@@ -1,0 +1,24 @@
+// This is the single file output by sass, It's intended to only @import other files.
+
+// 1 - H E L P E R S
+@import './partials/1-abstracts/breakpoints';
+@import './partials/1-abstracts/variables';
+@import './partials/1-abstracts/functions';
+@import './partials/1-abstracts/mixins';
+
+// 2 - T O O L S    --> any 3rd party library, tools and vendors that will help
+@import './partials/2-tools/normalize';
+@import './partials/2-tools/swiper-bundle.min';
+
+// 3 - B A S I C S    --> over all structure
+@import './partials/3-basics/buttons';
+@import './partials/3-basics/typography';
+@import './partials/3-basics/base';
+
+// 4 - C O M P O N E N T S   --> reused components footer, header, etc...
+@import './partials/4-components/search-dd';
+@import './partials/4-components/aside';
+@import './partials/4-components/dropdown';
+@import './partials/4-components/toggle';
+@import './partials/4-components/bottom-to-top';
+@import './partials/4-components/products-grid';

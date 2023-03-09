@@ -1,0 +1,182 @@
+// H E A D I N G S
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-style: $heading-font-style;
+}
+
+h1 {
+  font-size: 6rem; // 96px
+  line-height: 6rem; // 96px
+  font-weight: 700;
+
+  @include respond-to(md) {
+    font-size: 3rem; // 48px
+    line-height: 3.25rem; // 52px
+  }
+}
+
+h2 {
+  font-size: 3.125rem; // 50px
+  line-height: 3.75rem; // 60xp
+  font-weight: 700;
+
+  @include respond-to(md) {
+    font-size: 2rem; // 32px
+    line-height: 2.625rem; // 42px
+  }
+}
+
+h3 {
+  font-size: 2.5rem; // 40px
+  line-height: 3.125rem; // 50px
+  font-weight: 600;
+
+  @include respond-to(md) {
+    font-size: 1.5625rem; // 28px
+    line-height: 2.375rem; // 38px
+  }
+}
+
+h4 {
+  font-size: 1.875rem; // 30px
+  line-height: 2.5rem; // 40px
+  font-weight: 400;
+
+  @include respond-to(md) {
+    font-size: 1.5rem; // 24px
+    line-height: 1.875rem; // 30px
+  }
+}
+
+h5 {
+  font-size: 1.5625rem; // 25px
+  line-height: 2.1875rem; // 35px
+  font-weight: 600;
+
+  @include respond-to(md) {
+    font-size: 1.25rem; // 20px
+    line-height: 2.1875rem; // 35px
+  }
+}
+
+h6 {
+  font-size: 1.25rem; // 20px
+  line-height: 1.875rem; // 30px
+  font-weight: 400;
+
+  @include respond-to(md) {
+    font-size: 1.125rem; // 18px
+    line-height: 1.5rem; // 24px
+    font-weight: 400;
+  }
+}
+
+// B O D Y
+.p-regular-16px-400,
+.p-regular-16px-700,
+.p-subtitle-14px-300,
+.p-subtitle-14px-500,
+.p-small-12px-400,
+.p-small-12px-600 {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+}
+
+.p-regular-16px-400 {
+  font-weight: 400;
+  font-size: 1rem; // 16px
+  line-height: 1.5rem; // 24px
+}
+
+.p-regular-16px-700 {
+  font-weight: 700;
+  font-size: 1rem; // 16px
+  line-height: 160%;
+}
+
+.p-subtitle-14px-300 {
+  font-weight: 300;
+  font-size: 0.875rem; // 14px
+  line-height: 1.25rem; // 20px
+}
+
+.p-subtitle-14px-500 {
+  font-weight: 500;
+  font-size: 0.875rem; // 14px
+  line-height: 150%;
+  color: #BE4E2E;
+}
+
+.p-subtitle-14px-600 {
+  font-weight: 600;
+  font-size: 0.875rem; // 14px
+  line-height: 150%;
+}
+
+.p-small-12px-400 {
+  font-weight: 400;
+  font-size: 0.75rem; // 12px
+  line-height: 0.9375rem; // 15px
+}
+
+.p-small-12px-600 {
+  font-weight: 600;
+  font-size: 0.75rem; // 12px
+  line-height: 0.9375rem; // 15px
+}
+
+
+// L I N K S
+.a-link-16px {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem; // 16px
+  line-height: 1.5rem; // 24px
+  color: #000000;
+
+  &:hover {
+    text-decoration-line: underline;
+  }
+}
+
+// B U T T O N S
+.buttontext {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem; //16px
+  line-height: 1.5rem; // 24px
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+// B A D G E
+.badge {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem; // 14px
+  line-height: 0.9375rem; // 15px
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.current-price {
+  color: $Utility-success;
+}
+
+.discounted-price {
+  color: $-gray-400;
+}
+
+.normal-price {
+  color: $Secondary;
+}

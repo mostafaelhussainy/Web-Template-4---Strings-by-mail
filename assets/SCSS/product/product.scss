@@ -1,0 +1,305 @@
+@import '../main.scss';
+
+///////////////////////////////////////////////////////
+// B R E A D - C R U M B    S T Y L E S
+#bread-crumb {
+  margin-top: 192px;
+  margin: 192px 0 85px;
+
+  @include respond-to(1400px) {
+    margin-top: 267px;
+  }
+
+  .container ul {
+    @include flex(flex-start, center, row, 10px);
+    flex-wrap: wrap;
+
+    li {
+      img {
+        margin-left: 10px;
+      }
+
+      a {
+        white-space: nowrap;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .active {
+      color: $Secondary;
+      text-decoration: underline;
+
+      @include respond-to(sm) {
+        max-width: 350px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+// L A Y O U T    S T Y L E S
+#layout {
+  @include flex(center, flex-start, row, 10%, 53px);
+
+  @include respond-to(lg) {
+    flex-direction: column;
+  }
+}
+
+///////////////////////////////////////////////////////
+// P R O D U C T    F I G U R E   S T Y L E S
+.product-figure {
+  flex-basis: 35%;
+  width: clamp(350px, 100%, 655px);
+  height: clamp(350px, 100%, 655px);
+
+  img {
+    @include image-fit(100%, 100%, contain, center)
+  }
+}
+
+///////////////////////////////////////////////////////
+/// P R O D U C T   T E X T   W R A P P E R
+.product-text-wrapper {
+  flex-basis: 55%;
+}
+
+///////////////////////////////////////////////////////
+/// P R O D U C T   H E A D I N G
+.product-heading {
+  padding-bottom: 38px;
+  border-bottom: 1px solid $-gray-200;
+  margin-bottom: 25px;
+
+  h3 {
+    margin-bottom: 34px;
+  }
+
+  .product-highlights {
+    @include flex(flex-start, center, row, 12px);
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+    .new,
+    .sale {
+      border-radius: 37px;
+      padding: 5px 14px;
+      color: #FFF;
+    }
+
+    .new {
+      background: $Brand;
+    }
+
+    .sale {
+      background: $Utility-danger;
+    }
+
+    a {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration-line: underline;
+      color: $-gray-600;
+    }
+  }
+
+  .product-price {
+    @include flex(flex-start, center, row, 17px);
+
+    .current-price {
+      width: 80px;
+      height: 40px;
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      color: $Utility-success;
+    }
+
+    .discounted-price {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 40px;
+      text-decoration-line: line-through;
+      color: $-gray-400;
+    }
+
+    .normal-price {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 40px;
+      /* Secondary */
+      color: $Secondary;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+/// P R O D U C T   C O N T R O L S
+.product-controls {
+  margin-bottom: 25px;
+  padding-bottom: 76px;
+  border-bottom: 1px solid $-gray-200;
+
+  p {
+    max-width: 685px;
+    margin-bottom: 38.5px;
+  }
+
+  .product-controls-buttons {
+    @include flex(flex-start, center, row, 12px);
+
+    .btn-add-to-cart {
+      @include flex(center, center, row, 12px);
+      width: clamp(298px, 80%, 458px);
+      height: 56px;
+      background-color: $Secondary;
+      color: #FFF;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.4s ease-in-out;
+
+      @include respond-to(sm) {
+        border-radius: 100px;
+      }
+
+      &:hover {
+        background-color: $-primary-600;
+      }
+    }
+
+    .btn-add-to-wishlist {
+      @include flex(center, center);
+      background-color: $-primary-100;
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.4s ease-in-out;
+
+      &:hover {
+        background-color: $-gray-300;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+/// P R O D U C T   D E T A I L S
+.product-details {
+  border-bottom: 1px solid $-gray-200;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+
+  h6 {
+    margin-bottom: 12px;
+  }
+}
+
+///////////////////////////////////////////////////////
+/// P R O D U C T   D E S C R I P T I O N
+.product-description {
+  border-bottom: 1px solid $-gray-200;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+
+  @include respond-to(sm) {
+    margin-bottom: 53px;
+  }
+
+  h6 {
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 45px;
+  }
+
+  table {
+    width: 100%;
+    border: 1px solid $-gray-100;
+    border-radius: 5px;
+
+    thead {
+      background-color: $Brand;
+    }
+
+    thead,
+    tr {
+      padding: 5.5px 19px;
+      text-align: center;
+      height: 35px;
+    }
+
+    tr {
+      border-spacing: 5px;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+/// R E V I E W   A N D   Q U E S T I O N S
+#reviews-questions {
+  margin-bottom: 80px;
+
+  @include respond-to(sm) {
+    justify-content: space-between;
+    margin-bottom: 104px;
+  }
+
+  .controls {
+    margin-bottom: 7.5px;
+    position: relative;
+    @include flex(flex-end, center, row, 5px);
+
+    @include respond-to(sm) {
+      justify-content: space-between;
+      margin-bottom: 75px;
+    }
+  }
+
+  .routing {
+    width: 100%;
+    border-bottom: 1px solid $-gray-200;
+    margin-bottom: 40px;
+    @include flex(flex-start, center, row, 25px);
+
+    h6 {
+      padding: 7.5px 20.5px;
+      display: block;
+      color: $-gray-400;
+      cursor: pointer;
+    }
+
+    .active-toggle-button {
+      color: $Secondary;
+      border-bottom: 3px solid $Secondary;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+/// S I M I L A R   P R O D U C T S
+#similar-products {
+  margin-bottom: 123px;
+
+  h5 {
+    text-align: left;
+    margin-bottom: 36px;
+
+  }
+}

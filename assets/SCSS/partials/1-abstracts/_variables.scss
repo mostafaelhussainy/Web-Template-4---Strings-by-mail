@@ -1,0 +1,58 @@
+// F O N T    V A R I A B L E S
+// Headers
+$heading-font-family: 'Source Serif Pro', serif;
+$heading-font-weight: 700;
+$heading-font-style: normal;
+
+// Body text
+$body-font-family: 'Mulish', sans-serif;
+$body-font-style: normal;
+
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap');
+
+// S H A D O W S
+$main-shadow: 0px 4px 20px rgba(83, 41, 3, 0.16);
+// box-shadow: $main-shadow;
+
+// C O L O R S
+// 1-brand
+$Brand: #F2A124;
+
+//2-secondary
+$Secondary: #BE4E2E;
+
+// 3-main bg
+$main-bg: #FFF6F0;
+
+// 4-utilities
+$Utility-black: #000000;
+$Utility-white: #FFFFFF;
+$Utility-success: #0DAA26;
+$Utility-link: #00A9DE;
+$Utility-danger: #E2574C;
+
+// 5-primary colors
+$-primary-50: #F9EEEB;
+$-primary-100: #F2DCD5;
+$-primary-200: #E5B8AB;
+$-primary-300: #D89582;
+$-primary-400: #CB7158;
+$-primary-500: #BE4E2E;
+$-primary-600: #8F3B23;
+$-primary-700: #5F2717;
+$-primary-800: #30140C;
+$-primary-900: #130805;
+
+// 8-gray
+$-gray-50: #EEEEEE;
+$-gray-100: #DBDBDB;
+$-gray-200: #B8B8B8;
+$-gray-300: #949494;
+$-gray-400: #717171;
+$-gray-500: #4D4D4D;
+$-gray-600: #3A3A3A;
+$-gray-700: #272727;
+$-gray-800: #131313;
+$-gray-900: #080808;

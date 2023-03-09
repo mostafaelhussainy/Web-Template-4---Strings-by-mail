@@ -1,0 +1,56 @@
+$small: 576px; // sm
+$medium: 768px; // md
+$large: 992px; // lg
+$xlarge: 1200px; // xl
+$xxlarge: 1400px; // xxl
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint ==sm {
+    @media (max-width: $small) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==md {
+    @media (max-width: $medium) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==lg {
+    @media (max-width: $large) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==xl {
+    @media (max-width: $xlarge) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint ==xxl {
+    @media (max-width: $xxlarge) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+// How it works
+// body {
+//   font-size: 16px;
+
+//   @include respond-to(md) {
+//     font-size: 18px;
+//   }
+
+//   @include respond-to(lg) {
+//     font-size: 20px;
+//   }
+// }

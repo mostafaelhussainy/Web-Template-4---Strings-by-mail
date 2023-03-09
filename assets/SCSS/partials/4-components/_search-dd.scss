@@ -1,0 +1,113 @@
+nav .lower-nav-wrapper .lower-nav-container .search-bar-wrapper {
+  .search-dropdown {
+    @include abs-position(60px, 0px);
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: $main-shadow;
+    padding: 29px 22.5px;
+    @include flex;
+    column-gap: 95px;
+    min-height: 375px;
+    max-width: 890px;
+    width: auto;
+    // transition
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 0.3s, transform 0.5s, visibility 0.2s;
+    transform: translateY(-100px);
+
+    @include respond-to(lg) {
+      flex-direction: column;
+      align-items: flex-start;
+      column-gap: normal;
+      row-gap: 40px;
+    }
+
+    .categories {
+      h6 {
+        margin-bottom: 18px;
+      }
+
+      ul {
+
+        li {
+          margin-bottom: 12.5px;
+
+          a:hover {
+            text-decoration: underline;
+            color: $-primary-600;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .best-sellers {
+      h6 {
+        margin-bottom: 12px;
+      }
+
+      .products-wrapper {
+        @include flex;
+        column-gap: 17px;
+        row-gap: 17px;
+        flex-wrap: wrap;
+        max-width: 565px;
+
+        .product {
+          border: 1px solid #EEEEEE;
+          border-radius: 6px;
+          padding: 18px 10px;
+
+          figure {
+            img {
+              margin: 0 auto 14px;
+              display: block;
+              @include image-fit(146px, 146px, contain, center);
+            }
+
+            figcaption {
+              .product-title {
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 122%;
+                margin-bottom: 6px;
+                max-width: 155px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .search-dropdown {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .search-dd-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+}

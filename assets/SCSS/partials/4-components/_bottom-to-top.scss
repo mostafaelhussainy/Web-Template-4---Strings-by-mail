@@ -1,0 +1,8 @@
+.out-view {
+  transform: translateY(100px);
+  transition: transform 0.7s ease-in-out;
+}
+
+.in-view {
+  transform: translateY(0) !important;
+}

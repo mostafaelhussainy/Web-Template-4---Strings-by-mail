@@ -1,0 +1,114 @@
+.open-aside {
+  z-index: 999;
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #FFF;
+  box-shadow: $main-shadow;
+  padding: 27px 0px;
+  min-width: 421px;
+  min-height: 90vh;
+  overflow-y: auto;
+  // transition
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
+  @include respond-to(sm) {
+    min-width: 100%;
+  }
+
+  .side-nav-categories {
+    .heading {
+      @include flex(space-between, center, row);
+      margin-bottom: 20px;
+      padding: 0 25px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .sub-category {
+      .hide {
+        visibility: hidden;
+      }
+
+      span {
+        @include flex(space-between, center, row);
+        padding: 14px 25px;
+        width: 100%;
+        border-bottom: 1px solid #DBDBDB;
+        cursor: pointer;
+        position: relative;
+        transition: visibility 0.3s ease-in-out;
+
+        &:hover {
+          background-color: $-primary-100;
+        }
+      }
+
+      .open-subcategory {
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+      }
+
+      .sub-categories {
+        @include abs-position(0, 0);
+        padding: 27px 0px;
+        background: #FFF;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-100%);
+        opacity: 0;
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
+        h6 {
+          @include flex(space-between, center, row);
+          margin-bottom: 20px;
+          padding: 0 25px;
+
+          .back-arrow {
+            margin-right: 10px;
+            display: block;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .close-side-nav-fig {
+            flex-grow: 1;
+
+            img {
+              @include image-fit(20px, 20px, contain, center);
+              margin-left: auto;
+              display: block;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        li {
+          padding: 14px 25px;
+          width: 100%;
+          border-bottom: 1px solid #DBDBDB;
+          cursor: pointer;
+          position: relative;
+
+          &:hover {
+            background-color: $-primary-100;
+          }
+        }
+      }
+    }
+  }
+}
