@@ -1,0 +1,7 @@
+@function rem-calc($px-value, $base-font-size: 16px) {
+  @return ($px-value / $base-font-size) * 1rem;
+}
+
+// .my-class {
+//   font-size: rem-calc(24px); // === font-size: 1.5rem;
+// }

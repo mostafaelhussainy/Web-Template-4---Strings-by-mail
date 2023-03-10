@@ -1,0 +1,51 @@
+@import '../main.scss';
+
+#heading {
+  margin-bottom: 55px;
+
+  @include respond-to(md) {
+    margin-bottom: 45px;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    max-width: 942px;
+
+    button {
+      color: $Secondary;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.category-card {
+  height: 280px !important;
+  width: 280px !important;
+  position: relative;
+
+
+  @include respond-to(md) {
+    height: 230px !important;
+    width: 180px !important;
+  }
+
+  figure {
+    flex-direction: column !important;
+    row-gap: 12px !important;
+
+    @include respond-to(md) {
+      row-gap: 16px !important;
+    }
+  }
+
+  img {
+    @include respond-to(md) {
+      width: 166px;
+      height: 166px;
+    }
+  }
+}

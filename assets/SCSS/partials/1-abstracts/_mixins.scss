@@ -40,3 +40,32 @@
   object-fit: $object-fit;
   object-position: $object-position;
 }
+
+// Mixin to create buttons
+@mixin button($bg-color, $text-color, $border-radius, $padding-x, $padding-y) {
+  display: inline-block;
+  padding: $padding-y $padding-x;
+  border-radius: $border-radius;
+  background-color: $bg-color;
+  color: $text-color;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    background-color: lighten($bg-color, 10%);
+  }
+}
+
+// example
+// .my-button {
+//   @include button(#0074d9, #ffffff, 4px, 16px, 8px);
+// }
