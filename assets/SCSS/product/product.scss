@@ -292,6 +292,61 @@
   }
 }
 
+/////////////////
+#review-pop-up {
+  .stars-wrapper {
+    @include flex(flex-start, center, row, 5px);
+
+    .rating-star {
+      cursor: pointer;
+
+      svg {
+        transition: fill 0.3s ease-in-out;
+
+        &:hover {
+          fill: #F2A124;
+        }
+      }
+    }
+  }
+
+  .rating-tags {
+    @include flex(space-between, center, row, 5px);
+
+    .tag {
+      font-family: 'Cabin';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      color: $-gray-600;
+      border: 1px solid $-gray-200;
+      border-radius: 49px;
+      padding: 2px 16px;
+      display: block;
+      cursor: pointer;
+
+      &:hover {
+        color: $-gray-800;
+        border: 1px solid $-gray-400;
+      }
+    }
+  }
+
+  .attachments {
+    @include flex(flex-start, center, row, 30px);
+    width: 100%;
+
+    button {
+      @include flex(center, center, row, 6px);
+      cursor: pointer;
+    }
+
+  }
+}
+
+/////////////////////
 ///////////////////////////////////////////////////////
 /// S I M I L A R   P R O D U C T S
 #similar-products {

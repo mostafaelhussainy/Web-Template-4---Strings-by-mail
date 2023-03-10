@@ -1,0 +1,78 @@
+.pop-up-visible {
+  display: block !important;
+}
+
+.overlay-wrapper {
+  display: none;
+
+  .pop-up-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 998;
+    background-color: #e5e5e56e;
+  }
+
+  .pop-up {
+    @include abs-position;
+    z-index: 999;
+    position: fixed;
+    padding: 30px;
+    height: fit-content;
+    width: clamp(350px, 653px, 653px);
+    background: #FFFFFF;
+    border-radius: 12px;
+    @include flex(center, flex-start, column, 5px, 20px);
+
+    h5 {
+      @include flex(space-between, center, row);
+      width: 100%;
+
+      img {
+        cursor: pointer;
+        width: 11px;
+        height: 11px;
+      }
+    }
+
+    .row {
+      @include flex(center, center, row, 20px);
+      width: 100%
+    }
+
+    label {
+      @include flex(center, flex-start, column, 5px, 5px);
+      width: 100%;
+      max-width: 100%;
+
+      input {
+        height: 56px;
+      }
+
+      Textarea {
+        height: 137px;
+      }
+
+      input,
+      Textarea {
+        border: 1px solid $-gray-200;
+        border-radius: 8px;
+        padding: 10px 15px;
+        width: 100%;
+        max-width: 100%;
+        display: block;
+      }
+    }
+
+    .post {
+      margin-left: auto;
+      display: block;
+      width: 97px;
+      height: 56px;
+    }
+  }
+}

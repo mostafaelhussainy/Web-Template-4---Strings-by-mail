@@ -23,16 +23,17 @@ aside {
     min-width: 100%;
   }
 
-  .side-nav-categories {
-    .heading {
-      @include flex(space-between, center, row);
-      margin-bottom: 20px;
-      padding: 0 25px;
+  .heading {
+    @include flex(space-between, center, row);
+    margin-bottom: 20px;
+    padding: 0 25px;
 
-      &:hover {
-        cursor: pointer;
-      }
+    &:hover {
+      cursor: pointer;
     }
+  }
+
+  .side-nav-categories {
 
     .sub-category {
       .hide {
@@ -108,6 +109,26 @@ aside {
             background-color: $-primary-100;
           }
         }
+      }
+    }
+  }
+
+  .links {
+    @include flex(center, center, row, 50px);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 27px;
+    border-top: 1px solid #EBEBEB;
+    width: 80%;
+    margin: 0 auto;
+
+    li a {
+      white-space: nowrap;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }

@@ -1160,7 +1160,7 @@ aside {
     min-width: 100%;
   }
 }
-aside .side-nav-categories .heading {
+aside .heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1171,7 +1171,7 @@ aside .side-nav-categories .heading {
   margin-bottom: 20px;
   padding: 0 25px;
 }
-aside .side-nav-categories .heading:hover {
+aside .heading:hover {
   cursor: pointer;
 }
 aside .side-nav-categories .sub-category .hide {
@@ -1255,6 +1255,29 @@ aside .side-nav-categories .sub-category .sub-categories li {
 }
 aside .side-nav-categories .sub-category .sub-categories li:hover {
   background-color: #F2DCD5;
+}
+aside .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: unset;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 27px;
+  border-top: 1px solid #EBEBEB;
+  width: 80%;
+  margin: 0 auto;
+}
+aside .links li a {
+  white-space: nowrap;
+}
+aside .links li a:hover {
+  text-decoration: underline;
 }
 
 .dropdown-parent .dropdown-btn {
@@ -1450,6 +1473,103 @@ aside .side-nav-categories .sub-category .sub-categories li:hover {
   margin: 0;
   cursor: pointer;
   margin-left: auto;
+}
+
+.pop-up-visible {
+  display: block !important;
+}
+
+.overlay-wrapper {
+  display: none;
+}
+.overlay-wrapper .pop-up-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  background-color: rgba(229, 229, 229, 0.431372549);
+}
+.overlay-wrapper .pop-up {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  position: fixed;
+  padding: 30px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 653px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: 20px;
+}
+.overlay-wrapper .pop-up h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+  width: 100%;
+}
+.overlay-wrapper .pop-up h5 img {
+  cursor: pointer;
+  width: 11px;
+  height: 11px;
+}
+.overlay-wrapper .pop-up .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: unset;
+  width: 100%;
+}
+.overlay-wrapper .pop-up label {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: 5px;
+  width: 100%;
+  max-width: 100%;
+}
+.overlay-wrapper .pop-up label input {
+  height: 56px;
+}
+.overlay-wrapper .pop-up label Textarea {
+  height: 137px;
+}
+.overlay-wrapper .pop-up label input,
+.overlay-wrapper .pop-up label Textarea {
+  border: 1px solid #B8B8B8;
+  border-radius: 8px;
+  padding: 10px 15px;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+.overlay-wrapper .pop-up .post {
+  margin-left: auto;
+  display: block;
+  width: 97px;
+  height: 56px;
 }
 
 #bread-crumb {
@@ -1755,6 +1875,72 @@ aside .side-nav-categories .sub-category .sub-categories li:hover {
 #reviews-questions .routing .active-toggle-button {
   color: #BE4E2E;
   border-bottom: 3px solid #BE4E2E;
+}
+
+#review-pop-up .stars-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: unset;
+}
+#review-pop-up .stars-wrapper .rating-star {
+  cursor: pointer;
+}
+#review-pop-up .stars-wrapper .rating-star svg {
+  transition: fill 0.3s ease-in-out;
+}
+#review-pop-up .stars-wrapper .rating-star svg:hover {
+  fill: #F2A124;
+}
+#review-pop-up .rating-tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  row-gap: unset;
+}
+#review-pop-up .rating-tags .tag {
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #3A3A3A;
+  border: 1px solid #B8B8B8;
+  border-radius: 49px;
+  padding: 2px 16px;
+  display: block;
+  cursor: pointer;
+}
+#review-pop-up .rating-tags .tag:hover {
+  color: #131313;
+  border: 1px solid #717171;
+}
+#review-pop-up .attachments {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: unset;
+  width: 100%;
+}
+#review-pop-up .attachments button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+  row-gap: unset;
+  cursor: pointer;
 }
 
 #similar-products {
