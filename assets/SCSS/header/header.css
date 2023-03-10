@@ -1572,6 +1572,47 @@ aside .links li a:hover {
   height: 56px;
 }
 
+#bread-crumb {
+  margin-top: 192px;
+  margin: 192px 0 85px;
+}
+@media (max-width: 1400px) {
+  #bread-crumb {
+    margin-top: 267px;
+  }
+}
+#bread-crumb .container ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: unset;
+  flex-wrap: wrap;
+}
+#bread-crumb .container ul li img {
+  margin-left: 10px;
+}
+#bread-crumb .container ul li a {
+  white-space: nowrap;
+}
+#bread-crumb .container ul li a:hover {
+  text-decoration: underline;
+}
+#bread-crumb .container ul .active {
+  color: #BE4E2E;
+  text-decoration: underline;
+}
+@media (max-width: 576px) {
+  #bread-crumb .container ul .active {
+    max-width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 nav {
   z-index: 998;
   position: fixed;

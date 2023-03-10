@@ -1,48 +1,6 @@
 @import '../main.scss';
 
 ///////////////////////////////////////////////////////
-// B R E A D - C R U M B    S T Y L E S
-#bread-crumb {
-  margin-top: 192px;
-  margin: 192px 0 85px;
-
-  @include respond-to(1400px) {
-    margin-top: 267px;
-  }
-
-  .container ul {
-    @include flex(flex-start, center, row, 10px);
-    flex-wrap: wrap;
-
-    li {
-      img {
-        margin-left: 10px;
-      }
-
-      a {
-        white-space: nowrap;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    .active {
-      color: $Secondary;
-      text-decoration: underline;
-
-      @include respond-to(sm) {
-        max-width: 350px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-    }
-  }
-}
-
-///////////////////////////////////////////////////////
 // L A Y O U T    S T Y L E S
 #layout {
   @include flex(center, flex-start, row, 10%, 53px);
