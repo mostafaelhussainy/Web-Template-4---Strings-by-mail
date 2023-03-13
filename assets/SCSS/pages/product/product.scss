@@ -1,4 +1,4 @@
-@import '../main.scss';
+@import '../../main.scss';
 
 ///////////////////////////////////////////////////////
 // L A Y O U T    S T Y L E S
@@ -196,6 +196,10 @@
       background-color: $Brand;
     }
 
+    div :nth-last-child(-n+3) {
+      /* Your CSS styles here */
+    }
+
     thead,
     tr {
       padding: 5.5px 19px;
@@ -205,6 +209,14 @@
 
     tr {
       border-spacing: 5px;
+    }
+
+    @include respond-to(md) {
+
+      thead th:nth-last-child(-n+3),
+      tr td:nth-last-child(-n+3) {
+        display: none;
+      }
     }
   }
 }

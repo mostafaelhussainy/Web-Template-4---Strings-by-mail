@@ -1,5 +1,16 @@
 @import '../1-abstracts/breakpoints';
 
+// B O D Y
+body {
+  padding-top: 237px;
+  scroll-behavior: smooth;
+  background: $main-bg;
+
+  @include respond-to(md) {
+    padding-top: 305px;
+  }
+}
+
 // C O N T A I N E R
 .container {
   width: 80%;
@@ -20,32 +31,34 @@
 }
 
 // S C R O L L    B A R
-/* width */
+// width
 ::-webkit-scrollbar {
   width: 6px;
-
 }
 
-/* Track */
+// Track
 ::-webkit-scrollbar-track {
   background: #E7E7E7;
 }
 
-/* Handle */
+// Handle
 ::-webkit-scrollbar-thumb {
   border-radius: 21px;
   background-color: $Secondary;
 }
 
-/* Handle on hover */
+// Handle on hover
 ::-webkit-scrollbar-thumb:hover {
   background: #ca8370;
 }
 
-// ::-webkit-scrollbar the scrollbar.
-// ::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
-// ::-webkit-scrollbar-thumb the draggable scrolling handle.
-// ::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
-// ::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
-// ::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
-// ::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements.
+// Image hover effect
+.hover-img {
+  transition: transform 0.4s ease-in-out;
+  width: fit-content;
+  height: fit-content;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}

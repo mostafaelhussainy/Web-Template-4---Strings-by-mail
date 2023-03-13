@@ -10,21 +10,19 @@
   .dropdown-wrapper {
     position: relative;
     z-index: 0;
-    height: 100%;
     width: 100%;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, height 0.3s ease-in-out;
-    opacity: 1;
-  }
-
-  .hidden-dropdown {
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
   }
 
   // rotate img
   img {
     transition: transform 0.3s ease-in-out;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .rotate-180 {
@@ -37,10 +35,18 @@
 //   data-dropdown="(UNIQUE VALUE)">
 //   <h6>
 //   </h6>
+///////////////////////////////////////////////////////
+// I C O N S:
+// A R R O W
 //   <img src="../assets/icons/dropdown.svg"
 //     id="icon-(UNIQUE VALUE)">
+///////////////////////////////////////////////////////
+//  P L U S - M I N U S
+// <img src="../assets/icons/accordion-plus.svg" alt="plus icon" id="plus-1">
+// <img src="../assets/icons/accordion-minus.svg" alt="plus icon" id="minus-1" class="hidden">
+///////////////////////////////////////////////////////
 // </span>
-// <div class="hidden-dropdown dropdown-wrapper"
+// <div class="dropdown-wrapper"
 //   id="dropdown-(UNIQUE VALUE)">
 //   
 // </div>

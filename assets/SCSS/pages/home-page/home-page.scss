@@ -1,0 +1,304 @@
+@import '../../main.scss';
+
+// animation
+$animation-target: ".animation-target";
+$num-children: length($animation-target);
+
+// H E A D I N G    S T Y L E
+#heading {
+  margin-bottom: 105px;
+
+  @include respond-to(md) {
+    margin-bottom: 45px;
+  }
+
+  .h1-wrapper {
+    max-height: 96px;
+    overflow: hidden;
+
+    h1 {
+      max-width: 732px;
+      text-align: center;
+      margin: 0 auto;
+      @include fadeInDown;
+    }
+
+    &:last-child {
+      margin: 0 auto 30px;
+    }
+  }
+
+  .p-btn-wrapper {
+    max-height: 123px;
+    overflow: hidden;
+
+    .p-btn {
+      @include fadeInDown(0.5s, 0.5s);
+
+      p {
+        max-width: 747px;
+        margin: 0 auto 27px;
+      }
+
+      a {
+        margin: 0 auto;
+        width: fit-content;
+        @include flex(center, center, row, 24px);
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+// C A T E G O R I E S    S T Y L E
+#categories {
+  width: 100%;
+
+  .container {
+    width: 100%;
+    max-width: none;
+    position: relative;
+    height: 329px;
+
+
+
+    .imgs-wrapper {
+      @include flex(center, flex-start, row, 16px);
+      height: fit-content;
+      width: fit-content;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+
+      .animation-target {
+        position: relative;
+        @include fadeInLeft(0.5s, 0.5s);
+
+        figure {
+          width: fit-content;
+          height: fit-content;
+
+          img {
+            @include image-fit(235px, 246px, cover, center);
+            border-radius: 5px;
+          }
+        }
+      }
+
+      a:nth-child(1) {
+        bottom: 83px;
+      }
+
+      a:nth-child(2) {
+        bottom: 15px;
+      }
+
+      a:nth-child(3) {
+        bottom: 60px;
+      }
+
+      a:nth-child(4) {
+        bottom: 0px;
+      }
+
+      a:nth-child(5) {
+        bottom: 47px;
+      }
+
+      a:nth-child(6) {
+        bottom: 3px;
+      }
+
+      a:nth-child(7) {
+        bottom: 60px;
+      }
+    }
+  }
+
+}
+
+// P R O D U C T    S T Y L E
+.pre-header {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $Secondary;
+  text-align: center;
+  display: block;
+}
+
+#product {
+  background-image: url(../../../images/home-page/product-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  @include respond-to(md) {
+    background-image: none;
+  }
+
+  #curated h2,
+  #best-selling h2 {
+    text-align: center;
+    margin-bottom: 100px;
+
+    @include respond-to(md) {
+      margin-bottom: 52px;
+    }
+  }
+
+  #curated {
+    padding-top: 58px;
+    margin-bottom: 131px;
+
+    @include respond-to(md) {
+      margin-bottom: 48px;
+    }
+  }
+
+  #best-selling {
+    margin-bottom: 196px;
+
+    @include respond-to(md) {
+      margin-bottom: 239px;
+    }
+  }
+}
+
+// F A Q    S T Y L E
+#faq {
+  padding: 114px 0 190px;
+  margin-bottom: 160px;
+  background: url('../../../images/home-page/faq-bg.png');
+  background-position: center;
+  background-size: cover;
+
+  @include respond-to(md) {
+    padding: 80px 0 220px;
+    margin-bottom: 65px;
+  }
+
+  .pre-header,
+  h2 {
+    text-align: left;
+  }
+
+  h2 {
+    margin-bottom: 26px;
+  }
+
+  .dropdown-parent {
+    max-width: 1030px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include respond-to(md) {
+      margin: 0 auto 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .dropdown-btn {
+      padding: 10px 17px;
+      background-color: #FFF;
+      border-radius: 6px;
+    }
+
+    .dropdown-wrapper {
+      p {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+// B L O G S    S T Y L E
+
+
+// S A L E    S T Y L E
+#blogs {
+  background-image: url('../../../images/home-page/blogs-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-clip: border-box;
+
+  .pre-header {
+    color: #FFF;
+
+    @include respond-to(md) {
+      color: $Secondary;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include respond-to(md) {
+      margin-bottom: 36px;
+    }
+  }
+
+  .blogs-container {
+    @include flex(flex-start, flex-start, row, 16px);
+
+    .top-stories,
+    .videos-artists {
+      background-color: #FFF;
+      border-radius: 18px;
+      width: fit-content;
+      padding: 32px 24px;
+
+      a {
+        @include flex(flex-start, center, row, 20px);
+        margin-bottom: 27px;
+      }
+    }
+
+    .top-stories .stories-container {
+      @include flex(center, center, column, 0px, 27px);
+
+      a {
+        padding-bottom: 27px;
+        border-bottom: 1px solid $-gray-100;
+        margin-bottom: 27px;
+
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+          margin-bottom: 0;
+        }
+
+        figure {
+          @include flex(center, flex-start, row, 28px);
+
+          img {
+            @include image-fit(153px, 153px)
+          }
+
+          figcaption {
+            h5 {
+              margin-bottom: 2px;
+            }
+
+            p {
+              margin-bottom: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

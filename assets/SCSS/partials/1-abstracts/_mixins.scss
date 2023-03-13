@@ -69,3 +69,66 @@
 // .my-button {
 //   @include button(#0074d9, #ffffff, 4px, 16px, 8px);
 // }
+
+// Fade in down mixin
+// animation
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// mixin
+@mixin fadeInDown($duration: 0.5s, $delay: 0s) {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: $duration;
+  animation-duration: $duration;
+  -webkit-animation-delay: $delay;
+  animation-delay: $delay;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+// Fade in left mixin
+// animation
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// mixins
+@mixin fadeInLeft($duration: 1s, $delay: 0s) {
+  animation: fadeInLeft $duration ease-out $delay both;
+}

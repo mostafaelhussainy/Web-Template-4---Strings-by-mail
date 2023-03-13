@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap");
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +42,8 @@ td {
   border: none;
 }
 
-body {
-  scroll-behavior: smooth;
-  background: #FFF6F0;
+a {
+  cursor: pointer;
 }
 
 /**
@@ -760,31 +779,14 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-.sec-btn {
-  width: 197px;
-  padding: 8px 0px;
-  text-align: center;
+button {
   cursor: pointer;
-  height: 40px;
-  border: 0.5px solid #000000;
-  border-radius: 6px;
-  transition: transform 0.2s ease-in-out;
-}
-@media (max-width: 576px) {
-  .sec-btn {
-    width: 47.5%;
-  }
-}
-.sec-btn:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transform: scale(1.02);
 }
 
 .main-btn {
   width: 197px;
   padding: 8px 0px;
   text-align: center;
-  cursor: pointer;
   height: 40px;
   background: #BE4E2E;
   border-radius: 6px;
@@ -798,6 +800,25 @@ button.swiper-pagination-bullet {
 }
 .main-btn:hover {
   background-color: #8F3B23;
+  transform: scale(1.02);
+}
+
+.sec-btn {
+  width: 197px;
+  padding: 8px 0px;
+  text-align: center;
+  height: 40px;
+  border: 0.5px solid #000000;
+  border-radius: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+@media (max-width: 576px) {
+  .sec-btn {
+    width: 47.5%;
+  }
+}
+.sec-btn:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transform: scale(1.02);
 }
 
@@ -983,6 +1004,17 @@ h6 {
   color: #BE4E2E;
 }
 
+body {
+  padding-top: 237px;
+  scroll-behavior: smooth;
+  background: #FFF6F0;
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 305px;
+  }
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
@@ -1004,25 +1036,32 @@ h6 {
   }
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #E7E7E7;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 21px;
   background-color: #BE4E2E;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #ca8370;
+}
+
+.hover-img {
+  transition: transform 0.4s ease-in-out;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.hover-img:hover {
+  transform: scale(1.03);
 }
 
 nav .lower-nav-wrapper .lower-nav-container .search-bar-wrapper .search-dropdown {
@@ -1296,18 +1335,16 @@ aside .links li a:hover {
 .dropdown-parent .dropdown-wrapper {
   position: relative;
   z-index: 0;
-  height: 100%;
   width: 100%;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out, height 0.3s ease-in-out;
-  opacity: 1;
-}
-.dropdown-parent .hidden-dropdown {
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 .dropdown-parent img {
   transition: transform 0.3s ease-in-out;
+}
+.dropdown-parent .hidden {
+  display: none;
 }
 .dropdown-parent .rotate-180 {
   transform: rotate(180deg);
@@ -1353,7 +1390,7 @@ aside .links li a:hover {
   flex-direction: row;
   -moz-column-gap: 18px;
        column-gap: 18px;
-  row-gap: 24px;
+  row-gap: 35px;
   flex-wrap: wrap;
 }
 .products-grid .product-card {
@@ -1382,10 +1419,11 @@ aside .links li a:hover {
 }
 .products-grid .product-card .img-wrapper .product-image {
   display: block;
+  border-radius: 6px;
   width: 240px;
   height: 235px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
   margin: 0 auto 14px;
@@ -1394,8 +1432,8 @@ aside .links li a:hover {
   .products-grid .product-card .img-wrapper .product-image {
     width: 150px;
     height: 150px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
     -o-object-position: center;
        object-position: center;
   }

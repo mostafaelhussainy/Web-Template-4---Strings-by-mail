@@ -1,5 +1,5 @@
 .products-grid {
-  @include flex(center, center, row, 18px, 24px);
+  @include flex(center, center, row, 18px, 35px);
   flex-wrap: wrap;
 
   .product-card {
@@ -26,10 +26,11 @@
 
       .product-image {
         display: block;
-        @include image-fit(240px, 235px, contain, center);
+        border-radius: 6px;
+        @include image-fit(240px, 235px, cover, center);
 
         @include respond-to(lg) {
-          @include image-fit(150px, 150px, contain, center);
+          @include image-fit(150px, 150px, cover, center);
         }
 
         margin: 0 auto 14px;
