@@ -1,5 +1,10 @@
 button {
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .main-btn {
@@ -10,7 +15,6 @@ button {
   background: $Secondary;
   border-radius: 6px;
   color: #FFF !important;
-  transition: transform 0.2s ease-in-out;
 
   @include respond-to(sm) {
     width: 47.5%;
@@ -18,7 +22,6 @@ button {
 
   &:hover {
     background-color: $-primary-600;
-    transform: scale(1.02);
   }
 }
 
@@ -29,7 +32,6 @@ button {
   height: 40px;
   border: 0.5px solid #000000;
   border-radius: 6px;
-  transition: transform 0.2s ease-in-out;
 
   @include respond-to(sm) {
     width: 47.5%;
@@ -37,7 +39,6 @@ button {
 
   &:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    transform: scale(1.02);
   }
 }
 

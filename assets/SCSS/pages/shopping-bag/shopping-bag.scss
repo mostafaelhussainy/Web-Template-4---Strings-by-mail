@@ -1,0 +1,120 @@
+@import '../../main.scss';
+
+// P A G E    L A Y O U T
+#layout {
+  margin-bottom: 103px;
+
+  .container {
+    @include flex(space-between, flex-start, row, 86px);
+  }
+}
+
+///////////////////////////////////////////////////////////
+/// S H O P P I N G   B A G   S T Y L E
+#shopping-bag {
+  width: 100%;
+
+  h3 {
+    margin-bottom: 7px;
+  }
+
+  .sub-header {
+    margin-bottom: 63px;
+  }
+
+  .shopping-bag-products {
+    .product {
+      @include flex(flex-start, center, row, 20px);
+      padding-bottom: 23px;
+      padding-bottom: 23px;
+      margin-bottom: 23px;
+
+      img {
+        @include image-fit(124px, 124px, cover, center);
+
+        @include respond-to(md) {
+          @include image-fit(81px, 81px, cover, center);
+        }
+      }
+
+      figcaption {
+        width: 100%;
+
+        p {
+          margin-bottom: 28px;
+
+          @include respond-to(md) {
+            margin-bottom: 20px;
+          }
+        }
+
+        .controls {
+          @include flex(center, center, row, 15px);
+          width: 100%;
+
+          button {
+            img {
+              @include image-fit(35px, 35px, cover, center);
+            }
+          }
+
+          .quantity {
+            width: fit-content;
+          }
+
+          .delete {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .row {
+    @include flex(space-between, center, row, 70px, 70px);
+
+    @include respond-to(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .payment-methods {
+      @include flex(center, flex-start, column, unset, 19px);
+    }
+
+    .shopping-bag-subtotal-price {
+      width: 100%;
+      max-width: 464px;
+
+      @include respond-to(md) {
+        max-width: unset;
+      }
+
+      .subtotal-price {
+        @include flex(space-between, center, row);
+        padding-bottom: 6px;
+        margin-bottom: 33px;
+      }
+
+      .main-btn {
+        width: 100% !important;
+        height: 55px;
+        line-height: 55px;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////
+/// S H O P P I N G   B A G   S T Y L E
+#pepole-also-viewed {
+  @include respond-to(xxl) {
+    display: none;
+  }
+
+  h5 {
+    margin-bottom: 16px;
+  }
+}

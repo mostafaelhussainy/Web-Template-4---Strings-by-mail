@@ -1,0 +1,72 @@
+ #mini-cart {
+   .shopping-bag-products {
+     .product {
+       @include flex(flex-start, center, row, 20px);
+       padding-bottom: 23px;
+       padding-bottom: 23px;
+       margin-bottom: 23px;
+
+       img {
+         @include image-fit(124px, 124px, cover, center);
+
+         @include respond-to(md) {
+           @include image-fit(81px, 81px, cover, center);
+         }
+       }
+
+       figcaption {
+         width: 100%;
+
+         p {
+           margin-bottom: 28px;
+
+           @include respond-to(md) {
+             margin-bottom: 20px;
+           }
+         }
+
+         .controls {
+           @include flex(center, center, row, 15px);
+           width: 100%;
+
+           button {
+             img {
+               @include image-fit(35px, 35px, cover, center);
+             }
+           }
+
+           .quantity {
+             width: fit-content;
+           }
+
+           .delete {
+             margin-left: auto;
+           }
+         }
+       }
+     }
+   }
+
+   .shopping-bag-subtotal-price {
+     width: 100%;
+     max-width: 464px;
+
+     @include respond-to(md) {
+       max-width: unset;
+     }
+
+     .subtotal-price {
+       @include flex(space-between, center, row);
+       padding-bottom: 6px;
+       margin-bottom: 33px;
+     }
+
+     .main-btn {
+       width: 100% !important;
+       height: 55px;
+       line-height: 55px;
+       padding-top: 0;
+       padding-bottom: 0;
+     }
+   }
+ }

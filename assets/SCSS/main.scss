@@ -16,13 +16,15 @@
 @import './partials/3-basics/typography';
 @import './partials/3-basics/base';
 
-// 4 - C O M P O N E N T S   --> reused components footer, header, etc...
+// 4 - C O M P O N E N T S   --> reused components mini cart, product card, etc...
 @import './partials/4-components/search-dd';
 @import './partials/4-components/aside';
 @import './partials/4-components/dropdown';
 @import './partials/4-components/toggle';
 @import './partials/4-components/bottom-to-top';
 @import './partials/4-components/products-grid';
+@import './partials/4-components/product-card';
 @import './partials/4-components/pop-up';
 @import './partials/4-components/bread-crumb';
 @import './partials/4-components/categories-grid';
+@import './partials/4-components/mini-cart'; // MINI CART
