@@ -19,7 +19,7 @@
 }
 
 // Mixin to grid
-@mixin grid($columns-number, $rows-number, $column-gap, $row-gap) {
+@mixin grid($columns-number, $rows-number, $column-gap: unset, $row-gap: unset) {
   display: grid;
   grid-template-columns: $columns-number;
   grid-template-rows: $rows-number;
@@ -43,7 +43,7 @@
 
 // Mixin to create buttons
 @mixin button($bg-color, $text-color, $border-radius, $padding-x, $padding-y) {
-  display: inline-block;
+  display: block;
   padding: $padding-y $padding-x;
   border-radius: $border-radius;
   background-color: $bg-color;
@@ -51,17 +51,19 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
-    background-color: darken($bg-color, 10%);
+    opacity: 0.9;
+    transform: scale(1.02);
   }
 
   &:focus,
   &:active {
     outline: none;
     box-shadow: none;
-    background-color: lighten($bg-color, 10%);
+    opacity: 0.9;
+    transform: scale(1.02);
   }
 }
 
@@ -131,4 +133,14 @@
 // mixins
 @mixin fadeInLeft($duration: 1s, $delay: 0s) {
   animation: fadeInLeft $duration ease-out $delay both;
+}
+
+// max height for text
+@mixin line-clamp($line-number: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-number;
+  line-clamp: $line-number;
+  -webkit-box-orient: vertical;
 }

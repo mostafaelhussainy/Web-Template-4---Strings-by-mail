@@ -40,3 +40,11 @@ button {
     transform: scale(1.02);
   }
 }
+
+.dark-btn {
+  @include button(#000, #FFF, 4px, 26px, 11px);
+
+  @include respond-to(md) {
+    border-radius: 31px;
+  }
+}

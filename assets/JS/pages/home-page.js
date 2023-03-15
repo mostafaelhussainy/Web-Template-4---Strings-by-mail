@@ -17,22 +17,27 @@ var swiper = new Swiper(".testimonialsSlider", {
   },
   slidesPerView: 3,
   spaceBetween: 15,
-  // breakpoints: {
-  //   640: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //   },
-  //   768: {
-  //     slidesPerView: 4,
-  //     spaceBetween: 40,
-  //   },
-  //   1024: {
-  //     slidesPerView: 5,
-  //     spaceBetween: 50,
-  //   },
-  // },
+  breakpoints: {
+    370: {
+      slidesPerView: 1,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+    1550: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+  },
 });
 
+///////////////////////////////////////////////////////
+// N E W S    L E T T E R
 
+const closeNewsLetterBtn = document.querySelector(".close-news-letter");
+closeNewsLetterBtn.addEventListener("click", () => {
+  const newsLetterPopUp = document.querySelector("#news-letter");
+  newsLetterPopUp.classList.add("closeNewsLetter")
+})
 
 

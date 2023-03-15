@@ -822,6 +822,33 @@ button {
   transform: scale(1.02);
 }
 
+.dark-btn {
+  display: block;
+  padding: 11px 26px;
+  border-radius: 4px;
+  background-color: #000;
+  color: #FFF;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.dark-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+.dark-btn:focus, .dark-btn:active {
+  outline: none;
+  box-shadow: none;
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+@media (max-width: 768px) {
+  .dark-btn {
+    border-radius: 31px;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -1062,6 +1089,34 @@ body {
 }
 .hover-img:hover {
   transform: scale(1.03);
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: 5px;
+  margin-bottom: 12px;
+  width: 100%;
+}
+label textarea,
+label input {
+  width: 100%;
+  max-width: 550px;
+  height: 50px;
+  background: #FBFBFB;
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;
+  padding: 10px;
+}
+label textarea {
+  height: 100px;
+}
+label:last-child {
+  margin-bottom: 0;
 }
 
 nav .lower-nav-wrapper .lower-nav-container .search-bar-wrapper .search-dropdown {
