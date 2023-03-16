@@ -1,5 +1,36 @@
  #mini-cart {
+   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 90%;
+   max-width: 670px;
+   background-color: #FFF;
+   padding: 29px 0px;
+   height: 100vh;
+   max-height: 1050px;
+   z-index: 999;
+
+   @include respond-to(md) {
+     width: 100%;
+   }
+
+   .mini-cart-heading {
+     margin-bottom: 23px;
+     padding: 0px 42px 18px;
+
+     h5 {
+       @include flex(space-between, center, row)
+     }
+   }
+
+
    .shopping-bag-products {
+     height: auto;
+     max-height: 80%;
+     overflow-y: auto;
+     padding: 0px 42px;
+
      .product {
        @include flex(flex-start, center, row, 20px);
        padding-bottom: 23px;
@@ -45,21 +76,21 @@
          }
        }
      }
-   }
-
-   .shopping-bag-subtotal-price {
-     width: 100%;
-     max-width: 464px;
-
-     @include respond-to(md) {
-       max-width: unset;
-     }
 
      .subtotal-price {
        @include flex(space-between, center, row);
        padding-bottom: 6px;
        margin-bottom: 33px;
      }
+   }
+
+   .checkout-wrapper {
+     padding: 29px 42px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     background: #FFF;
 
      .main-btn {
        width: 100% !important;
@@ -67,6 +98,7 @@
        line-height: 55px;
        padding-top: 0;
        padding-bottom: 0;
+       margin: 0 auto;
      }
    }
  }

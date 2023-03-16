@@ -1,0 +1,179 @@
+#order-summary {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 90%;
+  max-width: 670px;
+  background-color: #FFF;
+  padding: 29px 0px 0px;
+  z-index: 999;
+  height: fit-content;
+  overflow-y: auto;
+  max-height: 100vh;
+
+  @include respond-to(md) {
+    width: 100%;
+    min-height: 420px;
+    max-height: 100vh;
+  }
+
+  .order-summary-heading {
+    margin-bottom: 20px;
+    padding: 0px 42px 21px;
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+
+    h5,
+    p {
+      width: fit-content;
+    }
+
+    h5 {
+      @include respond-to(md) {
+        display: none;
+      }
+    }
+
+    .question,
+    .expand-order-summary {
+      margin-left: auto !important;
+    }
+
+    .items-num {
+      width: 100%;
+    }
+
+    .expand-order-summary {
+      display: none;
+    }
+
+    @include respond-to(md) {
+      .expand-order-summary {
+        @include flex(space-between, center, row);
+        width: 100%;
+
+        .subheader {
+          display: block !important;
+        }
+      }
+
+      .question {
+        display: none;
+      }
+    }
+  }
+
+  .order-summary-products {
+    overflow-y: auto;
+    padding: 0px 42px;
+    max-height: 70%;
+
+    @include respond-to(md) {
+      max-height: 0;
+      overflow-y: unset !important;
+
+      &::-webkit-scrollbar {
+        width: 0 !important;
+      }
+    }
+
+    .product {
+      @include flex(flex-start, center, row, 20px);
+      padding-bottom: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+
+      img {
+        @include image-fit(93px, 93px, cover, center);
+
+        @include respond-to(md) {
+          @include image-fit(81px, 81px, cover, center);
+        }
+      }
+
+      figcaption {
+        width: 100%;
+
+        p {
+          margin-bottom: 28px;
+
+          @include respond-to(md) {
+            margin-bottom: 20px;
+          }
+        }
+
+        .controls {
+          @include flex(center, center, row, 15px);
+          width: 100%;
+
+          button {
+            img {
+              @include image-fit(35px, 35px, cover, center);
+            }
+          }
+
+          .quantity {
+            width: fit-content;
+          }
+
+          .delete {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    .subtotal-price {
+      @include flex(space-between, center, row);
+      padding-bottom: 6px;
+      margin-bottom: 33px;
+    }
+  }
+
+  .price-summary {
+    padding: 30px 35px 20px;
+    width: 100%;
+    background: #FFF;
+
+    .promo-code-wrapper {
+      @include flex(space-between, center, row);
+      padding: 0px 12px;
+      width: 100%;
+      height: 45px;
+      border: 1px solid $-gray-100;
+      margin-bottom: 25px;
+    }
+
+    .price-row {
+      @include flex(space-between, center, row);
+      width: 100%;
+      margin-bottom: 8px;
+
+      &:last-child {
+        // margin-bottom: 20px;
+        // padding-bottom: 20px;
+        // border-bottom: 1px solid #DBDBDB;
+      }
+
+      .discount {
+        color: $Utility-success;
+      }
+    }
+
+    .main-border-bottom {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+
+    .total-price {
+      width: 100%;
+      @include flex(space-between, center, row);
+
+      .total {
+        width: fit-content;
+        @include flex(space-between, center, row, 5px);
+      }
+    }
+  }
+}

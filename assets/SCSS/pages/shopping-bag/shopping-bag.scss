@@ -5,7 +5,11 @@
   margin-bottom: 103px;
 
   .container {
-    @include flex(space-between, flex-start, row, 86px);
+    @include flex(space-between, flex-start, row, 86px, 66px);
+
+    @include respond-to(xl) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -71,10 +75,10 @@
   }
 
   .row {
-    @include flex(space-between, center, row, 70px, 70px);
+    @include flex(space-between, center, row, 70px, 66px);
 
     @include respond-to(md) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: flex-start;
     }
 
@@ -110,11 +114,14 @@
 ///////////////////////////////////////////////////////////
 /// S H O P P I N G   B A G   S T Y L E
 #pepole-also-viewed {
-  @include respond-to(xxl) {
-    display: none;
-  }
-
   h5 {
     margin-bottom: 16px;
+  }
+
+  .products-column {
+    @include respond-to(xl) {
+      @include flex(center, flex-start, row, 16px, 12px);
+      flex-wrap: wrap;
+    }
   }
 }

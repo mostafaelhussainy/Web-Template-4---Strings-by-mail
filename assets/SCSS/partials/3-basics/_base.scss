@@ -70,7 +70,9 @@ label {
   width: 100%;
 
   textarea,
-  input {
+  input,
+  select,
+  option {
     width: 100%;
     max-width: 550px;
     height: 50px;
@@ -91,4 +93,9 @@ label {
 
 .main-border-bottom {
   border-bottom: 1px solid $-gray-100;
+}
+
+.fadeOutRight {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
 }

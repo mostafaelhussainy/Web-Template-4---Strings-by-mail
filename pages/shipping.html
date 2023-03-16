@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="../assets/SCSS/footer/footer.css">
+	<link rel="stylesheet"
+		href="../assets/SCSS/pages/shipping/shipping.css">
+	<title>Shipping</title>
+</head>
+
+<body>
+	<!-- S H I P P I N G    S T A R T -->
+	<!-- H E A D I N G		S T A R T -->
+	<section id="heading">
+		<div class="container">
+			<div class="row main-border-bottom">
+				<h4>Secure Checkout</h4>
+				<p class="p-regular-16px-400">
+					powered by Lexmodo
+					<img src="../assets/icons/lock.svg"
+						alt="lock icon">
+				</p>
+			</div>
+			<p class="p-regular-16px-400">
+				Already have a Melodic Strings account?
+				<span>Login</span>
+			</p>
+		</div>
+	</section>
+	<!-- H E A D I N G		E N D -->
+
+	<!-- D E L I V E R Y		A D D R E S S - - > "S H I P P I N G"		S T A R T -->
+	<section id="delivery-address">
+		<div class="container">
+			<!-- shared between sections -->
+			<div class="heading-row">
+				<p class="p-regular-16px-700">1</p>
+				<h5>Delivery Address</h5>
+			</div>
+			<!-- E M A I L		label & input -->
+			<label>
+				Email<i>*</i>
+				<input type="email">
+			</label>
+
+			<!-- F U L L	N A M E		label & input -->
+			<label>
+				Fullname<i>*</i>
+				<input type="text">
+			</label>
+
+			<!-- C O M P A N Y		label & input -->
+			<div class="dropdown-parent">
+				<span class="dropdown-btn"
+					data-dropdown="add-company-shipping">
+					<img src="../assets/icons/accordion-plus.svg"
+						alt="plus icon" id="plus-1">
+					<img src="../assets/icons/accordion-minus.svg"
+						alt="plus icon" id="minus-1" class="hidden">
+					<p>
+						Add Company (Optional)
+					</p>
+				</span>
+				<div class="dropdown-wrapper"
+					id="dropdown-add-company-shipping">
+					<label>
+						Company (Optional)
+						<input type="text">
+					</label>
+				</div>
+			</div>
+
+			<!-- A D D R E S S - 1		label & input -->
+			<label>
+				Address 1<i>*</i>
+				<input type="text">
+			</label>
+
+			<!-- A D D R E S S - 2		label & input -->
+			<div class="dropdown-parent">
+				<span class="dropdown-btn"
+					data-dropdown="add-address-2-shipping">
+					<img src="../assets/icons/accordion-plus.svg"
+						alt="plus icon" id="plus-1">
+					<img src="../assets/icons/accordion-minus.svg"
+						alt="plus icon" id="minus-1" class="hidden">
+					<p>
+						Add Company (Optional)
+					</p>
+				</span>
+				<div class="dropdown-wrapper"
+					id="dropdown-add-address-2-shipping">
+					<label>
+						Company (Optional)
+						<input type="text">
+					</label>
+				</div>
+			</div>
+
+			<!-- C O U N T R Y		label & input -->
+			<label>
+				Country<i>*</i>
+				<input type="text">
+			</label>
+
+			<div class="inputs-row">
+				<!-- Z I P / P O S T A L	C O D E		label & input -->
+				<label>
+					Zip/Postal Code<i>*</i>
+					<input type="text">
+				</label>
+
+				<!-- C I T Y		label & input -->
+				<label>
+					City<i>*</i>
+					<select name="city" id="city">
+						<option value=""></option>
+					</select>
+				</label>
+			</div>
+
+			<div class="inputs-row">
+				<!-- S T A T E / P R O V I N C E		label & input -->
+				<label>
+					State/Province<i>*</i>
+					<select name="province" id="province">
+						<option value=""></option>
+					</select>
+				</label>
+
+				<!-- P H O N E	N U M B E R		label & input -->
+				<label>
+					Phone Number (Optional)<i>*</i>
+					<select name="city" id="city">
+						<option value=""></option>
+					</select>
+					<input type="text">
+					<p class="p-small-12px-400">
+						We will only call you if there are questions
+						regarding your order.
+					</p>
+				</label>
+			</div>
+			<label>
+				<input type="checkbox" name="billing-equal-shipping"
+					id="billing-equal-shipping">
+				<p class="p-regular-16px-400">
+					My billing and delivery information is the same
+				</p>
+			</label>
+		</div>
+	</section>
+	<!-- D E L I V E R Y		A D D R E S S - - > "S H I P P I N G"		E N D -->
+
+	<!-- B I L L I N G		A D D R E S S		S T A R T -->
+	<section id="billing-address">
+		<div class="container">
+			<div class="heading-row">
+				<p class="p-regular-16px-700">1</p>
+				<h5>Delivery Address</h5>
+			</div>
+			<!-- E M A I L		label & input -->
+			<label>
+				Email<i>*</i>
+				<input type="email">
+			</label>
+
+			<!-- F U L L	N A M E		label & input -->
+			<label>
+				Fullname<i>*</i>
+				<input type="text">
+			</label>
+
+			<!-- C O M P A N Y		label & input -->
+			<div class="dropdown-parent">
+				<span class="dropdown-btn"
+					data-dropdown="add-company-billing">
+					<img src="../assets/icons/accordion-plus.svg"
+						alt="plus icon" id="plus-1">
+					<img src="../assets/icons/accordion-minus.svg"
+						alt="plus icon" id="minus-1" class="hidden">
+					<p>
+						Add Company (Optional)
+					</p>
+				</span>
+				<div class="dropdown-wrapper"
+					id="dropdown-add-company-billing">
+					<label>
+						Company (Optional)
+						<input type="text">
+					</label>
+				</div>
+			</div>
+
+			<!-- A D D R E S S - 1		label & input -->
+			<label>
+				Address 1<i>*</i>
+				<input type="text">
+			</label>
+
+			<!-- A D D R E S S - 2		label & input -->
+			<div class="dropdown-parent">
+				<span class="dropdown-btn"
+					data-dropdown="add-address-2-billing">
+					<img src="../assets/icons/accordion-plus.svg"
+						alt="plus icon" id="plus-1">
+					<img src="../assets/icons/accordion-minus.svg"
+						alt="plus icon" id="minus-1" class="hidden">
+					<p>
+						Add Company (Optional)
+					</p>
+				</span>
+				<div class="dropdown-wrapper"
+					id="dropdown-add-address-2-billing">
+					<label>
+						Company (Optional)
+						<input type="text">
+					</label>
+				</div>
+			</div>
+
+			<!-- C O U N T R Y		label & input -->
+			<label>
+				Country<i>*</i>
+				<input type="text">
+			</label>
+
+			<div class="inputs-row">
+				<!-- Z I P / P O S T A L	C O D E		label & input -->
+				<label>
+					Zip/Postal Code<i>*</i>
+					<input type="text">
+				</label>
+
+				<!-- C I T Y		label & input -->
+				<label>
+					City<i>*</i>
+					<select name="city" id="city">
+						<option value=""></option>
+					</select>
+				</label>
+			</div>
+
+			<div class="inputs-row">
+				<!-- S T A T E / P R O V I N C E		label & input -->
+				<label>
+					State/Province<i>*</i>
+					<select name="province" id="province">
+						<option value=""></option>
+					</select>
+				</label>
+
+				<!-- P H O N E	N U M B E R		label & input -->
+				<label>
+					Phone Number (Optional)<i>*</i>
+					<select name="city" id="city">
+						<option value=""></option>
+					</select>
+					<input type="text">
+					<p class="p-small-12px-400">
+						We will only call you if there are questions
+						regarding your order.
+					</p>
+				</label>
+			</div>
+		</div>
+	</section>
+	<!-- B I L L I N G		A D D R E S S		E N D -->
+
+	<!-- D E L I V E R Y		M E T H O D		S T A R T -->
+	<section id="devlivery-method">
+		<div class="container">
+			<h6>
+				Delivery Method
+			</h6>
+			<div class="devlivery-method">
+				<input type="radio" name="devlivery-method"
+					id="d-1">
+				<div class="shipping-method-title">
+					<img src="../assets/icons/truck.svg"
+						alt="truck icon">
+					<h5>
+						Standard Shipping
+					</h5>
+					<p class="p-regular-16px-400">
+						2Go (Standard delivery)
+					</p>
+				</div>
+				<p class="p-regular-16px-400">
+					5–11 business days
+				</p>
+				<p class="p-regular-16px-400">
+					$40.00
+				</p>
+			</div>
+			<div class="devlivery-method">
+				<input type="radio" name="devlivery-method"
+					id="d-2">
+				<div class="shipping-method-title">
+					<img src="../assets/icons/truck.svg"
+						alt="truck icon">
+					<h5>
+						Click & Collect
+					</h5>
+					<p class="p-regular-16px-400">
+						Reserve online, then collect at Melodic Strings
+						store
+					</p>
+				</div>
+				<p class="p-regular-16px-400">
+					5–11 business days
+				</p>
+				<p class="p-regular-16px-400">
+					$10.00
+				</p>
+			</div>
+		</div>
+	</section>
+	<!-- D E L I V E R Y		M E T H O D		E N D -->
+	<!-- S H I P P I N G    E N D -->
+
+	<!-- O R D E R      S U M M A R Y    S T A R T -->
+	<section id="order-summary" class="dropdown-parent">
+		<!-- <i class="close-order-summary"></i> -->
+		<div class="order-summary-heading main-border-bottom">
+			<h5>
+				Order Summary
+			</h5>
+			<button class="expand-order-summary dropdown-btn"
+				data-dropdown="order-summary">
+				<h5 class="subheader">
+					Order Summary
+				</h5>
+				<img src="../assets/icons/arrowDown.svg"
+					id="icon-order-summary"
+					alt="expand order summary button">
+			</button>
+			<p class="p-regular-16px-400 question">
+				Questions? (612) 331-3635
+			</p>
+			<p class="p-regular-16px-400 items-num">4 items</p>
+		</div>
+		<div class="order-summary-products dropdown-wrapper"
+			id="dropdown-order-summary">
+			<figure class="product main-border-bottom">
+				<img
+					src="../assets/images/shopping-bag/shopping-bag-products-1.png">
+				<figcaption>
+					<p class="p-regular-16px-400">
+						D'Addario EPBB170 Phosphor Bronze
+						Acoustic
+						Bass Strings 45-100
+					</p>
+					<div class="controls">
+						<button>
+							<img src="../assets/icons/minus.svg"
+								alt="minus button">
+						</button>
+						<span class="quantity">1</span>
+						<button>
+							<img src="../assets/icons/plus.svg"
+								alt="plus button">
+						</button>
+						<span class="price">$23.99</span>
+						<button class="delete">
+							<img src="../assets/icons/delete.svg"
+								alt="delete button">
+						</button>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="product main-border-bottom">
+				<img
+					src="../assets/images/shopping-bag/shopping-bag-products-2.png">
+				<figcaption>
+					<p class="p-regular-16px-400">
+						D'Addario EPBB170 Phosphor Bronze
+						Acoustic
+						Bass Strings 45-100
+					</p>
+					<div class="controls">
+						<button>
+							<img src="../assets/icons/minus.svg"
+								alt="minus button">
+						</button>
+						<span class="quantity">1</span>
+						<button>
+							<img src="../assets/icons/plus.svg"
+								alt="plus button">
+						</button>
+						<span class="price">$23.99</span>
+						<button class="delete">
+							<img src="../assets/icons/delete.svg"
+								alt="delete button">
+						</button>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="product main-border-bottom">
+				<img
+					src="../assets/images/shopping-bag/shopping-bag-products-3.png">
+				<figcaption>
+					<p class="p-regular-16px-400">
+						D'Addario EPBB170 Phosphor Bronze
+						Acoustic
+						Bass Strings 45-100
+					</p>
+					<div class="controls">
+						<button>
+							<img src="../assets/icons/minus.svg"
+								alt="minus button">
+						</button>
+						<span class="quantity">1</span>
+						<button>
+							<img src="../assets/icons/plus.svg"
+								alt="plus button">
+						</button>
+						<span class="price">$23.99</span>
+						<button class="delete">
+							<img src="../assets/icons/delete.svg"
+								alt="delete button">
+						</button>
+					</div>
+				</figcaption>
+			</figure>
+			<figure class="product main-border-bottom">
+				<img
+					src="../assets/images/shopping-bag/shopping-bag-products-4.png">
+				<figcaption>
+					<p class="p-regular-16px-400">
+						D'Addario EPBB170 Phosphor Bronze
+						Acoustic
+						Bass Strings 45-100
+					</p>
+					<div class="controls">
+						<button>
+							<img src="../assets/icons/minus.svg"
+								alt="minus button">
+						</button>
+						<span class="quantity">1</span>
+						<button>
+							<img src="../assets/icons/plus.svg"
+								alt="plus button">
+						</button>
+						<span class="price">$23.99</span>
+						<button class="delete">
+							<img src="../assets/icons/delete.svg"
+								alt="delete button">
+						</button>
+					</div>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="price-summary">
+			<div class="promo-code-wrapper">
+				<input type="text" placeholder="Promo Code" class="p-regular-16px-400
+				">
+				<button id="promo-code-btn">
+					<img src="../assets/icons/plus-rounded-edges.svg"
+						alt="enter promo code button">
+				</button>
+			</div>
+			<div class="price-row">
+				<p class="p-regular-16px-400">Subtotal</p>
+				<p class="p-regular-16px-400">$296.00</p>
+			</div>
+			<div class="price-row">
+				<p class="p-regular-16px-400">Promo Code Discount
+				</p>
+				<p class="p-regular-16px-400 discount">- $20.00</p>
+			</div>
+			<div class="price-row main-border-bottom">
+				<p class="p-regular-16px-400">Shipping (Standard
+					Shipping)</p>
+				<p class="p-regular-16px-400">+ $40.00</p>
+			</div>
+			<div class="total-price">
+				<h4>
+					Total
+				</h4>
+				<div class="total">
+					<h6>
+						(USD)
+					</h6>
+					<h4>
+						$316.00
+					</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- O R D E R      S U M M A R Y    E N D -->
+	<!-- S U B M I T   S T A R T -->
+	<div class="container">
+		<button class="main-btn">
+			CONTINUE
+		</button>
+	</div>
+	<!-- S U B M I T   E N D -->
+
+	<!-- F O O T E R    S T A R T -->
+	<footer id="simplified-footer">
+		<div class="container">
+
+		</div>
+	</footer>
+	<!-- F O O T E R    E N D -->
+	<script
+		src="../assets/JS/pages/order-summary.js"></script>
+	<script
+		src="../assets/JS/transitions-animations/dropdown.js"></script>
+</body>
+
+</html>

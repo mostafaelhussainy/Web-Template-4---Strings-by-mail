@@ -724,7 +724,18 @@
   <!-- C A R T    E N D -->
 
   <!-- M I N I    C A R T   S T A R T -->
-  <section id="mini-cart">
+  <section id="mini-cart" class="fadeOutRight">
+    <!-- <i class="close-mini-cart"></i> -->
+    <div class="mini-cart-heading main-border-bottom">
+      <h5>
+        Shopping Bag
+        <button class="close-mini-cart">
+          <img src="../assets/icons/close.svg"
+            alt="close btn">
+        </button>
+      </h5>
+      <p class="p-regular-16px-400">4 items</p>
+    </div>
     <div class="shopping-bag-products">
       <figure class="product main-border-bottom">
         <img
@@ -830,9 +841,7 @@
           </div>
         </figcaption>
       </figure>
-    </div>
-    <div class="shopping-bag-subtotal-price">
-      <div class="subtotal-price main-border-bottom">
+      <div class="subtotal-price">
         <h5>
           Subtotal
         </h5>
@@ -840,6 +849,8 @@
           $296.00
         </h3>
       </div>
+    </div>
+    <div class="checkout-wrapper">
       <button class="main-btn">
         CHECKOUT
       </button>
@@ -848,7 +859,7 @@
   <!-- M I N I    C A R T   E N D -->
 
   <!-- F O O T E R    S T A R T -->
-  <footer>
+  <footer id="main-footer">
     <div class="container">
       <div class="upper-footer-wrapper">
         <div class="contact">
@@ -1012,6 +1023,7 @@
     src="../assets/JS/transitions-animations/bottom-to-top.js"></script>
   <script
     src="../assets/JS/transitions-animations/pop-up.js"></script>
+  <script src="../assets/JS/pages/mini-cart.js"></script>
 </body>
 
 </html>

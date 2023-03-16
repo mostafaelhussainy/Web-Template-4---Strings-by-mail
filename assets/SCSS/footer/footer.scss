@@ -1,9 +1,7 @@
 @import '../main.scss';
 
-footer {
+#main-footer {
   background: $-primary-700;
-  position: relative;
-  top: 46%;
 
   .upper-footer-wrapper {
     padding: 55px 25px 130px;
