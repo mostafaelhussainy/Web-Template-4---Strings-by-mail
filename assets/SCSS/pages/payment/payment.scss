@@ -1,0 +1,135 @@
+@import '../../main.scss';
+
+// G L O B A L      S T Y L E
+body {
+  padding-top: 73px;
+
+  @include respond-to(md) {
+    padding-top: 0;
+  }
+}
+
+#simplified-footer {
+  display: block;
+}
+
+#main-footer {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.heading-row {
+  @include flex(flex-start, center, row, 12px);
+  margin-bottom: 35px;
+
+  p {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: $-primary-200;
+    text-align: center;
+  }
+}
+
+///////////////////////////////////////////
+/// H E A D I N G   S T Y L E
+#heading {
+  margin-bottom: 55px;
+
+  .container {
+    .row {
+      @include flex(flex-start, center, row, 6px);
+      margin-bottom: 27px;
+      max-width: 910px;
+
+      @include respond-to(md) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 6px;
+        padding-bottom: 5px;
+      }
+
+      p {
+        @include flex(center, center, row, 9px);
+      }
+    }
+
+    p a {
+      color: $Secondary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////
+/// D E L I V E R Y   A D D R E S S   S T Y L E
+#delivery-address {
+  margin-bottom: 43px;
+
+  .container {
+
+    .heading-row-wrapper {
+      @include flex(space-between, center, row);
+      margin-bottom: 30px;
+      max-width: 910px;
+
+      a {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $Secondary;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .addresses-method {
+      padding-bottom: 43px;
+      width: 100%;
+      max-width: 910px;
+      @include flex(space-between, flex-start, row, 20px, 20px);
+      flex-wrap: wrap;
+
+      @include respond-to(sm) {
+        flex-direction: column;
+      }
+
+      .col {
+        .col-heading {
+          font-family: 'Mulish';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 160%;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////
+/// P A Y M E N T   M E T H O D   S T Y L E
+#payment-method {
+  p:nth-child(2) {
+    margin-bottom: 38px;
+
+    @include respond-to(md) {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #DBDBDB;
+    }
+  }
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="../assets/SCSS/footer/footer.css">
+  <link rel="stylesheet"
+    href="../assets/SCSS/pages/payment/payment.css">
+  <title>Payment</title>
+</head>
+
+<body>
+  <!-- O R D E R      S U M M A R Y    S T A R T -->
+  <section id="order-summary" class="dropdown-parent">
+    <div class="order-summary-heading main-border-bottom">
+      <h5>
+        Order Summary
+      </h5>
+      <button class="expand-order-summary dropdown-btn"
+        data-dropdown="order-summary">
+        <h5 class="subheader">
+          Order Summary
+        </h5>
+        <img src="../assets/icons/arrowDown.svg"
+          id="icon-order-summary"
+          alt="expand order summary button">
+      </button>
+      <p class="p-regular-16px-400 question">
+        Questions? (612) 331-3635
+      </p>
+      <p class="p-regular-16px-400 items-num">4 items
+      </p>
+    </div>
+    <div class="order-summary-products dropdown-wrapper"
+      id="dropdown-order-summary">
+      <figure class="product main-border-bottom">
+        <img
+          src="../assets/images/shopping-bag/shopping-bag-products-1.png">
+        <figcaption>
+          <p class="p-regular-16px-400">
+            D'Addario EPBB170 Phosphor Bronze
+            Acoustic
+            Bass Strings 45-100
+          </p>
+          <div class="controls">
+            <button>
+              <img src="../assets/icons/minus.svg"
+                alt="minus button">
+            </button>
+            <span class="quantity">1</span>
+            <button>
+              <img src="../assets/icons/plus.svg"
+                alt="plus button">
+            </button>
+            <span class="price">$23.99</span>
+            <button class="delete">
+              <img src="../assets/icons/delete.svg"
+                alt="delete button">
+            </button>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="product main-border-bottom">
+        <img
+          src="../assets/images/shopping-bag/shopping-bag-products-2.png">
+        <figcaption>
+          <p class="p-regular-16px-400">
+            D'Addario EPBB170 Phosphor Bronze
+            Acoustic
+            Bass Strings 45-100
+          </p>
+          <div class="controls">
+            <button>
+              <img src="../assets/icons/minus.svg"
+                alt="minus button">
+            </button>
+            <span class="quantity">1</span>
+            <button>
+              <img src="../assets/icons/plus.svg"
+                alt="plus button">
+            </button>
+            <span class="price">$23.99</span>
+            <button class="delete">
+              <img src="../assets/icons/delete.svg"
+                alt="delete button">
+            </button>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="product main-border-bottom">
+        <img
+          src="../assets/images/shopping-bag/shopping-bag-products-3.png">
+        <figcaption>
+          <p class="p-regular-16px-400">
+            D'Addario EPBB170 Phosphor Bronze
+            Acoustic
+            Bass Strings 45-100
+          </p>
+          <div class="controls">
+            <button>
+              <img src="../assets/icons/minus.svg"
+                alt="minus button">
+            </button>
+            <span class="quantity">1</span>
+            <button>
+              <img src="../assets/icons/plus.svg"
+                alt="plus button">
+            </button>
+            <span class="price">$23.99</span>
+            <button class="delete">
+              <img src="../assets/icons/delete.svg"
+                alt="delete button">
+            </button>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="product main-border-bottom">
+        <img
+          src="../assets/images/shopping-bag/shopping-bag-products-4.png">
+        <figcaption>
+          <p class="p-regular-16px-400">
+            D'Addario EPBB170 Phosphor Bronze
+            Acoustic
+            Bass Strings 45-100
+          </p>
+          <div class="controls">
+            <button>
+              <img src="../assets/icons/minus.svg"
+                alt="minus button">
+            </button>
+            <span class="quantity">1</span>
+            <button>
+              <img src="../assets/icons/plus.svg"
+                alt="plus button">
+            </button>
+            <span class="price">$23.99</span>
+            <button class="delete">
+              <img src="../assets/icons/delete.svg"
+                alt="delete button">
+            </button>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="price-summary">
+      <div class="promo-code-wrapper">
+        <input type="text" placeholder="Promo Code" class="p-regular-16px-400
+				">
+        <button id="promo-code-btn">
+          <img src="../assets/icons/plus-rounded-edges.svg"
+            alt="enter promo code button">
+        </button>
+      </div>
+      <div class="price-row">
+        <p class="p-regular-16px-400">Subtotal</p>
+        <p class="p-regular-16px-400">$296.00</p>
+      </div>
+      <div class="price-row">
+        <p class="p-regular-16px-400">Promo Code
+          Discount
+        </p>
+        <p class="p-regular-16px-400 discount">-
+          $20.00</p>
+      </div>
+      <div class="price-row main-border-bottom">
+        <p class="p-regular-16px-400">Shipping
+          (Standard
+          Shipping)</p>
+        <p class="p-regular-16px-400">+ $40.00</p>
+      </div>
+      <div class="total-price">
+        <h4>
+          Total
+        </h4>
+        <div class="total">
+          <h6>
+            (USD)
+          </h6>
+          <h4>
+            $316.00
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- O R D E R      S U M M A R Y    E N D -->
+
+  <!-- P A Y M E N T    S T A R T -->
+  <!-- H E A D I N G		S T A R T -->
+  <section id="heading">
+    <div class="container">
+      <div class="row main-border-bottom">
+        <h4>Secure Checkout</h4>
+        <p class="p-regular-16px-400">
+          powered by Lexmodo
+          <img src="../assets/icons/lock.svg"
+            alt="lock icon">
+        </p>
+      </div>
+      <p class="p-regular-16px-400">
+        Already have a Melodic Strings account?
+        <a href="">Login</a>
+      </p>
+    </div>
+  </section>
+  <!-- H E A D I N G		E N D -->
+
+  <!-- D E L I V E R Y		A D D R E S S		S T A R T -->
+  <section id="delivery-address">
+    <div class="container">
+      <div class="heading-row-wrapper">
+        <div class="heading-row">
+          <p class="p-regular-16px-700">1</p>
+          <h5>Delivery Address</h5>
+        </div>
+        <a href="">
+          Change
+        </a>
+      </div>
+      <div class="addresses-method main-border-bottom">
+        <!-- B I L L -->
+        <div class="col">
+          <span class="col-heading">
+            Bill To
+          </span>
+          <p class="p-regular-16px-400">
+            Resame Cabulang
+          </p>
+          <p class="p-regular-16px-400">
+            943 S 9th St
+          </p>
+          <p class="p-regular-16px-400">
+            Philadelphia, Pennsylvania
+          </p>
+          <p class="p-regular-16px-400">
+            (215) 925-0900
+          </p>
+          <p class="p-regular-16px-400">
+            19147 United States
+          </p>
+        </div>
+        <!-- S H I P -->
+        <div class="col">
+          <span class="col-heading">
+            Ship To
+          </span>
+          <p class="p-regular-16px-400">
+            Resame Cabulang
+          </p>
+          <p class="p-regular-16px-400">
+            943 S 9th St
+          </p>
+          <p class="p-regular-16px-400">
+            Philadelphia, Pennsylvania
+          </p>
+          <p class="p-regular-16px-400">
+            (215) 925-0900
+          </p>
+          <p class="p-regular-16px-400">
+            19147 United States
+          </p>
+        </div>
+        <!-- D E L I V E R Y    M E T H O D -->
+        <div class="col">
+          <span class="col-heading">
+            Delivery Method
+          </span>
+          <p class="p-regular-16px-400">
+            Standard Shipping
+          </p>
+          <p class="p-regular-16px-400">
+            2Go (Standard delivery)
+          </p>
+          <p class="p-regular-16px-400">
+            5-11 business days
+          </p>
+          <p class="p-regular-16px-400">
+            $40.00
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- D E L I V E R Y		A D D R E S S		E N D -->
+
+  <!-- P A Y M E N T    M E T H O D    S T A R T -->
+  <section id="payment-method">
+    <div class="container">
+      <div class="heading-row">
+        <p class="p-regular-16px-700">2</p>
+        <h5>Payment Method</h5>
+      </div>
+      <p class="p-regular-16px-400">
+        This is a secure 128-bit SSl encrypted payment.
+      </p>
+      <div class="payment-method-wrapper">
+        <label>
+          <input type="radio" name="payment-method"
+            id="credit-card">
+          Credit/Debit Card
+          <img src="../assets/images/payment/visa.png"
+            alt="visa, master card, american express and discover">
+        </label>
+        <!-- C A R D    N U M B E R     label & input -->
+        <label>
+          <span>
+            Card<i>*</i>
+          </span>
+          <div class="left-input-wrapper">
+            <img
+              src="../assets/images/payment/master-card-logo.png"
+              alt="master card">
+            <input type="text"
+              placeholder="0000 0000 0000 0000"
+              class="p-regular-16px-400">
+          </div>
+        </label>
+        <div class="inputs-row">
+          <!-- E X P I R Y    D A T E		label & input -->
+          <label>
+            <span>
+              Expiry Date<i>*</i>
+            </span>
+            <div class="right-input-wrapper">
+              <input type="date" placeholder="MM/ YY"
+                class="p-regular-16px-400">
+              <!-- <img src="../assets/icons/agenda.svg"
+                alt="agenda icon"> -->
+            </div>
+          </label>
+
+          <!-- C V C / C V V		label & input -->
+          <label>
+            <span>
+              CVC/CVV<i>*</i>
+            </span>
+            <div class="right-input-wrapper">
+              <input type="text" class="p-regular-16px-400">
+              <img src="../assets/icons/info.svg"
+                alt="info icon">
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="payment-method-wrapper">
+        <label>
+          <input type="radio" name="payment-method"
+            id="credit-card">
+          <img
+            src="../assets/images/payment/paypal-logo.png"
+            alt="paypal">
+        </label>
+      </div>
+    </div>
+  </section>
+  <!-- P A Y M E N T    M E T H O D    E N D -->
+  <!-- P A Y M E N T    E N D -->
+
+  <!-- F O O T E R    S T A R T -->
+  <footer id="simplified-footer">
+    <div class="container">
+      <p class="p-subtitle-14px-300">
+        © 2023 Melodic Strings - Powered by
+        <img src="../assets/icons/lexmodo.svg"
+          alt="Lexmodo">
+      </p>
+      <ul>
+        <li>
+          <a href="">Guarantee</a>
+        </li>
+        <li>
+          <a href="">Privacy</a>
+        </li>
+        <li>
+          <a href="">Conditions</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- F O O T E R    E N D -->
+  <script
+    src="../assets/JS/pages/order-summary.js"></script>
+  <script
+    src="../assets/JS/transitions-animations/dropdown.js"></script>
+</body>
+
+</html>

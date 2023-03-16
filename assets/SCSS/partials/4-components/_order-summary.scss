@@ -10,12 +10,14 @@
   z-index: 999;
   height: fit-content;
   overflow-y: auto;
-  max-height: 100vh;
+  max-height: 90vh;
 
   @include respond-to(md) {
     width: 100%;
     min-height: 420px;
     max-height: 100vh;
+    position: static;
+    margin-bottom: 38px;
   }
 
   .order-summary-heading {

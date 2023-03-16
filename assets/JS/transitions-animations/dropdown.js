@@ -36,6 +36,7 @@ function closeDropdown(dropdown) {
   } else {
     const dropdownMinus = document.querySelector(`#minus-${dropdown.id.split("-")[1]}`);
     const dropdownPlus = document.querySelector(`#plus-${dropdown.id.split("-")[1]}`);
+
     dropdownMinus.classList.add("hidden");
     dropdownPlus.classList.remove("hidden");
   }
@@ -46,6 +47,7 @@ function toggleDropdown(dropdown, dropdownIcon) {
   if (dropdownIcon) {
     dropdownIcon.classList.toggle("rotate-180");
   } else {
+    console.log(`#minus-${dropdown.id.split("-")[1]}`)
     const dropdownMinus = document.querySelector(`#minus-${dropdown.id.split("-")[1]}`);
     const dropdownPlus = document.querySelector(`#plus-${dropdown.id.split("-")[1]}`);
     dropdownMinus.classList.toggle("hidden");

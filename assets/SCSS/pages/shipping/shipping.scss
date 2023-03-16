@@ -1,1 +1,306 @@
 @import '../../main.scss';
+
+// G L O B A L      S T Y L E
+body {
+  padding-top: 73px;
+
+  @include respond-to(md) {
+    padding-top: 0;
+  }
+}
+
+#simplified-footer {
+  display: block;
+}
+
+#main-footer {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+
+///////////////////////////////////////////
+/// H E A D I N G   S T Y L E
+#heading {
+  margin-bottom: 55px;
+
+  .container {
+    .row {
+      @include flex(flex-start, center, row, 6px);
+      margin-bottom: 27px;
+      max-width: 910px;
+
+      @include respond-to(md) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 6px;
+        padding-bottom: 5px;
+      }
+
+      p {
+        @include flex(center, center, row, 9px);
+      }
+    }
+
+    p a {
+      color: $Secondary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////
+/// D E L I V E R Y   A D D R E S S   S T Y L E
+/// B I L L I N G   A D D R E S S   S T Y L E
+
+#delivery-address,
+#billing-address {
+  .container {
+    .heading-row {
+      @include flex(flex-start, center, row, 12px);
+      margin-bottom: 35px;
+
+      p {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        background-color: $-primary-200;
+        text-align: center;
+      }
+    }
+
+    label {
+      i {
+        color: $Utility-danger;
+      }
+
+      input {
+        width: 100%;
+        max-width: 910px;
+      }
+
+      &:last-child {
+        margin-bottom: 12px;
+      }
+
+      .country-select {
+        background-color: #FFF;
+        width: 100%;
+        max-width: 910px;
+        border: 1px solid $-gray-100;
+        border-radius: 6px;
+        @include flex(space-between, center, row, 10px);
+        padding: 10px 24px;
+        height: 56px;
+
+        select,
+        option {
+          background-color: none;
+          background: none;
+          border: none;
+          padding: 0;
+          border-radius: 0;
+          width: 100%;
+          max-width: unset;
+          height: auto;
+        }
+      }
+    }
+
+    .dropdown-parent {
+      max-width: 910px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+
+      .dropdown-btn {
+        @include flex(flex-start, center, row, 9px);
+        width: fit-content;
+
+        img:nth-child(1) {
+          padding: 5px 4.5px;
+          border-radius: 50%;
+          background-color: #000;
+        }
+
+        img:nth-child(2) {
+          padding: 11px 4.5px;
+          border-radius: 50%;
+          background-color: #000;
+        }
+      }
+
+      .dropdown-wrapper {
+        margin-top: 12px;
+      }
+    }
+
+    .inputs-row {
+      @include flex(center, flex-start, row, 20px);
+
+      @include respond-to(md) {
+        flex-direction: column;
+      }
+
+      width: 100%;
+      max-width: 910px;
+
+      .city-select,
+      .province-select {
+        background-color: #FFF;
+        width: 100%;
+        max-width: 910px;
+        border: 1px solid $-gray-100;
+        border-radius: 6px;
+        @include flex(space-between, center, row, 10px);
+        padding: 10px 24px;
+        height: 56px;
+
+        select,
+        option {
+          background-color: none;
+          background: none;
+          border: none;
+          padding: 0;
+          border-radius: 0;
+          width: 100%;
+          max-width: unset;
+          height: auto;
+        }
+
+        select {
+          color: $-gray-400 ;
+        }
+      }
+
+      .phone-number-select {
+        background-color: #FFF;
+        width: 100%;
+        max-width: 910px;
+        border: 1px solid $-gray-100;
+        border-radius: 6px;
+        @include flex(space-between, center, row, 10px);
+        padding: 10px 24px;
+        height: 56px;
+
+        select,
+        option {
+          background-color: none;
+          background: none;
+          border: none;
+          padding: 0;
+          border-radius: 0;
+          width: 20%;
+          max-width: 100px;
+          height: auto;
+        }
+
+        select {
+          color: $-gray-400 ;
+        }
+
+        input {
+          padding-left: 30px;
+          background-color: none;
+          background: none;
+          border-radius: 0;
+          border: none;
+          border-left: 1px solid $-gray-100;
+        }
+      }
+    }
+
+    .toggle-billing {
+      @include flex(flex-start, flex-start, row, 9px);
+
+      input {
+        width: 18px;
+        height: 18px;
+        accent-color: $Secondary;
+      }
+    }
+  }
+}
+
+#billing-address {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+///////////////////////////////////////////
+/// D E L I V E R Y   M E T H O D   S T Y L E
+#delivery-method {
+  margin-top: 64px;
+  margin-bottom: 80px;
+
+  .container {
+    h6 {
+      margin-bottom: 30px;
+    }
+
+    .border-main {
+      border: 1px solid $-gray-100;
+    }
+
+    .border-active {
+      border: 1px solid $Secondary;
+    }
+
+    .delivery-method {
+      @include flex(space-between, flex-start, row);
+      width: 100%;
+      padding: 17px 27px;
+      max-width: 910px;
+      border-radius: 6px;
+
+      input {
+        display: none;
+      }
+
+      .shipping-method-title {
+        @include flex(flex-start, flex-start, row, 23px);
+        min-width: 50%;
+
+        img {
+          transform: translateY(9px);
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////
+/// S U B M I T   S T Y L E
+#submit {
+  margin-bottom: 80px;
+
+  .main-btn {
+    width: 360px;
+    margin-right: auto;
+    max-height: 100%;
+    height: 50px;
+
+    @include respond-to(md) {
+      width: 100%;
+    }
+  }
+}

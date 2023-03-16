@@ -1108,7 +1108,7 @@ label select,
 label option {
   width: 100%;
   max-width: 550px;
-  height: 50px;
+  height: 56px;
   background: #FBFBFB;
   border: 1px solid #DBDBDB;
   border-radius: 8px;
@@ -1928,13 +1928,15 @@ aside .links li a:hover {
   height: -moz-fit-content;
   height: fit-content;
   overflow-y: auto;
-  max-height: 100vh;
+  max-height: 90vh;
 }
 @media (max-width: 768px) {
   #order-summary {
     width: 100%;
     min-height: 420px;
     max-height: 100vh;
+    position: static;
+    margin-bottom: 38px;
   }
 }
 #order-summary .order-summary-heading {

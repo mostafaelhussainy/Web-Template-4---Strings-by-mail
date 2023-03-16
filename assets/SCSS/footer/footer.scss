@@ -1,8 +1,11 @@
 @import '../main.scss';
 
-#main-footer {
+#main-footer,
+#simplified-footer {
   background: $-primary-700;
+}
 
+#main-footer {
   .upper-footer-wrapper {
     padding: 55px 25px 130px;
     border-bottom: 1px solid $-primary-300;
@@ -138,6 +141,33 @@
 
     @include respond-to(sm) {
       display: none;
+    }
+  }
+}
+
+#simplified-footer {
+  .container {
+    @include flex(space-between, center, row);
+
+    @include respond-to(md) {
+      flex-direction: column;
+      row-gap: 12px;
+    }
+
+    padding: 34px 0;
+
+    p,
+    ul {
+      @include flex(center, center, row, 11.5px);
+    }
+
+    p,
+    ul li a {
+      color: #FFF;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
     }
   }
 }

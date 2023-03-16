@@ -1108,7 +1108,7 @@ label select,
 label option {
   width: 100%;
   max-width: 550px;
-  height: 50px;
+  height: 56px;
   background: #FBFBFB;
   border: 1px solid #DBDBDB;
   border-radius: 8px;
@@ -1928,13 +1928,15 @@ aside .links li a:hover {
   height: -moz-fit-content;
   height: fit-content;
   overflow-y: auto;
-  max-height: 100vh;
+  max-height: 90vh;
 }
 @media (max-width: 768px) {
   #order-summary {
     width: 100%;
     min-height: 420px;
     max-height: 100vh;
+    position: static;
+    margin-bottom: 38px;
   }
 }
 #order-summary .order-summary-heading {
@@ -2137,9 +2139,11 @@ aside .links li a:hover {
   row-gap: unset;
 }
 
-#main-footer {
+#main-footer,
+#simplified-footer {
   background: #5F2717;
 }
+
 #main-footer .upper-footer-wrapper {
   padding: 55px 25px 130px;
   border-bottom: 1px solid #D89582;
@@ -2319,4 +2323,38 @@ aside .links li a:hover {
   #main-footer .footer-button {
     display: none;
   }
+}
+
+#simplified-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+  padding: 34px 0;
+}
+@media (max-width: 768px) {
+  #simplified-footer .container {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+}
+#simplified-footer .container p,
+#simplified-footer .container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 11.5px;
+       column-gap: 11.5px;
+  row-gap: unset;
+}
+#simplified-footer .container p,
+#simplified-footer .container ul li a {
+  color: #FFF;
+}
+#simplified-footer .container ul li a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=footer.css.map */
