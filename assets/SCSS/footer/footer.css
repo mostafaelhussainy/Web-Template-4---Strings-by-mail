@@ -938,8 +938,8 @@ h6 {
 .p-subtitle-14px-500,
 .p-small-12px-400,
 .p-small-12px-600 {
-  font-family: "Source Serif Pro", serif;
-  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
 }
 
 .p-regular-16px-400 {
@@ -1032,13 +1032,13 @@ h6 {
 }
 
 body {
-  padding-top: 237px;
+  padding-top: 220px;
   scroll-behavior: smooth;
   background: #FFF6F0;
 }
 @media (max-width: 768px) {
   body {
-    padding-top: 305px;
+    padding-top: 300px;
   }
 }
 
@@ -1141,6 +1141,18 @@ label:last-child {
 .fadeOutRight {
   opacity: 0;
   transform: translate3d(100%, 0, 0);
+}
+
+.tx-green {
+  color: #0DAA26;
+}
+
+.tx-danger {
+  color: #E2574C;
+}
+
+.tx-secondary {
+  color: #BE4E2E;
 }
 
 nav .lower-nav-wrapper .lower-nav-container .search-bar-wrapper .search-dropdown {

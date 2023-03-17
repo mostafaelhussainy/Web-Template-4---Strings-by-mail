@@ -2,12 +2,12 @@
 
 // B O D Y
 body {
-  padding-top: 237px;
+  padding-top: 220px;
   scroll-behavior: smooth;
   background: $main-bg;
 
   @include respond-to(md) {
-    padding-top: 305px;
+    padding-top: 300px;
   }
 }
 
@@ -114,4 +114,16 @@ label {
 .fadeOutRight {
   opacity: 0;
   transform: translate3d(100%, 0, 0);
+}
+
+.tx-green {
+  color: $Utility-success;
+}
+
+.tx-danger {
+  color: $Utility-danger;
+}
+
+.tx-secondary {
+  color: $Secondary;
 }
