@@ -1701,15 +1701,13 @@ aside .links li a:hover {
   width: 97px;
   height: 56px;
 }
+.overlay-wrapper .pop-up ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
 
 #bread-crumb {
-  margin-top: 192px;
-  margin: 192px 0 85px;
-}
-@media (max-width: 1400px) {
-  #bread-crumb {
-    margin-top: 267px;
-  }
+  margin-bottom: 85px;
 }
 #bread-crumb .container ul {
   display: flex;

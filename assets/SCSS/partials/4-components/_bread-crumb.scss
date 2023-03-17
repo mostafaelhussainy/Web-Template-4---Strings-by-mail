@@ -1,10 +1,5 @@
 #bread-crumb {
-  margin-top: 192px;
-  margin: 192px 0 85px;
-
-  @include respond-to(1400px) {
-    margin-top: 267px;
-  }
+  margin-bottom: 85px;
 
   .container ul {
     @include flex(flex-start, center, row, 10px);

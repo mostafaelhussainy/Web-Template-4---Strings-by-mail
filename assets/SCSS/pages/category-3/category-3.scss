@@ -1,0 +1,164 @@
+@import '../../main.scss';
+
+#heading {
+  margin-bottom: 55px;
+
+  @include respond-to(md) {
+    margin-bottom: 45px;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    max-width: 942px;
+
+    button {
+      color: $Secondary;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+///////////////////////////////////////////////
+// L A Y O U T    S T Y L E
+#layout .container {
+  @include grid(repeat(2, auto), repeat(2, auto), 88px, 26px);
+
+  @include respond-to(md) {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+
+///////////////////////////////////////////////
+// F I L T E R    O P T I O N S   S T Y L E
+#filter {
+  grid-row: 1 / 3;
+  width: 100%;
+  min-width: 260px;
+
+  h6 {
+    @include flex(flex-start, center, row, 10px);
+    margin-bottom: 20px;
+  }
+
+  .col-filter {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $-gray-200;
+
+    .dropdown-btn {
+      @include flex(space-between, center, row, 10px);
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 160%;
+      color: #000000;
+    }
+
+    .dropdown-wrapper {
+      li {
+        &:first-child {
+          padding-top: 20px;
+        }
+
+        label {
+          font-family: 'Mulish';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000000;
+          @include flex(flex-start, center, row, 10px);
+        }
+      }
+
+      .price-li .inputs-change-price {
+        @include flex(space-between, center, row);
+        margin-top: 20px;
+
+        .input-main {
+          @include flex(center, center, column, unset, 5px);
+          height: fit-content;
+
+          .input {
+            width: 90px;
+            line-height: 38px;
+            border: 1px solid $-gray-100;
+            border-radius: 4px;
+            text-align: center;
+            @include flex(center, center, row);
+
+            input {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .price-filter {
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    border-bottom: none;
+  }
+
+  .main-btn,
+  .clear-btn {
+    width: 100%;
+    height: 40px;
+  }
+
+  .main-btn {
+    margin-bottom: 15px;
+  }
+
+  .clear-btn {
+    border: 1px solid $Secondary;
+    border-radius: 4px;
+  }
+}
+
+///////////////////////////////////////////////
+// F I L T E R    T A G S   S T Y L E
+#filtered-tags {
+  @include flex(center, center, row, 20px);
+
+  .filtered-tags-wrapper {
+    flex-grow: 1;
+    @include flex(flex-start, center, row, 9px);
+
+    .tag {
+      background: $-primary-50;
+      border: 1px solid $-primary-200;
+      border-radius: 36px;
+      padding: 6px 22px;
+      @include flex(center, center, row, 7.5px);
+    }
+  }
+
+  .sort-products-by {
+    position: relative;
+
+    .dropdown-btn {
+      width: fit-content;
+      column-gap: 10px;
+      background: #FFFFFF;
+      border: 1px solid $-gray-100;
+      border-radius: 6px;
+      padding: 8px 13.5px;
+    }
+
+    .dropdown-wrapper {
+      position: absolute;
+      background: #FFFFFF;
+      border-radius: 6px;
+      width: 150px;
+    }
+  }
+}
