@@ -2177,22 +2177,11 @@ aside .links li a:hover {
   }
 }
 
-#heading {
-  margin-bottom: 55px;
+body {
+  padding-top: 73px;
 }
 @media (max-width: 768px) {
-  #heading {
-    margin-bottom: 45px;
+  body {
+    padding-top: 0;
   }
-}
-#heading h3 {
-  margin-bottom: 20px;
-}
-#heading p {
-  max-width: 942px;
-}
-#heading p button {
-  color: #BE4E2E;
-  text-decoration: underline;
-  cursor: pointer;
-}/*# sourceMappingURL=category-1.css.map */
+}/*# sourceMappingURL=payment-complete.css.map */

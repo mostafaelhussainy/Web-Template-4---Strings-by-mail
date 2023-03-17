@@ -69,6 +69,10 @@ label {
   margin-bottom: 12px;
   width: 100%;
 
+  i {
+    color: $Utility-danger;
+  }
+
   textarea,
   input,
   select,
@@ -80,6 +84,18 @@ label {
     border: 1px solid $-gray-100;
     border-radius: 8px;
     padding: 10px;
+  }
+
+  input[type='radio'] {
+    accent-color: $Secondary;
+    width: 18px;
+    height: 18px;
+  }
+
+  input[type='checkbox'] {
+    accent-color: $Secondary;
+    width: 18px;
+    height: 18px;
   }
 
   textarea {

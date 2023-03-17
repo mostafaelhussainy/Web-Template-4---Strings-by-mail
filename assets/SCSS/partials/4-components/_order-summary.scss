@@ -1,5 +1,6 @@
 #order-summary {
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
   position: fixed;
   top: 0;
   right: 0;
@@ -11,6 +12,7 @@
   height: fit-content;
   overflow-y: auto;
   max-height: 90vh;
+  box-shadow: $main-shadow;
 
   @include respond-to(md) {
     width: 100%;
@@ -69,7 +71,28 @@
   .order-summary-products {
     overflow-y: auto;
     padding: 0px 42px;
-    max-height: 70%;
+    max-height: 35vh;
+
+    // width
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    // Track
+    &::-webkit-scrollbar-track {
+      background: $-primary-100;
+    }
+
+    // Handle
+    &::-webkit-scrollbar-thumb {
+      border-radius: 21px;
+      background-color: $-primary-300;
+    }
+
+    // Handle on hover
+    &::-webkit-scrollbar-thumb:hover {
+      background: $-primary-600;
+    }
 
     @include respond-to(md) {
       max-height: 0;
@@ -176,6 +199,17 @@
         width: fit-content;
         @include flex(space-between, center, row, 5px);
       }
+    }
+  }
+
+  .main-btn {
+    height: 55px;
+    width: 90%;
+    margin: 0 auto 50px;
+    display: block;
+
+    @include respond-to(md) {
+      display: none;
     }
   }
 }

@@ -74,6 +74,10 @@ body {
 #delivery-address {
   margin-bottom: 43px;
 
+  @include respond-to(md) {
+    margin-bottom: 22px;
+  }
+
   .container {
 
     .heading-row-wrapper {
@@ -123,6 +127,12 @@ body {
 ///////////////////////////////////////////
 /// P A Y M E N T   M E T H O D   S T Y L E
 #payment-method {
+  margin-bottom: 200px;
+
+  @include respond-to(md) {
+    margin-bottom: 70px;
+  }
+
   p:nth-child(2) {
     margin-bottom: 38px;
 
@@ -130,6 +140,96 @@ body {
       margin-bottom: 24px;
       padding-bottom: 24px;
       border-bottom: 1px solid #DBDBDB;
+    }
+  }
+
+  .payment-method-wrapper {
+    max-width: 910px;
+    margin-bottom: 38px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .label-wrapper {
+      @include flex(space-between, center, row);
+      margin-bottom: 23px;
+
+      label {
+        @include flex(flex-start, center, row, 9px);
+        width: fit-content;
+
+        input {
+          width: fit-content;
+        }
+      }
+
+      .visa-group {
+        @include respond-to(md) {
+          @include image-fit(180px, 21px, cover, center);
+        }
+      }
+    }
+
+    label {
+      margin-bottom: 20px;
+    }
+
+    .input-wrapper {
+      @include flex(flex-start, center, row);
+      width: 100%;
+      background-color: #FFF;
+      border: 1px solid $-gray-100;
+      border-radius: 6px;
+      padding: 10px 20px;
+
+      label {
+        margin-bottom: 0;
+      }
+
+      input {
+        height: 37px;
+        padding: 0;
+        width: 100%;
+        flex-grow: 1;
+        max-width: unset;
+        background-color: unset;
+        background: unset;
+        border: none;
+      }
+    }
+
+    .inputs-row {
+      @include flex(center, center, row, 12px);
+      width: 100%;
+
+      label {
+        margin-bottom: 0;
+      }
+
+      input {
+        width: 100%;
+        max-width: unset;
+      }
+    }
+  }
+}
+
+#payment-method>div>div:nth-child(3)>label>div>input {
+  padding-left: 20px !important;
+}
+
+///////////////////////////////////////////
+/// S U B M I T   M O B I L E   V I E W   S T Y L E
+#submit-mobile {
+  .main-btn {
+    display: none;
+
+    @include respond-to(md) {
+      height: 55px;
+      width: 90%;
+      margin: 0 auto 88px;
+      display: block;
     }
   }
 }

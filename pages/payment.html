@@ -186,6 +186,9 @@
         </div>
       </div>
     </div>
+    <button class="main-btn">
+      PLACE ORDER
+    </button>
   </section>
   <!-- O R D E R      S U M M A R Y    E N D -->
 
@@ -298,19 +301,22 @@
         This is a secure 128-bit SSl encrypted payment.
       </p>
       <div class="payment-method-wrapper">
-        <label>
-          <input type="radio" name="payment-method"
-            id="credit-card">
-          Credit/Debit Card
+        <div class="label-wrapper img-to-right">
+          <label class="p-regular-16px-400">
+            <input type="radio" name="payment-method"
+              id="credit-card">
+            Credit/Debit Card
+          </label>
           <img src="../assets/images/payment/visa.png"
-            alt="visa, master card, american express and discover">
-        </label>
+            alt="visa, master card, american express and discover"
+            class="visa-group">
+        </div>
         <!-- C A R D    N U M B E R     label & input -->
         <label>
           <span>
             Card<i>*</i>
           </span>
-          <div class="left-input-wrapper">
+          <div class="input-wrapper">
             <img
               src="../assets/images/payment/master-card-logo.png"
               alt="master card">
@@ -325,7 +331,7 @@
             <span>
               Expiry Date<i>*</i>
             </span>
-            <div class="right-input-wrapper">
+            <div class="input-wrapper">
               <input type="date" placeholder="MM/ YY"
                 class="p-regular-16px-400">
               <!-- <img src="../assets/icons/agenda.svg"
@@ -338,7 +344,7 @@
             <span>
               CVC/CVV<i>*</i>
             </span>
-            <div class="right-input-wrapper">
+            <div class="input-wrapper">
               <input type="text" class="p-regular-16px-400">
               <img src="../assets/icons/info.svg"
                 alt="info icon">
@@ -347,17 +353,29 @@
         </div>
       </div>
       <div class="payment-method-wrapper">
-        <label>
-          <input type="radio" name="payment-method"
-            id="credit-card">
-          <img
-            src="../assets/images/payment/paypal-logo.png"
-            alt="paypal">
-        </label>
+        <div class="label-wrapper">
+          <label>
+            <input type="radio" name="payment-method"
+              id="credit-card">
+            <img
+              src="../assets/images/payment/paypal-logo.png"
+              alt="paypal">
+          </label>
+        </div>
       </div>
     </div>
   </section>
   <!-- P A Y M E N T    M E T H O D    E N D -->
+
+  <!-- S U B M I T    M O B I L E   V I E W   S T A R T -->
+  <section id="submit-mobile">
+    <div class="container">
+      <button class="main-btn">
+        PLACE ORDER
+      </button>
+    </div>
+  </section>
+  <!-- S U B M I T    M O B I L E   V I E W   E N D -->
   <!-- P A Y M E N T    E N D -->
 
   <!-- F O O T E R    S T A R T -->

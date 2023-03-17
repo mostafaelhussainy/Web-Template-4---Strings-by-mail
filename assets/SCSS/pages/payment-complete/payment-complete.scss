@@ -1,0 +1,10 @@
+@import '../../main.scss';
+
+// G L O B A L      S T Y L E
+body {
+  padding-top: 73px;
+
+  @include respond-to(md) {
+    padding-top: 0;
+  }
+}

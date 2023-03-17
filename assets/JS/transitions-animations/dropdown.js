@@ -43,7 +43,7 @@ function closeDropdown(dropdown) {
 }
 
 function toggleDropdown(dropdown, dropdownIcon) {
-  dropdown.style.maxHeight ? dropdown.style.maxHeight = null : dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+  dropdown?.style.maxHeight ? dropdown.style.maxHeight = null : dropdown.style.maxHeight = dropdown.scrollHeight + "px";
   if (dropdownIcon) {
     dropdownIcon.classList.toggle("rotate-180");
   } else {
