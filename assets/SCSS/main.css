@@ -849,6 +849,11 @@ button:hover {
   }
 }
 
+.clear-btn {
+  border: 1px solid #BE4E2E;
+  border-radius: 4px;
+}
+
 h1,
 h2,
 h3,
@@ -1080,17 +1085,6 @@ body {
   background: #ca8370;
 }
 
-.hover-img {
-  transition: transform 0.4s ease-in-out;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.hover-img:hover {
-  transform: scale(1.03);
-}
-
 label {
   display: flex;
   justify-content: center;
@@ -1136,6 +1130,31 @@ label:last-child {
 
 .main-border-bottom {
   border-bottom: 1px solid #DBDBDB;
+}
+
+.tag {
+  background: #F9EEEB;
+  border: 1px solid #E5B8AB;
+  border-radius: 36px;
+  padding: 6px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 7.5px;
+       column-gap: 7.5px;
+  row-gap: unset;
+}
+
+.hover-img {
+  transition: transform 0.4s ease-in-out;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.hover-img:hover {
+  transform: scale(1.03);
 }
 
 .fadeOutRight {
@@ -1491,6 +1510,7 @@ aside .links li a:hover {
   padding: 20px;
   width: -moz-fit-content;
   width: fit-content;
+  background: #FFF;
 }
 @media (max-width: 992px) {
   .product-card {

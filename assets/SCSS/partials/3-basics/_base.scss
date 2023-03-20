@@ -52,18 +52,10 @@ body {
   background: #ca8370;
 }
 
-// Image hover effect
-.hover-img {
-  transition: transform 0.4s ease-in-out;
-  width: fit-content;
-  height: fit-content;
 
-  &:hover {
-    transform: scale(1.03);
-  }
-}
 
-// inputs, textareas and labels
+// L A B E L -> I N P U T S ,   T E X T A R E A   
+// &   S E L E C T 
 label {
   @include flex(center, flex-start, column, unset, 5px);
   margin-bottom: 12px;
@@ -109,6 +101,26 @@ label {
 
 .main-border-bottom {
   border-bottom: 1px solid $-gray-100;
+}
+
+// T A G 
+.tag {
+  background: $-primary-50;
+  border: 1px solid $-primary-200;
+  border-radius: 36px;
+  padding: 6px 22px;
+  @include flex(center, center, row, 7.5px);
+}
+
+// C L A S S E S
+.hover-img {
+  transition: transform 0.4s ease-in-out;
+  width: fit-content;
+  height: fit-content;
+
+  &:hover {
+    transform: scale(1.03);
+  }
 }
 
 .fadeOutRight {

@@ -26,10 +26,12 @@
 // L A Y O U T    S T Y L E
 #layout .container {
   @include grid(repeat(2, auto), repeat(2, auto), 88px, 26px);
+  margin-bottom: 137px;
 
   @include respond-to(md) {
     grid-template-columns: auto;
     grid-template-rows: auto;
+    margin-bottom: 100px;
   }
 }
 
@@ -86,6 +88,7 @@
           height: fit-content;
 
           .input {
+            height: 38px;
             width: 90px;
             line-height: 38px;
             border: 1px solid $-gray-100;
@@ -117,11 +120,6 @@
   .main-btn {
     margin-bottom: 15px;
   }
-
-  .clear-btn {
-    border: 1px solid $Secondary;
-    border-radius: 4px;
-  }
 }
 
 ///////////////////////////////////////////////
@@ -132,14 +130,6 @@
   .filtered-tags-wrapper {
     flex-grow: 1;
     @include flex(flex-start, center, row, 9px);
-
-    .tag {
-      background: $-primary-50;
-      border: 1px solid $-primary-200;
-      border-radius: 36px;
-      padding: 6px 22px;
-      @include flex(center, center, row, 7.5px);
-    }
   }
 
   .sort-products-by {
@@ -156,9 +146,70 @@
 
     .dropdown-wrapper {
       position: absolute;
+      z-index: 100;
       background: #FFFFFF;
       border-radius: 6px;
-      width: 150px;
+      width: 185px;
+      margin-top: 10px;
+      @include flex(flex-start, flex-start, column, unset, 20px);
+      box-shadow: $main-shadow;
+
+      li {
+        padding: 0 30px;
+        width: 100%;
+
+        a {
+          width: 100%;
+          display: block;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &:first-child {
+          padding-top: 20px;
+        }
+
+        &:last-child {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////
+// F I L T E R E D    P R O D U C T S   S T Y L E
+#filtered-products {
+  .products-grid {
+    margin-bottom: 83px;
+    justify-content: flex-start;
+    column-gap: 16px;
+  }
+
+  .pagination {
+    width: 100%;
+    @include flex(center, flex-start, row, 10px);
+
+    .pagination-control,
+    .pagination-page {
+      padding: 8px 20px;
+      background-color: #FFF;
+      border-radius: 4px;
+      box-shadow: $main-shadow;
+
+      &:hover {
+        background-color: $-primary-300;
+      }
+    }
+
+    .pages {
+      @include flex(center, center, row, 10px);
+
+      .active {
+        background-color: $-primary-300;
+      }
     }
   }
 }

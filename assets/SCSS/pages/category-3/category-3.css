@@ -849,6 +849,11 @@ button:hover {
   }
 }
 
+.clear-btn {
+  border: 1px solid #BE4E2E;
+  border-radius: 4px;
+}
+
 h1,
 h2,
 h3,
@@ -1080,17 +1085,6 @@ body {
   background: #ca8370;
 }
 
-.hover-img {
-  transition: transform 0.4s ease-in-out;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-.hover-img:hover {
-  transform: scale(1.03);
-}
-
 label {
   display: flex;
   justify-content: center;
@@ -1136,6 +1130,31 @@ label:last-child {
 
 .main-border-bottom {
   border-bottom: 1px solid #DBDBDB;
+}
+
+.tag {
+  background: #F9EEEB;
+  border: 1px solid #E5B8AB;
+  border-radius: 36px;
+  padding: 6px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 7.5px;
+       column-gap: 7.5px;
+  row-gap: unset;
+}
+
+.hover-img {
+  transition: transform 0.4s ease-in-out;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.hover-img:hover {
+  transform: scale(1.03);
 }
 
 .fadeOutRight {
@@ -1491,6 +1510,7 @@ aside .links li a:hover {
   padding: 20px;
   width: -moz-fit-content;
   width: fit-content;
+  background: #FFF;
 }
 @media (max-width: 992px) {
   .product-card {
@@ -2214,11 +2234,13 @@ aside .links li a:hover {
   -moz-column-gap: 88px;
        column-gap: 88px;
   row-gap: 26px;
+  margin-bottom: 137px;
 }
 @media (max-width: 768px) {
   #layout .container {
     grid-template-columns: auto;
     grid-template-rows: auto;
+    margin-bottom: 100px;
   }
 }
 
@@ -2297,6 +2319,7 @@ aside .links li a:hover {
   height: fit-content;
 }
 #filter .col-filter .dropdown-wrapper .price-li .inputs-change-price .input-main .input {
+  height: 38px;
   width: 90px;
   line-height: 38px;
   border: 1px solid #DBDBDB;
@@ -2326,10 +2349,6 @@ aside .links li a:hover {
 #filter .main-btn {
   margin-bottom: 15px;
 }
-#filter .clear-btn {
-  border: 1px solid #BE4E2E;
-  border-radius: 4px;
-}
 
 #filtered-tags {
   display: flex;
@@ -2350,19 +2369,6 @@ aside .links li a:hover {
        column-gap: 9px;
   row-gap: unset;
 }
-#filtered-tags .filtered-tags-wrapper .tag {
-  background: #F9EEEB;
-  border: 1px solid #E5B8AB;
-  border-radius: 36px;
-  padding: 6px 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  -moz-column-gap: 7.5px;
-       column-gap: 7.5px;
-  row-gap: unset;
-}
 #filtered-tags .sort-products-by {
   position: relative;
 }
@@ -2378,7 +2384,74 @@ aside .links li a:hover {
 }
 #filtered-tags .sort-products-by .dropdown-wrapper {
   position: absolute;
+  z-index: 100;
   background: #FFFFFF;
   border-radius: 6px;
-  width: 150px;
+  width: 185px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: 20px;
+  box-shadow: 0px 4px 20px rgba(83, 41, 3, 0.16);
+}
+#filtered-tags .sort-products-by .dropdown-wrapper li {
+  padding: 0 30px;
+  width: 100%;
+}
+#filtered-tags .sort-products-by .dropdown-wrapper li a {
+  width: 100%;
+  display: block;
+}
+#filtered-tags .sort-products-by .dropdown-wrapper li a:hover {
+  text-decoration: underline;
+}
+#filtered-tags .sort-products-by .dropdown-wrapper li:first-child {
+  padding-top: 20px;
+}
+#filtered-tags .sort-products-by .dropdown-wrapper li:last-child {
+  padding-bottom: 20px;
+}
+
+#filtered-products .products-grid {
+  margin-bottom: 83px;
+  justify-content: flex-start;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+#filtered-products .pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: unset;
+}
+#filtered-products .pagination .pagination-control,
+#filtered-products .pagination .pagination-page {
+  padding: 8px 20px;
+  background-color: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 4px 20px rgba(83, 41, 3, 0.16);
+}
+#filtered-products .pagination .pagination-control:hover,
+#filtered-products .pagination .pagination-page:hover {
+  background-color: #D89582;
+}
+#filtered-products .pagination .pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: unset;
+}
+#filtered-products .pagination .pages .active {
+  background-color: #D89582;
 }/*# sourceMappingURL=category-3.css.map */

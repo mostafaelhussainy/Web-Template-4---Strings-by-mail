@@ -3,6 +3,7 @@
   border-radius: 6px;
   padding: 20px;
   width: fit-content;
+  background: #FFF;
 
   @include respond-to(lg) {
     padding: 18px 14px;
