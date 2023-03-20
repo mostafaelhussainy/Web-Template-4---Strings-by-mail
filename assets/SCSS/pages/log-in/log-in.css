@@ -2209,354 +2209,103 @@ aside .links li a:hover {
 }
 
 body {
-  padding-top: 73px;
+  padding-top: 185px;
+  background-image: url(../../../images/log-in/log-in-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
 }
-@media (max-width: 768px) {
+@media (max-width: 1720px) {
   body {
-    padding-top: 0;
+    background-image: none;
   }
 }
 
-#simplified-footer {
-  display: block;
-}
-
-#main-footer {
-  display: none;
-}
-
-.hidden {
-  display: none;
-}
-
-select {
-  /* for Firefox */
-  -moz-appearance: none;
-  /* for Chrome */
-  -webkit-appearance: none;
-}
-
-/* For IE10 */
-select::-ms-expand {
-  display: none;
-}
-
-#heading {
-  margin-bottom: 55px;
-}
-#heading .container .row {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  -moz-column-gap: 6px;
-       column-gap: 6px;
-  row-gap: unset;
-  margin-bottom: 27px;
-  max-width: 910px;
-}
-@media (max-width: 768px) {
-  #heading .container .row {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    row-gap: 6px;
-    padding-bottom: 5px;
-  }
-}
-#heading .container .row p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  -moz-column-gap: 9px;
-       column-gap: 9px;
-  row-gap: unset;
-}
-#heading .container p a {
-  color: #BE4E2E;
-}
-#heading .container p a:hover {
-  text-decoration: underline;
-}
-
-#delivery-address .container .heading-row,
-#billing-address .container .heading-row {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
-  row-gap: unset;
+#bread-crumb {
   margin-bottom: 35px;
 }
-#delivery-address .container .heading-row p,
-#billing-address .container .heading-row p {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
-  background-color: #E5B8AB;
-  text-align: center;
+
+main {
+  margin-bottom: 70px;
 }
-#delivery-address .container label i,
-#billing-address .container label i {
-  color: #E2574C;
-}
-#delivery-address .container label input,
-#billing-address .container label input {
+main .login-container {
   width: 100%;
-  max-width: 910px;
-}
-#delivery-address .container label:last-child,
-#billing-address .container label:last-child {
-  margin-bottom: 12px;
-}
-#delivery-address .container label .country-select,
-#billing-address .container label .country-select {
+  max-width: 570px;
   background-color: #FFF;
-  width: 100%;
-  max-width: 910px;
-  border: 1px solid #DBDBDB;
-  border-radius: 6px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  row-gap: unset;
-  padding: 10px 24px;
-  height: 56px;
+  border-radius: 12px;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: 0;
 }
-#delivery-address .container label .country-select select,
-#delivery-address .container label .country-select option,
-#billing-address .container label .country-select select,
-#billing-address .container label .country-select option {
-  background-color: none;
-  background: none;
-  border: none;
-  padding: 0;
-  border-radius: 0;
-  width: 100%;
-  max-width: unset;
-  height: auto;
+main .login-container h3 {
+  margin-bottom: 6px;
 }
-#delivery-address .container .dropdown-parent,
-#billing-address .container .dropdown-parent {
-  max-width: 910px;
-  margin-top: 8px;
-  margin-bottom: 20px;
+main .login-container p {
+  margin-bottom: 37px;
 }
-#delivery-address .container .dropdown-parent .dropdown-btn,
-#billing-address .container .dropdown-parent .dropdown-btn {
-  display: flex;
+main .login-container label {
+  margin-bottom: 12px;
+  height: 100px;
+  align-items: flex-start;
+  position: relative;
   justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  -moz-column-gap: 9px;
-       column-gap: 9px;
-  row-gap: unset;
-  width: -moz-fit-content;
-  width: fit-content;
 }
-#delivery-address .container .dropdown-parent .dropdown-btn img:nth-child(1),
-#billing-address .container .dropdown-parent .dropdown-btn img:nth-child(1) {
-  padding: 5px 4.5px;
-  border-radius: 50%;
-  background-color: #000;
+main .login-container input {
+  width: 100%;
+  max-width: 515px;
 }
-#delivery-address .container .dropdown-parent .dropdown-btn img:nth-child(2),
-#billing-address .container .dropdown-parent .dropdown-btn img:nth-child(2) {
-  padding: 11px 4.5px;
-  border-radius: 50%;
-  background-color: #000;
-}
-#delivery-address .container .dropdown-parent .dropdown-wrapper,
-#billing-address .container .dropdown-parent .dropdown-wrapper {
-  margin-top: 12px;
-}
-#delivery-address .container .inputs-row,
-#billing-address .container .inputs-row {
+main .login-container .input-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  row-gap: unset;
-  width: 100%;
-  max-width: 910px;
-}
-@media (max-width: 768px) {
-  #delivery-address .container .inputs-row,
-  #billing-address .container .inputs-row {
-    flex-direction: column;
-  }
-}
-#delivery-address .container .inputs-row .city-select,
-#delivery-address .container .inputs-row .province-select,
-#billing-address .container .inputs-row .city-select,
-#billing-address .container .inputs-row .province-select {
-  background-color: #FFF;
-  width: 100%;
-  max-width: 910px;
-  border: 1px solid #DBDBDB;
-  border-radius: 6px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  row-gap: unset;
-  padding: 10px 24px;
-  height: 56px;
-}
-#delivery-address .container .inputs-row .city-select select,
-#delivery-address .container .inputs-row .city-select option,
-#delivery-address .container .inputs-row .province-select select,
-#delivery-address .container .inputs-row .province-select option,
-#billing-address .container .inputs-row .city-select select,
-#billing-address .container .inputs-row .city-select option,
-#billing-address .container .inputs-row .province-select select,
-#billing-address .container .inputs-row .province-select option {
-  background-color: none;
-  background: none;
-  border: none;
-  padding: 0;
-  border-radius: 0;
-  width: 100%;
-  max-width: unset;
-  height: auto;
-}
-#delivery-address .container .inputs-row .city-select select,
-#delivery-address .container .inputs-row .province-select select,
-#billing-address .container .inputs-row .city-select select,
-#billing-address .container .inputs-row .province-select select {
-  color: #717171;
-}
-#delivery-address .container .inputs-row .phone-number-select,
-#billing-address .container .inputs-row .phone-number-select {
-  background-color: #FFF;
-  width: 100%;
-  max-width: 910px;
-  border: 1px solid #DBDBDB;
-  border-radius: 6px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  row-gap: unset;
-  padding: 10px 24px;
-  height: 56px;
-}
-#delivery-address .container .inputs-row .phone-number-select select,
-#delivery-address .container .inputs-row .phone-number-select option,
-#billing-address .container .inputs-row .phone-number-select select,
-#billing-address .container .inputs-row .phone-number-select option {
-  background-color: none;
-  background: none;
-  border: none;
-  padding: 0;
-  border-radius: 0;
-  width: 20%;
-  max-width: 100px;
-  height: auto;
-}
-#delivery-address .container .inputs-row .phone-number-select select,
-#billing-address .container .inputs-row .phone-number-select select {
-  color: #717171;
-}
-#delivery-address .container .inputs-row .phone-number-select input,
-#billing-address .container .inputs-row .phone-number-select input {
-  padding-left: 30px;
-  background-color: none;
-  background: none;
-  border-radius: 0;
-  border: none;
-  border-left: 1px solid #DBDBDB;
-}
-#delivery-address .container .toggle-billing,
-#billing-address .container .toggle-billing {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-  -moz-column-gap: 9px;
-       column-gap: 9px;
-  row-gap: unset;
-}
-#delivery-address .container .toggle-billing input,
-#billing-address .container .toggle-billing input {
-  width: 18px;
-  height: 18px;
-  accent-color: #BE4E2E;
-}
-
-#billing-address {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-}
-
-#delivery-method {
-  margin-top: 64px;
-  margin-bottom: 80px;
-}
-#delivery-method .container h6 {
-  margin-bottom: 30px;
-}
-#delivery-method .container .border-main {
-  border: 1px solid #DBDBDB;
-}
-#delivery-method .container .border-active {
-  border: 1px solid #BE4E2E;
-}
-#delivery-method .container .delivery-method {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   flex-direction: row;
   -moz-column-gap: unset;
        column-gap: unset;
   row-gap: unset;
-  width: 100%;
-  padding: 17px 27px;
-  max-width: 910px;
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
   border-radius: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  margin-bottom: 8px;
 }
-#delivery-method .container .delivery-method input {
-  display: none;
+main .login-container .input-wrapper input {
+  background: none;
+  border: none;
+  border-radius: 0;
 }
-#delivery-method .container .delivery-method .shipping-method-title {
+main .login-container .invalid-username,
+main .login-container .invalid-password {
+  color: #BE4E2E;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
-  -moz-column-gap: 23px;
-       column-gap: 23px;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
   row-gap: unset;
-  min-width: 50%;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
 }
-#delivery-method .container .delivery-method .shipping-method-title img {
-  transform: translateY(9px);
+main .login-container .forgot-password,
+main .login-container .main-btn {
+  margin-bottom: 46px;
+  display: block;
 }
-
-#submit {
-  margin-bottom: 80px;
+main .login-container .forgot-password {
+  text-align: right;
 }
-#submit .main-btn {
-  width: 360px;
-  margin-right: auto;
-  max-height: 100%;
-  height: 50px;
+main .login-container .main-btn {
+  width: 100%;
+  height: 55px;
 }
-@media (max-width: 768px) {
-  #submit .main-btn {
-    width: 100%;
-  }
-}/*# sourceMappingURL=shipping.css.map */
+main .login-container p:last-child {
+  text-decoration: none !important;
+  text-align: center;
+}
+main .login-container p:last-child a:hover {
+  color: #BE4E2E;
+}/*# sourceMappingURL=log-in.css.map */

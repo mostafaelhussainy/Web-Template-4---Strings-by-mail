@@ -782,6 +782,7 @@ button.swiper-pagination-bullet {
 button {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
+  display: block;
 }
 button:hover {
   transform: scale(1.02);

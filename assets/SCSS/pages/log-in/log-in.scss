@@ -1,0 +1,104 @@
+@import '../../main.scss';
+
+body {
+  padding-top: 185px;
+  background-image: url(../../../images/log-in/log-in-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  @media (max-width:1720px) {
+    background-image: none;
+  }
+}
+
+#bread-crumb {
+  margin-bottom: 35px;
+}
+
+// M A I N      S E C T I O N       S T Y L E
+main {
+  margin-bottom: 70px;
+
+  .login-container {
+    width: 100%;
+    max-width: 570px;
+    background-color: #FFF;
+    border-radius: 12px;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: 0;
+
+    h3 {
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin-bottom: 37px;
+    }
+
+    label {
+      margin-bottom: 12px;
+      height: 100px;
+      align-items: flex-start;
+      position: relative;
+      justify-content: flex-start;
+    }
+
+    input {
+      width: 100%;
+      max-width: 515px;
+    }
+
+    .input-wrapper {
+      @include flex(center, center, row);
+      background: #FFFFFF;
+      border: 1px solid $-gray-100;
+      border-radius: 6px;
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 100%;
+      margin-bottom: 8px;
+
+      input {
+        background: none;
+        border: none;
+        border-radius: 0;
+      }
+    }
+
+    .invalid-username,
+    .invalid-password {
+      color: $Secondary;
+      @include flex(flex-start, center, row, 7px);
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-bottom: 0;
+    }
+
+    .forgot-password,
+    .main-btn {
+      margin-bottom: 46px;
+      display: block;
+    }
+
+    .forgot-password {
+      text-align: right;
+    }
+
+    .main-btn {
+      width: 100%;
+      height: 55px;
+    }
+
+    p:last-child {
+      text-decoration: none !important;
+      text-align: center;
+
+      a:hover {
+        color: $Secondary;
+      }
+    }
+  }
+}
