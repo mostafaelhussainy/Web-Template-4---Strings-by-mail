@@ -11,11 +11,17 @@
   <link rel="stylesheet"
     href="../assets/SCSS/footer/footer.css">
   <link rel="stylesheet"
-    href="../assets/SCSS/pages/log-in/log-in.css">
-  <title>Product</title>
+    href="../assets/SCSS/pages/account-order-history/account-order-history.css">
+  <title>Create account</title>
+  <link rel="stylesheet"
+    href="https://printjs-4de6.kxcdn.com/print.min.css">
+  <script
+    src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+
 </head>
 
 <body>
+
   <!-- N A V I G A T I O N    B A R   S T A R T -->
   <nav>
     <!-- U P P E R   N A V   S E C T I O N -->
@@ -493,7 +499,7 @@
   </aside>
   <!-- S I D E    B A R   E N D -->
 
-  <!-- L O G    I N    S T A R T -->
+  <!-- R E G I S T E R    S T A R T -->
 
   <!-- B R E A D - C R U M B    S T A R T -->
   <section id="bread-crumb">
@@ -505,66 +511,359 @@
           <img src="../assets/icons/arrowRight.svg">
         </li>
         <li>
-          <a class="p-regular-16px-400 active">Login</a>
+          <a class="p-regular-16px-400 active">
+            My Account
+          </a>
         </li>
       </ul>
     </div>
   </section>
   <!-- B R E A D - C R U M B    E N D -->
 
-  <!-- L O G I N    F O R M   S T A R T -->
-  <form>
+  <!-- L A Y O U T    S T A R T -->
+  <div id="layout">
     <div class="container">
-      <div class="login-container">
+      <!-- A S I D E    S T A R T -->
+      <ul id="side-navigation--web">
         <h3>
-          Welcome Back!
+          My Account
         </h3>
-        <p class="p-regular-16px-400">
-          Please enter your e-mail and password
-        </p>
-        <label>
-          Email
-          <input id="email" type="email"
-            placeholder="Enter your email" required
-            class="p-regular-16px-400">
-          <p class="p-small-12px-400 invalid-username">
-            <img src="../assets/icons/invalid-input.svg">
-            Please fill out this field.
-          </p>
-        </label>
-        <label>
-          Password
-          <div class="input-wrapper">
-            <input id="password" type="password"
-              placeholder="Enter your password" required
-              class="p-regular-16px-400">
-            <button class="show-password" type="button">
-              <img src="../assets/icons/show-password.svg"
-                alt="eye icon">
-            </button>
-          </div>
-          <p class="p-small-12px-400 invalid-password">
-            <img src="../assets/icons/invalid-input.svg">
-            Please fill out this field.
-          </p>
-        </label>
-        <a href="./forgot-password.html"
-          class="a-link-16px forgot-password">
-          Forgot your password?
-        </a>
-        <button class="main-btn" type="submit">
-          LOGIN
-        </button>
-        <p class="a-link-16px">
-          Don't have an account?
-          <a href="./create-account.html"
-            class="a-link-16px">Create one</a>
-        </p>
+        <ul>
+          <li>
+            <a class="active p-regular-16px-400">
+              Order History
+            </a>
+          </li>
+          <li>
+            <a class="p-regular-16px-400"
+              href="./account-profile.html">
+              My Profile
+            </a>
+          </li>
+          <li>
+            <a class="p-regular-16px-400"
+              href="./account-address-book.html">
+              Address Book
+            </a>
+          </li>
+          <li>
+            <a class="p-regular-16px-400"
+              href="./payment-methods.html">
+              Payment Methods
+            </a>
+          </li>
+          <li>
+            <a class="p-regular-16px-400"
+              href="./gift-certificates.html">
+              Gift Certificates
+            </a>
+          </li>
+        </ul>
+      </ul>
+      <div id="side-navigation--mob"
+        class="dropdown-parent">
+        <span class="active p-regular-16px-400 dropdown-btn"
+          data-dropdown="account">
+          Order History
+          <img src="../assets/icons/dropdown.svg"
+            id="icon-account">
+        </span>
+        <ul class="dropdown-wrapper" id="dropdown-account">
+          <li>
+            <a class="p-regular-16px-400"
+              href="./account-profile.html">
+              My Profile
+            </a>
+          </li>
+          <li>
+            <a class="p-regular-16px-400"
+              href="./account-address-book.html">
+              Address Book
+            </a>
+          </li>
+          <li>
+            <a class="p-regular-16px-400"
+              href="./payment-methods.html">
+              Payment Methods
+            </a>
+          </li>
+          <li>
+            <a class="p-regular-16px-400"
+              href="./gift-certificates.html">
+              Gift Certificates
+            </a>
+          </li>
+        </ul>
       </div>
+      <!-- A S I D E    E N D -->
+
+      <!-- O R D E R S    S T A R T -->
+      <main>
+        <h6>
+          Order History
+        </h6>
+        <div class="main-layout">
+          <ul class="orders-list">
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Date
+              </p>
+              <p class="p-regular-16px-400">
+                Jan 12, 2021
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Order no.
+              </p>
+              <p class="p-regular-16px-400">
+                NDW2934
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Status
+              </p>
+              <p class="p-regular-16px-400 tx-green">
+                Shipped
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                No. of Items
+              </p>
+              <p class="p-regular-16px-400">
+                2
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Shipping address
+              </p>
+              <p class="p-regular-16px-400">
+                4597 Rardin Drive, San Bruno CA California
+                94066
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Order amount
+              </p>
+              <p class="p-regular-16px-400">
+                $74.98
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Receipt
+              </p>
+              <p class="p-regular-16px-400 download"
+                onclick="printJS({
+                  printable: 'receipt',
+                  type: 'html',
+                  css: 'path/to/receipt.css',
+                })">
+                Download
+              </p>
+            </li>
+          </ul>
+          <ul class=" orders-list">
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Date
+              </p>
+              <p class="p-regular-16px-400">
+                Jan 12, 2021
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Order no.
+              </p>
+              <p class="p-regular-16px-400">
+                NDW2934
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Status
+              </p>
+              <p class="p-regular-16px-400 tx-danger">
+                Cancelled
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                No. of Items
+              </p>
+              <p class="p-regular-16px-400">
+                2
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Shipping address
+              </p>
+              <p class="p-regular-16px-400">
+                4597 Rardin Drive, San Bruno CA California
+                94066
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Order amount
+              </p>
+              <p class="p-regular-16px-400">
+                $74.98
+              </p>
+            </li>
+            <li class="col">
+              <p class="p-regular-16px-400">
+                Receipt
+              </p>
+              <p class="p-regular-16px-400 download">
+                Download
+              </p>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <!-- O R D E R S    E N D -->
+
     </div>
-  </form>
-  <!-- L O G I N    F O R M   E N D  -->
-  <!-- L O G    I N    E N D -->
+  </div>
+  <!-- L A Y O U T    E N D  -->
+
+  <!-- R E C E I P T    S T A R T -->
+  <div id="receipt">
+    <div class="heading main-border-bottom">
+      <div class="title-row">
+        <h4>
+          Receipt
+        </h4>
+        <div class="order-no">
+          <p class="p-regular-16px-400">
+            Order no.
+          </p>
+          <h5>
+            NDW2934
+          </h5>
+        </div>
+      </div>
+      <p class="p-regular-16px-700">
+        Thank you for your order!
+      </p>
+      <p class="p-regular-16px-400">
+        Melodic Strings
+      </p>
+    </div>
+    <ul class="order-details main-border-bottom">
+      <li>
+        <p class="p-regular-16px-400">
+          Order Date
+        </p>
+        <p class="p-regular-16px-400">
+          Jan 12, 2021
+        </p>
+      </li>
+      <li>
+        <p class="p-regular-16px-400">
+          Payment type
+        </p>
+        <p class="p-regular-16px-400">
+          Visa
+        </p>
+      </li>
+      <li>
+        <p class="p-regular-16px-400">
+          Shipping address
+        </p>
+        <p class="p-regular-16px-400">
+          4597 Rardin Drive, San Bruno, CA California 94066
+        </p>
+      </li>
+    </ul>
+    <ul class="order-products main-border-bottom">
+      <li>
+        <figure>
+          <img src="../assets/images/product/p1.png">
+          <figcaption>
+            <p>
+              D'Addario EPBB170 Phosphor Bronze Acoustic
+              Bass Strings 45-100
+            </p>
+            <p>
+              Qty 1
+            </p>
+            <p>
+              $23.99
+            </p>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="../assets/images/product/p1.png">
+          <figcaption>
+            <p>
+              D'Addario EPBB170 Phosphor Bronze Acoustic
+              Bass Strings 45-100
+            </p>
+            <p>
+              Qty 1
+            </p>
+            <p>
+              $23.99
+            </p>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+    <ul class="order-prices main-border-bottom">
+      <li>
+        <p class="p-regular-16px-400">
+          Subtotal
+        </p>
+        <p class="p-regular-16px-400">
+          $47.98
+        </p>
+      </li>
+      <li>
+        <p class="p-regular-16px-400">
+          Subtotal
+        </p>
+        <p class="p-regular-16px-400">
+          $47.98
+        </p>
+      </li>
+      <li>
+        <p class="p-regular-16px-400">
+          Subtotal
+        </p>
+        <p class="p-regular-16px-400">
+          $47.98
+        </p>
+      </li>
+      <li>
+        <p class="p-regular-16px-400">
+          Subtotal
+        </p>
+        <p class="p-regular-16px-400 tx-green">
+          -$3.00
+        </p>
+      </li>
+    </ul>
+    <div class="order-total">
+      <p class="p-regular-16px-700">
+        Order amount
+      </p>
+      <p class="total-price">
+        $74.98
+      </p>
+    </div>
+  </div>
+  <!-- R E C E I P T    E N D -->
+
   <!-- F O O T E R    S T A R T -->
   <footer id="main-footer">
     <div class="container">
@@ -737,7 +1036,8 @@
     src="../assets/JS/transitions-animations/toggle-btns.js"></script>
   <script
     src="../assets/JS/transitions-animations/bottom-to-top.js"></script>
-  <script src="../assets/JS/pages/log-in.js"></script>
+  <script
+    src="../assets/JS/pages/account-order-history.js"></script>
 </body>
 
 </html>

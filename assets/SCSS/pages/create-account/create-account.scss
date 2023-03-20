@@ -1,0 +1,81 @@
+@import '../../main.scss';
+
+// H E A D I N G    S T Y L E
+#heading {
+  margin-bottom: 52px;
+
+  h3 {
+    margin-bottom: 12px;
+  }
+
+  p {
+    a {
+      color: $Secondary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////
+/// R E G I S T E R   S T Y LE
+#register {
+  margin-bottom: 180px;
+  width: 100%;
+
+  .input-row {
+    @include flex(flex-start, flex-start, row, 20px);
+    width: 100%;
+    max-width: 910px;
+  }
+
+  label {
+    width: 100%;
+    max-width: 910px;
+    height: 105px;
+    justify-content: flex-start;
+    row-gap: 0;
+    margin-bottom: 0;
+
+    span {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  input:not([type='checkbox']) {
+    width: 100%;
+    max-width: 910px;
+    margin-top: 12px;
+  }
+
+  .checkbox-label {
+    @include flex(flex-start, flex-start, row, 13px);
+    height: fit-content;
+
+    p a {
+      color: $Secondary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:last-of-type {
+      height: 50px;
+    }
+
+    input {
+      width: fit-content;
+      margin-top: 3px;
+    }
+  }
+
+  .main-btn {
+    height: 55px;
+    width: 224px;
+  }
+}

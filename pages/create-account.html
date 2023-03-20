@@ -11,8 +11,8 @@
   <link rel="stylesheet"
     href="../assets/SCSS/footer/footer.css">
   <link rel="stylesheet"
-    href="../assets/SCSS/pages/log-in/log-in.css">
-  <title>Product</title>
+    href="../assets/SCSS/pages/create-account/create-account.css">
+  <title>Create account</title>
 </head>
 
 <body>
@@ -493,7 +493,7 @@
   </aside>
   <!-- S I D E    B A R   E N D -->
 
-  <!-- L O G    I N    S T A R T -->
+  <!-- R E G I S T E R    S T A R T -->
 
   <!-- B R E A D - C R U M B    S T A R T -->
   <section id="bread-crumb">
@@ -505,66 +505,112 @@
           <img src="../assets/icons/arrowRight.svg">
         </li>
         <li>
-          <a class="p-regular-16px-400 active">Login</a>
+          <a class="p-regular-16px-400"
+            href="./log-in.html">Login</a>
+          <img src="../assets/icons/arrowRight.svg">
+        </li>
+        <li>
+          <a class="p-regular-16px-400 active">Register
+            Account</a>
         </li>
       </ul>
     </div>
   </section>
   <!-- B R E A D - C R U M B    E N D -->
 
-  <!-- L O G I N    F O R M   S T A R T -->
-  <form>
+  <!-- H E A D I N G   S T A R T -->
+  <section id="heading">
     <div class="container">
-      <div class="login-container">
-        <h3>
-          Welcome Back!
-        </h3>
-        <p class="p-regular-16px-400">
-          Please enter your e-mail and password
-        </p>
+      <h3>
+        Register Account
+      </h3>
+      <p class="p-regular-16px-400">
+        If you already have an account with us, please login
+        at the <a href="./log-in.html">login page</a>.
+      </p>
+    </div>
+  </section>
+  <!-- H E A D I N G   E N D -->
+
+  <!-- R E G I S T E R    F O R M    S T A R T -->
+  <form id="register">
+    <div class="container">
+      <div class="input-row">
         <label>
-          Email
-          <input id="email" type="email"
-            placeholder="Enter your email" required
-            class="p-regular-16px-400">
-          <p class="p-small-12px-400 invalid-username">
+          First Name
+          <input required type="text" id="firstName">
+          <p
+            class="p-small-12px-400 invalid-msg invalid-msg-firstName">
             <img src="../assets/icons/invalid-input.svg">
             Please fill out this field.
           </p>
         </label>
         <label>
-          Password
-          <div class="input-wrapper">
-            <input id="password" type="password"
-              placeholder="Enter your password" required
-              class="p-regular-16px-400">
-            <button class="show-password" type="button">
-              <img src="../assets/icons/show-password.svg"
-                alt="eye icon">
-            </button>
-          </div>
-          <p class="p-small-12px-400 invalid-password">
+          Last Name
+          <input required type="text" id="lastName">
+          <p
+            class="p-small-12px-400 invalid-msg invalid-msg-lastName">
             <img src="../assets/icons/invalid-input.svg">
             Please fill out this field.
           </p>
         </label>
-        <a href="./forgot-password.html"
-          class="a-link-16px forgot-password">
-          Forgot your password?
-        </a>
-        <button class="main-btn" type="submit">
-          LOGIN
-        </button>
-        <p class="a-link-16px">
-          Don't have an account?
-          <a href="./create-account.html"
-            class="a-link-16px">Create one</a>
-        </p>
       </div>
+      <label>
+        Email
+        <input required type="email" id="email">
+        <p
+          class="p-small-12px-400 invalid-msg invalid-msg-email">
+          <img src="../assets/icons/invalid-input.svg">
+          Please fill out this field.
+        </p>
+        <p
+          class="p-small-12px-400 invalid-msg invalid-form-email">
+          <img src="../assets/icons/invalid-input.svg">
+          Please fill out this with correct email form.
+        </p>
+      </label>
+      <label>
+        Password
+        <span class="p-subtitle-14px-300">
+          At least 7 characters
+        </span>
+        <input required type="password" id="password">
+        <p
+          class="p-small-12px-400 invalid-msg invalid-msg-password">
+          <img src="../assets/icons/invalid-input.svg">
+          Please fill out this field.
+        </p>
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" name="newsletter"
+          id="newsletter">
+        <p class="p-regular-16px-400">
+          Subscribe me to Melodic Strings’s newsletter for
+          periodic updates and promotions.
+        </p>
+      </label>
+      <label class="checkbox-label">
+        <input required type="checkbox" name="newsletter"
+          id="terms">
+        <p class="p-regular-16px-400">
+          By checking this box, I have read and agree to
+          Melodic Strings’s <a>Privacy Notice</a> and
+          <a>Terms of Use</a>.
+        </p>
+        <p
+          class="p-small-12px-400 invalid-msg invalid-msg-terms">
+          <img src="../assets/icons/invalid-input.svg">
+          Please check out this field.
+        </p>
+      </label>
+      <button class="main-btn buttontext" type="submit">
+        register account
+      </button>
     </div>
   </form>
-  <!-- L O G I N    F O R M   E N D  -->
-  <!-- L O G    I N    E N D -->
+
+  <!-- R E G I S T E R    F O R M    E N D  -->
+  <!-- R E G I S T E R    E N D -->
   <!-- F O O T E R    S T A R T -->
   <footer id="main-footer">
     <div class="container">
@@ -737,7 +783,8 @@
     src="../assets/JS/transitions-animations/toggle-btns.js"></script>
   <script
     src="../assets/JS/transitions-animations/bottom-to-top.js"></script>
-  <script src="../assets/JS/pages/log-in.js"></script>
+  <script
+    src="../assets/JS/pages/create-account.js"></script>
 </body>
 
 </html>

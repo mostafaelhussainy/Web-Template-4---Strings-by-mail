@@ -1096,6 +1096,7 @@ label {
   row-gap: 5px;
   margin-bottom: 12px;
   width: 100%;
+  position: relative;
 }
 label i {
   color: #E2574C;
@@ -1126,6 +1127,22 @@ label textarea {
   height: 100px;
 }
 label:last-child {
+  margin-bottom: 0;
+}
+
+.invalid-msg {
+  color: #BE4E2E;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  row-gap: unset;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   margin-bottom: 0;
 }
 

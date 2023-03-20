@@ -1,0 +1,98 @@
+@import '../main.scss';
+
+#receipt {
+  display: block;
+  background-color: #FFF;
+  width: fit-content;
+  padding: 35px;
+  border-radius: 12px;
+
+  .heading {
+    padding-bottom: 43px;
+    margin-bottom: 30px;
+
+    .title-row {
+      @include flex(space-between, center, row);
+      margin-bottom: 30px;
+    }
+
+    .order-no {
+      @include flex(space-between, center, row, 20px);
+
+      h5 {
+        color: $Secondary;
+      }
+    }
+  }
+
+  .order-details {
+    @include flex (space-between, flex-start, row, 25px, 20px);
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+    padding-bottom: 30px;
+
+    li {
+      p {
+        max-width: 225px;
+
+        &:first-child {
+          color: $-gray-400;
+        }
+      }
+    }
+  }
+
+  .order-products {
+    margin-bottom: 42px;
+    padding-bottom: 30px;
+    @include flex (flex-start, flex-start, column, unset, 38px);
+
+    figure {
+      @include flex (center, center, row, 20px, 20px);
+      width: 100%;
+
+      img {
+        @include image-fit(78px, 78px, cover, center);
+      }
+
+      figcaption {
+        @include flex (flex-start, center, row, 20px, 20px);
+        flex-wrap: wrap;
+
+        p {
+          max-width: 215px;
+          font-family: 'Source Serif Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 23px;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .order-prices {
+    @include flex (space-between, center, column, unset, 10px);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+    li {
+      @include flex (space-between, center, row);
+      width: 100%
+    }
+  }
+
+  .order-total {
+    @include flex (space-between, center, row);
+
+    .total-price {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 160%;
+      color: #000000;
+    }
+  }
+}

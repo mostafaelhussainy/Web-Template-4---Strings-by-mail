@@ -60,6 +60,7 @@ label {
   @include flex(center, flex-start, column, unset, 5px);
   margin-bottom: 12px;
   width: 100%;
+  position: relative;
 
   i {
     color: $Utility-danger;
@@ -99,6 +100,18 @@ label {
   }
 }
 
+// I N V A L I D    M E S S A G E 
+.invalid-msg {
+  color: $Secondary;
+  @include flex(flex-start, center, row, 7px);
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+}
+
+// B O R D E R    B O T T O M
 .main-border-bottom {
   border-bottom: 1px solid $-gray-100;
 }
@@ -111,6 +124,7 @@ label {
   padding: 6px 22px;
   @include flex(center, center, row, 7.5px);
 }
+
 
 // C L A S S E S
 .hover-img {
