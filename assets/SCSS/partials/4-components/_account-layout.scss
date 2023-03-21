@@ -3,6 +3,10 @@
 #layout {
   margin-bottom: 200px;
 
+  @include respond-to(xxl) {
+    margin-bottom: 115px;
+  }
+
   .container {
     @include flex(flex-start, flex-start, row, 130px, 40px);
 

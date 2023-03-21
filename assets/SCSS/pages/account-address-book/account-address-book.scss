@@ -1,0 +1,149 @@
+@import '../../main.scss';
+
+// H E A D I N G    S T Y L E
+#heading {
+  margin-bottom: 52px;
+
+  h3 {
+    margin-bottom: 12px;
+  }
+
+  p {
+    a {
+      color: $Secondary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////
+/// O R D E R S   S T Y L E
+main {
+  position: relative;
+
+  h6 {
+    margin-bottom: 18px;
+  }
+
+  .main-layout {
+    min-height: 650px;
+
+    @include respond-to(md) {
+      min-height: 780px;
+    }
+  }
+
+  .main-layout {
+
+    .address,
+    .update-address {
+      position: absolute;
+      width: 100%;
+      max-width: 910px;
+      top: 0;
+    }
+
+    .addresses {
+      @include flex(flex-start, flex-start, column, 12px, 12px);
+
+      .address {
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid $-gray-100;
+        border-radius: 6px;
+        position: relative;
+        @include flex(flex-start, flex-start, column, 6px, 6px);
+        padding: 17px 23px;
+
+        &:last-of-type {
+          margin-bottom: 44px;
+        }
+
+        span {
+          font-family: 'Mulish';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $-gray-700;
+        }
+
+        .controls {
+          position: absolute;
+          bottom: 17px;
+          right: 23px;
+          @include flex(flex-start, flex-start, row, 31px);
+
+          button {
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #000000;
+          }
+
+          .btn--delete {
+            color: $Utility-danger;
+          }
+        }
+      }
+    }
+
+    .update-address {
+      .back-to-addressbook {
+        @include flex(flex-start, center, row, 10px);
+        margin-bottom: 18px;
+
+        h6 {
+          margin-bottom: 0;
+        }
+      }
+
+      .inputs-row {
+        @include flex(flex-start, flex-start, row, 12px);
+      }
+
+      .select-wrapper {
+        background-color: #FFF;
+        width: 100%;
+        max-width: 910px;
+        border: 1px solid $-gray-100;
+        border-radius: 6px;
+        @include flex(space-between, center, row, 10px);
+        padding: 10px 24px;
+        height: 56px;
+
+        select,
+        option {
+          background-color: none;
+          background: none;
+          border: none;
+          padding: 0;
+          border-radius: 0;
+          width: 100%;
+          max-width: unset;
+          height: auto;
+          appearance: none;
+        }
+
+        select {
+          color: $-gray-400 ;
+        }
+      }
+
+      label:last-of-type {
+        margin-bottom: 37px !important;
+      }
+
+      .main-btn {
+        margin-left: auto;
+      }
+    }
+  }
+}

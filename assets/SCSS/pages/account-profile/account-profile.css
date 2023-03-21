@@ -2253,6 +2253,11 @@ aside .links li a:hover {
 #layout {
   margin-bottom: 200px;
 }
+@media (max-width: 1400px) {
+  #layout {
+    margin-bottom: 115px;
+  }
+}
 #layout .container {
   display: flex;
   justify-content: flex-start;
@@ -2466,6 +2471,11 @@ main .main-layout .password-controller {
   margin-bottom: 66px;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  main .main-layout .password-controller {
+    margin-bottom: 20px;
+  }
+}
 main .main-layout .password-controller .password-control {
   width: 100%;
   display: flex;
@@ -2491,5 +2501,6 @@ main .main-layout .password-controller .new-password .new-password-control {
 main .main-layout .password-controller .current-password,
 main .main-layout .password-controller .new-password {
   position: absolute;
-  width: 910px;
+  width: 100%;
+  max-width: 910px;
 }/*# sourceMappingURL=account-profile.css.map */

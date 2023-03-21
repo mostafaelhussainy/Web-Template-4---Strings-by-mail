@@ -2253,6 +2253,11 @@ aside .links li a:hover {
 #layout {
   margin-bottom: 200px;
 }
+@media (max-width: 1400px) {
+  #layout {
+    margin-bottom: 115px;
+  }
+}
 #layout .container {
   display: flex;
   justify-content: flex-start;

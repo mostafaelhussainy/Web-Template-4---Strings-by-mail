@@ -84,6 +84,11 @@ main {
     .password-controller {
       min-height: 325px;
       margin-bottom: 66px;
+
+      @include respond-to(md) {
+        margin-bottom: 20px;
+      }
+
       overflow: hidden;
 
       .password-control {
@@ -104,7 +109,8 @@ main {
       .current-password,
       .new-password {
         position: absolute;
-        width: 910px;
+        width: 100%;
+        max-width: 910px;
       }
     }
   }
