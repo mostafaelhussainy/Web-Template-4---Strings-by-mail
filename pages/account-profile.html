@@ -11,8 +11,8 @@
   <link rel="stylesheet"
     href="../assets/SCSS/footer/footer.css">
   <link rel="stylesheet"
-    href="../assets/SCSS/pages/account-order-history/account-order-history.css">
-  <title>Order History</title>
+    href="../assets/SCSS/pages/account-profile/account-profile.css">
+  <title>Profile</title>
 </head>
 
 <body>
@@ -525,13 +525,13 @@
         </h3>
         <ul>
           <li>
-            <a class="active p-regular-16px-400">
+            <a class="p-regular-16px-400"
+              href="./account-order-history.html">
               Order History
             </a>
           </li>
           <li>
-            <a class="p-regular-16px-400"
-              href="./account-profile.html">
+            <a class="active p-regular-16px-400">
               My Profile
             </a>
           </li>
@@ -559,15 +559,15 @@
         class="dropdown-parent">
         <span class="active p-regular-16px-400 dropdown-btn"
           data-dropdown="account">
-          Order History
+          My Profile
           <img src="../assets/icons/dropdown.svg"
             id="icon-account">
         </span>
         <ul class="dropdown-wrapper" id="dropdown-account">
           <li>
             <a class="p-regular-16px-400"
-              href="./account-profile.html">
-              My Profile
+              href="./account-order-history.html">
+              Order History
             </a>
           </li>
           <li>
@@ -592,267 +592,130 @@
       </div>
       <!-- A S I D E    E N D -->
 
-      <!-- O R D E R S    S T A R T -->
-      <main>
+      <!-- P E R S O N A L    D E T A I L S    S T A R T -->
+      <main id="account--main">
         <h6>
-          Order History
+          Personal Details
         </h6>
         <div class="main-layout">
-          <ul class="orders-list">
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Date
-              </p>
-              <p class="p-regular-16px-400">
-                Jan 12, 2021
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Order no.
-              </p>
-              <p class="p-regular-16px-400">
-                NDW2934
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Status
-              </p>
-              <p class="p-regular-16px-400 tx-green">
-                Shipped
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                No. of Items
-              </p>
-              <p class="p-regular-16px-400">
-                2
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Shipping address
-              </p>
-              <p class="p-regular-16px-400">
-                4597 Rardin Drive, San Bruno CA California
-                94066
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Order amount
-              </p>
-              <p class="p-regular-16px-400">
-                $74.98
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Receipt
-              </p>
-              <p class="p-regular-16px-400 download">
-                Download
-              </p>
-            </li>
-          </ul>
-          <ul class=" orders-list">
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Date
-              </p>
-              <p class="p-regular-16px-400">
-                Jan 12, 2021
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Order no.
-              </p>
-              <p class="p-regular-16px-400">
-                NDW2934
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Status
-              </p>
-              <p class="p-regular-16px-400 tx-danger">
-                Cancelled
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                No. of Items
-              </p>
-              <p class="p-regular-16px-400">
-                2
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Shipping address
-              </p>
-              <p class="p-regular-16px-400">
-                4597 Rardin Drive, San Bruno CA California
-                94066
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Order amount
-              </p>
-              <p class="p-regular-16px-400">
-                $74.98
-              </p>
-            </li>
-            <li class="col">
-              <p class="p-regular-16px-400">
-                Receipt
-              </p>
-              <p class="p-regular-16px-400 download">
-                Download
-              </p>
-            </li>
-          </ul>
+          <label>
+            First Name
+            <input type="text" placeholder="Mostafa"
+              class="p-regular-16px-400" />
+          </label>
+          <label>
+            Last Name
+            <input type="text" placeholder="Elhussainy"
+              class="p-regular-16px-400" />
+          </label>
+          <label>
+            Email
+            <input type="text"
+              placeholder="mostafaelhussainy22@gmail.com"
+              class="p-regular-16px-400" />
+          </label>
+          <label>
+            Phone Number
+            <div class="input-phone-wrapper">
+              <div class="select-wrapper">
+                <select id="phone-flags-sc">
+                </select>
+                <img src="../assets/icons/phoneSelect.svg">
+              </div>
+              <input type="tel" placeholder=""
+                class="p-regular-16px-400"
+                id="phone-input" />
+            </div>
+          </label>
+          <label class="newsletter">
+            <input type="checkbox">
+            <p class="p-regular-16px-400">
+              Subscribe me to Melodic Strings’s newsletter
+              for periodic updates and promotions.
+            </p>
+          </label>
+          <div class="password-controller">
+            <h6>Password</h6>
+            <div
+              class="current-password animate animate--password">
+              <label>
+                Current password
+                <div class="password-control">
+                  <div class="password-input-wrapper">
+                    <input
+                      class="password-input p-regular-16px-400"
+                      type="password" value="test123456789"
+                      required>
+                    <button class="show-password"
+                      type="button">
+                      <img
+                        src="../assets/icons/show-password.svg"
+                        alt="eye icon">
+                    </button>
+                  </div>
+                  <button
+                    class="sec-btn buttontext toggle-pass-divs">
+                    UPDATE
+                  </button>
+                </div>
+              </label>
+            </div>
+            <div
+              class="new-password animate animate--password fadeOutRight">
+              <label>
+                New password
+                <div class="password-control">
+                  <div class="password-input-wrapper">
+                    <input
+                      class="password-input p-regular-16px-400"
+                      type="password" value="test123456789"
+                      required>
+                    <button class="show-password"
+                      type="button">
+                      <img
+                        src="../assets/icons/show-password.svg"
+                        alt="eye icon">
+                    </button>
+                  </div>
+                </div>
+              </label>
+              <label>
+                Confirm password
+                <div class="password-control">
+                  <div class="password-input-wrapper">
+                    <input
+                      class="password-input p-regular-16px-400"
+                      type="password" value="test123456789"
+                      required>
+                    <button class="show-password"
+                      type="button">
+                      <img
+                        src="../assets/icons/show-password.svg"
+                        alt="eye icon">
+                    </button>
+                  </div>
+                </div>
+              </label>
+              <div class="new-password-control">
+                <button
+                  class="sub-btn buttontext toggle-pass-divs">
+                  CANCEL
+                </button>
+                <button class="sec-btn buttontext">
+                  UPDATE
+                </button>
+              </div>
+            </div>
+          </div>
+          <button class="main-btn buttontext">
+            SAVE CHANGES
+          </button>
         </div>
       </main>
-      <!-- O R D E R S    E N D -->
-
+      <!-- P E R S O N A L    D E T A I L S    E N D -->
     </div>
   </div>
   <!-- L A Y O U T    E N D  -->
-
-  <!-- R E C E I P T    S T A R T -->
-  <div id="receipt">
-    <div class="heading main-border-bottom">
-      <div class="title-row">
-        <h4>
-          Receipt
-        </h4>
-        <div class="order-no">
-          <p class="p-regular-16px-400">
-            Order no.
-          </p>
-          <h5>
-            NDW2934
-          </h5>
-        </div>
-      </div>
-      <p class="p-regular-16px-700">
-        Thank you for your order!
-      </p>
-      <p class="p-regular-16px-400">
-        Melodic Strings
-      </p>
-    </div>
-    <ul class="order-details main-border-bottom">
-      <li>
-        <p class="p-regular-16px-400">
-          Order Date
-        </p>
-        <p class="p-regular-16px-400">
-          Jan 12, 2021
-        </p>
-      </li>
-      <li>
-        <p class="p-regular-16px-400">
-          Payment type
-        </p>
-        <p class="p-regular-16px-400">
-          Visa
-        </p>
-      </li>
-      <li>
-        <p class="p-regular-16px-400">
-          Shipping address
-        </p>
-        <p class="p-regular-16px-400">
-          4597 Rardin Drive, San Bruno, CA California 94066
-        </p>
-      </li>
-    </ul>
-    <ul class="order-products main-border-bottom">
-      <li>
-        <figure>
-          <img src="../assets/images/product/p1.png">
-          <figcaption>
-            <p>
-              D'Addario EPBB170 Phosphor Bronze Acoustic
-              Bass Strings 45-100
-            </p>
-            <p>
-              Qty 1
-            </p>
-            <p>
-              $23.99
-            </p>
-          </figcaption>
-        </figure>
-      </li>
-      <li>
-        <figure>
-          <img src="../assets/images/product/p1.png">
-          <figcaption>
-            <p>
-              D'Addario EPBB170 Phosphor Bronze Acoustic
-              Bass Strings 45-100
-            </p>
-            <p>
-              Qty 1
-            </p>
-            <p>
-              $23.99
-            </p>
-          </figcaption>
-        </figure>
-      </li>
-    </ul>
-    <ul class="order-prices main-border-bottom">
-      <li>
-        <p class="p-regular-16px-400">
-          Subtotal
-        </p>
-        <p class="p-regular-16px-400">
-          $47.98
-        </p>
-      </li>
-      <li>
-        <p class="p-regular-16px-400">
-          Subtotal
-        </p>
-        <p class="p-regular-16px-400">
-          $47.98
-        </p>
-      </li>
-      <li>
-        <p class="p-regular-16px-400">
-          Subtotal
-        </p>
-        <p class="p-regular-16px-400">
-          $47.98
-        </p>
-      </li>
-      <li>
-        <p class="p-regular-16px-400">
-          Subtotal
-        </p>
-        <p class="p-regular-16px-400 tx-green">
-          -$3.00
-        </p>
-      </li>
-    </ul>
-    <div class="order-total">
-      <p class="p-regular-16px-700">
-        Order amount
-      </p>
-      <p class="total-price">
-        $74.98
-      </p>
-    </div>
-  </div>
-  <!-- R E C E I P T    E N D -->
 
   <!-- F O O T E R    S T A R T -->
   <footer id="main-footer">
@@ -1027,9 +890,11 @@
   <script
     src="../assets/JS/transitions-animations/bottom-to-top.js"></script>
   <script
-    src="../assets/JS/tools/html2pdf.bundle.min.js"></script>
+    src="../assets/JS/tools/phoneShorts-flags.js"></script>
   <script
-    src="../assets/JS/pages/account-order-history.js"></script>
+    src="../assets/JS/tools/shopPasswords.js"></script>
+  <script
+    src="../assets/JS/pages/account-profile.js"></script>
 
 </body>
 

@@ -1,0 +1,150 @@
+////////////////////////////////////////////////////////////
+/// L A Y O U T   S T Y L E
+#layout {
+  margin-bottom: 200px;
+
+  .container {
+    @include flex(flex-start, flex-start, row, 130px, 40px);
+
+    @include respond-to(xxl) {
+      flex-direction: column;
+    }
+  }
+}
+
+// M A I N    S T Y L E
+#account--main {
+  width: 100%;
+  max-width: 910px;
+
+  // L A B E L    S T Y L E S
+  label {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: capitalize;
+    color: #000000;
+    align-items: flex-start;
+    max-width: unset;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    input:not(input[type="checkbox"]) {
+      width: 100%;
+      max-width: unset;
+
+      &::placeholder {
+        color: $-gray-400 !important;
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////
+/// A S I D E   S T Y L E
+/// W E B
+#side-navigation--web {
+  @include respond-to(xxl) {
+    display: none;
+  }
+
+  h3 {
+    white-space: nowrap;
+    margin-bottom: 40px
+  }
+
+  ul {
+    li {
+      width: 100%;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        padding: 12px 20px;
+        text-align: left;
+        width: 100%;
+        display: block;
+        border-radius: 6px;
+
+        &:hover {
+          background-color: $-primary-200;
+        }
+      }
+
+      .active {
+        background-color: $-primary-200;
+      }
+    }
+  }
+}
+
+/// M O B
+#side-navigation--mob {
+  display: none;
+  width: 100%;
+  max-width: 500px;
+
+  @include respond-to(xxl) {
+    display: block;
+  }
+
+  .active {
+    padding: 12px 20px;
+    text-align: left;
+    width: 100%;
+    border-radius: 6px;
+    background-color: $-primary-200;
+  }
+
+  .dropdown-wrapper {
+    li {
+      padding: 12px 20px;
+      text-align: left;
+      width: 100%;
+      border-radius: 6px;
+
+      &:hover {
+        background-color: $-primary-200;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// P A S S W O R D    I N P U T   W R A P P E R
+.password-input-wrapper {
+  @include flex(center, center, row);
+  background: #FFFFFF;
+  border: 1px solid $-gray-100;
+  border-radius: 6px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  margin-bottom: 8px;
+
+  input {
+    background: none;
+    border: none;
+    border-radius: 0;
+  }
+}

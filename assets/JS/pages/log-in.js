@@ -1,7 +1,6 @@
 const showPasswordBtn = document.querySelector(".show-password");
 const userNameField = document.querySelector("#email");
 const passwordField = document.querySelector("#password");
-const form = document.querySelector("form");
 
 function showPassword() {
   passwordField.type = "text";
