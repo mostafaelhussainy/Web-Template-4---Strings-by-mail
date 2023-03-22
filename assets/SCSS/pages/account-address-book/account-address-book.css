@@ -2421,7 +2421,8 @@ main .main-layout {
   }
 }
 main .main-layout .address,
-main .main-layout .update-address {
+main .main-layout .update-address,
+main .main-layout .add-address {
   position: absolute;
   width: 100%;
   max-width: 910px;
@@ -2487,7 +2488,8 @@ main .main-layout .addresses .address .controls button {
 main .main-layout .addresses .address .controls .btn--delete {
   color: #E2574C;
 }
-main .main-layout .update-address .back-to-addressbook {
+main .main-layout .update-address .back-to-addressbook,
+main .main-layout .add-address .back-to-addressbook {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -2497,10 +2499,12 @@ main .main-layout .update-address .back-to-addressbook {
   row-gap: unset;
   margin-bottom: 18px;
 }
-main .main-layout .update-address .back-to-addressbook h6 {
+main .main-layout .update-address .back-to-addressbook h6,
+main .main-layout .add-address .back-to-addressbook h6 {
   margin-bottom: 0;
 }
-main .main-layout .update-address .inputs-row {
+main .main-layout .update-address .inputs-row,
+main .main-layout .add-address .inputs-row {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -2509,7 +2513,8 @@ main .main-layout .update-address .inputs-row {
        column-gap: 12px;
   row-gap: unset;
 }
-main .main-layout .update-address .select-wrapper {
+main .main-layout .update-address .select-wrapper,
+main .main-layout .add-address .select-wrapper {
   background-color: #FFF;
   width: 100%;
   max-width: 910px;
@@ -2526,7 +2531,9 @@ main .main-layout .update-address .select-wrapper {
   height: 56px;
 }
 main .main-layout .update-address .select-wrapper select,
-main .main-layout .update-address .select-wrapper option {
+main .main-layout .update-address .select-wrapper option,
+main .main-layout .add-address .select-wrapper select,
+main .main-layout .add-address .select-wrapper option {
   background-color: none;
   background: none;
   border: none;
@@ -2539,12 +2546,16 @@ main .main-layout .update-address .select-wrapper option {
      -moz-appearance: none;
           appearance: none;
 }
-main .main-layout .update-address .select-wrapper select {
+main .main-layout .update-address .select-wrapper select,
+main .main-layout .add-address .select-wrapper select {
   color: #717171;
+  height: 100%;
 }
-main .main-layout .update-address label:last-of-type {
+main .main-layout .update-address label:last-of-type,
+main .main-layout .add-address label:last-of-type {
   margin-bottom: 37px !important;
 }
-main .main-layout .update-address .main-btn {
+main .main-layout .update-address .main-btn,
+main .main-layout .add-address .main-btn {
   margin-left: auto;
 }/*# sourceMappingURL=account-address-book.css.map */

@@ -28,6 +28,7 @@ const handlePhoneInput = () => {
 fetch("/assets/JSON/countries.json")
     .then((res) => res.json())
     .then((data) => {
+        console.log(data)
         countries = data;
         setCountryFlagsAndShortCode();
     });

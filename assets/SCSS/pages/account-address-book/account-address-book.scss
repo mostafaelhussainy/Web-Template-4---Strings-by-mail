@@ -39,7 +39,8 @@ main {
   .main-layout {
 
     .address,
-    .update-address {
+    .update-address,
+    .add-address {
       position: absolute;
       width: 100%;
       max-width: 910px;
@@ -95,7 +96,8 @@ main {
       }
     }
 
-    .update-address {
+    .update-address,
+    .add-address {
       .back-to-addressbook {
         @include flex(flex-start, center, row, 10px);
         margin-bottom: 18px;
@@ -134,6 +136,7 @@ main {
 
         select {
           color: $-gray-400 ;
+          height: 100%;
         }
       }
 
