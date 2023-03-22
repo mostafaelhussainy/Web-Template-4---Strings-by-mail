@@ -1176,6 +1176,18 @@ label:last-child {
   margin-bottom: 0;
 }
 
+.invalid {
+  color: #BE4E2E;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 7px;
+  column-gap: 7px;
+  row-gap: unset;
+  display: none;
+  margin-bottom: 0;
+}
+
 .invalid-input {
   border-color: #E2574C;
 }
@@ -2434,6 +2446,9 @@ main .main-layout {
     min-height: 780px;
   }
 }
+main .main-layout {
+  min-height: 785px;
+}
 main .main-layout .addresses {
   display: flex;
   justify-content: flex-start;
@@ -2442,6 +2457,7 @@ main .main-layout .addresses {
   -moz-column-gap: 12px;
        column-gap: 12px;
   row-gap: 12px;
+  position: relative !important;
 }
 main .main-layout .addresses .address {
   width: 100%;
@@ -2457,6 +2473,7 @@ main .main-layout .addresses .address {
        column-gap: 6px;
   row-gap: 6px;
   padding: 17px 23px;
+  position: relative;
 }
 main .main-layout .addresses .address:last-of-type {
   margin-bottom: 44px;

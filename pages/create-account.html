@@ -62,7 +62,7 @@
     <div class="lower-nav-wrapper">
       <div class="lower-nav-container">
         <!-- L O G O -->
-        <a href="#" class="logo">
+        <a href="/pages/home-page.html" class="logo">
           <figure>
             <img src="../assets/images/Logo/Logo.png"
               alt="website logo and title: 'Melodic Strings'">
@@ -209,20 +209,22 @@
         <!-- C U S T O M E R -->
         <div class="customer-wrapper">
           <figure>
+            <a href="/pages/account-profile.html">
             <img
               src="../assets/images/header/customerPortraitPlaceholder.png"
               alt="customer image placeholder">
+            </a>
             <figcaption>
               <span class="welcome p-small-12px-600">
                 Hi Welcome!
               </span>
               <div class="controls">
-                <a href="#" class="p-regular-16px-400">
+                <a href="/pages/log-in.html" class="p-regular-16px-400">
                   Login
                 </a>
                 <span class="p-regular-16px-400">
                   or </span>
-                <a href="#" class="p-regular-16px-400">
+                <a href="/pages/create-account.html" class="p-regular-16px-400">
                   Sign up
                 </a>
               </div>
@@ -540,7 +542,7 @@
           First Name
           <input required type="text" id="firstName">
           <p
-            class="p-small-12px-400 invalid-msg invalid-msg-firstName">
+            class="p-small-12px-400 invalid invalid-msg-firstName">
             <img src="../assets/icons/invalid-input.svg">
             Please fill out this field.
           </p>
@@ -549,7 +551,7 @@
           Last Name
           <input required type="text" id="lastName">
           <p
-            class="p-small-12px-400 invalid-msg invalid-msg-lastName">
+            class="p-small-12px-400 invalid invalid-msg-lastName">
             <img src="../assets/icons/invalid-input.svg">
             Please fill out this field.
           </p>
@@ -559,12 +561,12 @@
         Email
         <input required type="email" id="email">
         <p
-          class="p-small-12px-400 invalid-msg invalid-msg-email">
+          class="p-small-12px-400 invalid invalid-msg-email">
           <img src="../assets/icons/invalid-input.svg">
           Please fill out this field.
         </p>
         <p
-          class="p-small-12px-400 invalid-msg invalid-form-email">
+          class="p-small-12px-400 invalid invalid-form-email">
           <img src="../assets/icons/invalid-input.svg">
           Please fill out this with correct email form.
         </p>
@@ -576,7 +578,7 @@
         </span>
         <input required type="password" id="password">
         <p
-          class="p-small-12px-400 invalid-msg invalid-msg-password">
+          class="p-small-12px-400 invalid invalid-msg-password">
           <img src="../assets/icons/invalid-input.svg">
           Please fill out this field.
         </p>
@@ -598,9 +600,9 @@
           <a>Terms of Use</a>.
         </p>
         <p
-          class="p-small-12px-400 invalid-msg invalid-msg-terms">
+          class="p-small-12px-400 invalid invalid-msg-terms">
           <img src="../assets/icons/invalid-input.svg">
-          Please check out this field.
+          Please check out this box.
         </p>
       </label>
       <button class="main-btn buttontext" type="submit">
@@ -783,8 +785,7 @@
     src="../assets/JS/transitions-animations/toggle-btns.js"></script>
   <script
     src="../assets/JS/transitions-animations/bottom-to-top.js"></script>
-  <script
-    src="../assets/JS/pages/create-account.js"></script>
+  <script src="../assets/JS/tools/error-msg.js"></script>
 </body>
 
 </html>

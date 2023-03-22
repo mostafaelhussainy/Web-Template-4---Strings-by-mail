@@ -37,9 +37,11 @@ main {
   }
 
   .main-layout {
+    min-height: 785px;
 
     .addresses {
       @include flex(flex-start, flex-start, column, 12px, 12px);
+      position: relative !important;
 
       .address {
         width: 100%;
@@ -49,6 +51,7 @@ main {
         position: relative;
         @include flex(flex-start, flex-start, column, 6px, 6px);
         padding: 17px 23px;
+        position: relative;
 
         &:last-of-type {
           margin-bottom: 44px;

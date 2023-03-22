@@ -1176,6 +1176,18 @@ label:last-child {
   margin-bottom: 0;
 }
 
+.invalid {
+  color: #BE4E2E;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 7px;
+  column-gap: 7px;
+  row-gap: unset;
+  display: none;
+  margin-bottom: 0;
+}
+
 .invalid-input {
   border-color: #E2574C;
 }
@@ -2440,8 +2452,6 @@ aside .links li a:hover {
   max-width: 910px;
   height: 105px;
   justify-content: flex-start;
-  row-gap: 0;
-  margin-bottom: 0;
 }
 #register label span {
   position: absolute;
@@ -2451,7 +2461,6 @@ aside .links li a:hover {
 #register input:not([type=checkbox]) {
   width: 100%;
   max-width: 910px;
-  margin-top: 12px;
 }
 #register .checkbox-label {
   display: flex;
@@ -2477,6 +2486,10 @@ aside .links li a:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 3px;
+}
+#register .invalid-msg-terms {
+  position: absolute;
+  bottom: 0;
 }
 #register .main-btn {
   height: 55px;

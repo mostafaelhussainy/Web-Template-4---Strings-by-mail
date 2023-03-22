@@ -1,0 +1,16 @@
+@import '../../main.scss';
+
+#account--main .main-layout {
+  p:first-of-type {
+    margin-bottom: 39px;
+  }
+
+  label {
+    margin-bottom: 28px;
+  }
+
+  button {
+    display: block;
+    margin-left: auto;
+  }
+}

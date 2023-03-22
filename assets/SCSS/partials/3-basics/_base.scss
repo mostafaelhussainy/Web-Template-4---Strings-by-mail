@@ -112,6 +112,18 @@ label {
   margin-bottom: 0;
 }
 
+.invalid {
+  color: #BE4E2E;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 7px;
+  column-gap: 7px;
+  row-gap: unset;
+  display: none;
+  margin-bottom: 0;
+}
+
 .invalid-input {
   border-color: $Utility-danger;
 }

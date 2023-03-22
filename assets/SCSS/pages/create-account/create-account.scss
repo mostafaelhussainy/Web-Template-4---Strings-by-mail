@@ -36,8 +36,7 @@
     max-width: 910px;
     height: 105px;
     justify-content: flex-start;
-    row-gap: 0;
-    margin-bottom: 0;
+    // row-gap: 0;
 
     span {
       position: absolute;
@@ -49,7 +48,6 @@
   input:not([type='checkbox']) {
     width: 100%;
     max-width: 910px;
-    margin-top: 12px;
   }
 
   .checkbox-label {
@@ -72,6 +70,11 @@
       width: fit-content;
       margin-top: 3px;
     }
+  }
+
+  .invalid-msg-terms {
+    position: absolute;
+    bottom: 0;
   }
 
   .main-btn {

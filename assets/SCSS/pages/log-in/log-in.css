@@ -1176,6 +1176,18 @@ label:last-child {
   margin-bottom: 0;
 }
 
+.invalid {
+  color: #BE4E2E;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 7px;
+  column-gap: 7px;
+  row-gap: unset;
+  display: none;
+  margin-bottom: 0;
+}
+
 .invalid-input {
   border-color: #E2574C;
 }
@@ -2423,10 +2435,10 @@ body {
   margin-bottom: 35px;
 }
 
-form {
+#log-in-form {
   margin-bottom: 70px;
 }
-form .login-container {
+#log-in-form .login-container {
   width: 100%;
   max-width: 570px;
   background-color: #FFF;
@@ -2435,24 +2447,24 @@ form .login-container {
   margin-right: auto;
   margin-left: 0;
 }
-form .login-container h3 {
+#log-in-form .login-container h3 {
   margin-bottom: 6px;
 }
-form .login-container p {
+#log-in-form .login-container p {
   margin-bottom: 37px;
 }
-form .login-container label {
+#log-in-form .login-container label {
   margin-bottom: 12px;
   height: 100px;
   align-items: flex-start;
   position: relative;
   justify-content: flex-start;
 }
-form .login-container input {
+#log-in-form .login-container input {
   width: 100%;
   max-width: 515px;
 }
-form .login-container .input-wrapper {
+#log-in-form .login-container .input-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2468,13 +2480,13 @@ form .login-container .input-wrapper {
   width: 100%;
   margin-bottom: 8px;
 }
-form .login-container .input-wrapper input {
+#log-in-form .login-container .input-wrapper input {
   background: none;
   border: none;
   border-radius: 0;
 }
-form .login-container .invalid-username,
-form .login-container .invalid-password {
+#log-in-form .login-container .invalid-username,
+#log-in-form .login-container .invalid-password {
   color: #BE4E2E;
   display: flex;
   justify-content: flex-start;
@@ -2489,22 +2501,22 @@ form .login-container .invalid-password {
   left: 0;
   margin-bottom: 0;
 }
-form .login-container .forgot-password,
-form .login-container .main-btn {
+#log-in-form .login-container .forgot-password,
+#log-in-form .login-container .main-btn {
   margin-bottom: 46px;
   display: block;
 }
-form .login-container .forgot-password {
+#log-in-form .login-container .forgot-password {
   text-align: right;
 }
-form .login-container .main-btn {
+#log-in-form .login-container .main-btn {
   width: 100%;
   height: 55px;
 }
-form .login-container p:last-child {
+#log-in-form .login-container p:last-child {
   text-decoration: none !important;
   text-align: center;
 }
-form .login-container p:last-child a:hover {
+#log-in-form .login-container p:last-child a:hover {
   color: #BE4E2E;
 }/*# sourceMappingURL=log-in.css.map */
