@@ -38,15 +38,6 @@ main {
 
   .main-layout {
 
-    .address,
-    .update-address,
-    .add-address {
-      position: absolute;
-      width: 100%;
-      max-width: 910px;
-      top: 0;
-    }
-
     .addresses {
       @include flex(flex-start, flex-start, column, 12px, 12px);
 

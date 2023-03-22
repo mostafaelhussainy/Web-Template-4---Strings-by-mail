@@ -11,7 +11,7 @@
   <link rel="stylesheet"
     href="../assets/SCSS/footer/footer.css">
   <link rel="stylesheet"
-    href="../assets/SCSS/pages/account-address-book/account-address-book.css">
+    href="../assets/SCSS/pages/account-payment-methods/account-payment-methods.css">
   <title>Address Book</title>
 </head>
 
@@ -530,17 +530,18 @@
             </a>
           </li>
           <li>
-            <a class="p-regular-16px-400" href="./account-profile.html">
+            <a class="p-regular-16px-400">
               My Profile
             </a>
           </li>
           <li>
-            <a class="active p-regular-16px-400">
+            <a class="p-regular-16px-400"
+              href="./account-address-book.html">
               Address Book
             </a>
           </li>
           <li>
-            <a class="p-regular-16px-400"
+            <a class="active p-regular-16px-400"
               href="./account-payment-methods.html">
               Payment Methods
             </a>
@@ -557,7 +558,7 @@
         class="dropdown-parent">
         <span class="active p-regular-16px-400 dropdown-btn"
           data-dropdown="account">
-          My Profile
+          Payment Methods
           <img src="../assets/icons/dropdown.svg"
             id="icon-account">
         </span>
@@ -576,8 +577,8 @@
           </li>
           <li>
             <a class="p-regular-16px-400"
-              href="./account-payment-methods.html">
-              Payment Methods
+              href="./account-profile.html">
+              My profile
             </a>
           </li>
           <li>
@@ -590,248 +591,143 @@
       </div>
       <!-- A S I D E    E N D -->
 
-      <!-- P E R S O N A L    D E T A I L S    S T A R T -->
+      <!-- P A Y M E N T    M E T H O D S    S T A R T -->
       <main id="account--main">
         <div class="main-layout">
-          <div class="addresses animate animate--div div-book">
+          <div class="payment-methods-wrapper animate animate--div div-methods">
             <h6>
-              Address Book
+              Payment Methods
             </h6>
-            <div class="address">
-              <span class="address--name">
-                John Doe
-              </span>
-              <span class="address--street">
-                292 S La Cienega Blvd #100
-              </span>
-              <span class="address--city">
-                Beverly Hills
-              </span>
-              <span class="address--province">
-                California
-              </span>
-              <span class="address--postal-code">
-                90211
-              </span>
-              <span class="address--phone-number">
-                (310) 855-7504
-              </span>
-              <span class="address--country">
-                United States
-              </span>
-              <div class="controls">
-                <button
-                  class="btn--edit toggle-divs" target="edit">
-                  EDIT
-                </button>
-                <button class="btn--delete">
-                  DELETE
-                </button>
+            <p class="p-regular-16px-400">
+              View the payment profiles currently associated with your account below.
+            </p>
+            <div class="payment-methods">
+              <div class="payment-method">
+                <img src="../assets/icons/visa.svg">
+                <span class="payment-method-num">
+                  **** **** **** 1234
+                </span>
+                <div class="payment-method-control">
+                  <button class="buttontext tx-danger sub-btn pop-up-button" data-popup="delete">
+                    DELETE
+                  </button>
+                  <button class="buttontext sub-btn">
+                    SET AS DEFAULT
+                  </button>
+                </div>
+              </div>
+              <div class="payment-method">
+                <img src="../assets/icons/visa.svg">
+                <span class="payment-method-num">
+                  **** **** **** 1234
+                </span>
+                <div class="payment-method-control">
+                  <button class="buttontext tx-danger sub-btn pop-up-button" data-popup="delete">
+                    DELETE
+                  </button>
+                  <button class="buttontext sub-btn">
+                    SET AS DEFAULT
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="address">
-              <span class="address--name">
-                John Doe
-              </span>
-              <span class="address--street">
-                292 S La Cienega Blvd #100
-              </span>
-              <span class="address--city">
-                Beverly Hills
-              </span>
-              <span class="address--province">
-                California
-              </span>
-              <span class="address--postal-code">
-                90211
-              </span>
-              <span class="address--phone-number">
-                (310) 855-7504
-              </span>
-              <span class="address--country">
-                United States
-              </span>
-              <div class="controls">
-                <button
-                  class="btn--edit toggle-divs" target="edit">
-                  EDIT
-                </button>
-                <button class="btn--delete">
-                  DELETE
-                </button>
-              </div>
-            </div>
-            <button class="main-btn buttontext toggle-divs" target="add">
-              ADD NEW ADDRESS
+            <button class="main-btn buttontext toggle-divs" target="new">
+              ADD NEW CARD
             </button>
           </div>
-          <div
-            class="update-address animate animate--div fadeOutRight div-edit">
-            <div class="main-layout">
-              <button
-                class="back-to-addressbook toggle-divs" target="book">
-                <img src="../assets/icons/arrowLeft.svg">
-                <h6>
-                  Update address
-                </h6>
-              </button>
-              <div class="inputs-row">
-                <label>
-                  <span>
-                    First Name<i>*</i>
-                  </span>
-                  <input type="text" value="John"
-                    class="p-regular-16px-400">
-                </label>
-                <label>
-                  <span>
-                    Last Name<i>*</i>
-                  </span>
-                  <input type="text" value="Doe"
-                    class="p-regular-16px-400">
-                </label>
-              </div>
+          <form class="form-msg-check new-card-wrapper animate animate--div div-new fadeOutRight" id="card-form">
+            <button
+              class="back-to-addressbook toggle-divs" target="methods">
+              <img src="../assets/icons/arrowLeft.svg">
+              <h6>
+                Add address
+              </h6>
+            </button>
+            <p class="p-regular-16px-400">
+              Your credit card details are protected.
+            </p>
+            <p class="p-regular-16px-400">
+              We partner with Stripe so that your card details are safe. Melodic Strings will not have access to your card info.
+            </p>
+            <label>
+              Card Number
+              <input id="card-number" type="text"
+                 required
+                class="p-regular-16px-400">
+              <p class="p-small-12px-400 invalid">
+                <img src="../assets/icons/invalid-input.svg">
+                Please enter valid card number.
+              </p>
+            </label>
+            <label>
+              Card Name
+              <input id="card-name" type="text"
+                 required
+                class="p-regular-16px-400">
+              <p class="p-small-12px-400 invalid">
+                <img src="../assets/icons/invalid-input.svg">
+                Please enter valid name.
+              </p>
+            </label>
+            <div class="inputs-wrapper">
               <label>
-                <span>
-                  Address<i>*</i>
-                </span>
-                <input type="text"
-                  value="292 S La Cienega Blvd #100 Beverly Hills California 90211"
+                Card Expiry Date
+                <input id="expirt-date" type="date"
+                   required
                   class="p-regular-16px-400">
+                <p class="p-small-12px-400 invalid">
+                  <img src="../assets/icons/invalid-input.svg">
+                  Please enter valid card expiry date.
+                </p>
               </label>
-              <label>
-                <span>
-                  Country<i>*</i>
-                </span>
-                <div class="select-wrapper">
-                  <select class="select--country" select-target="province-select-1"></select>
-                  <img
-                    src="../assets/icons/dropdown-filled-arrow.svg" />
+              <label class="cvc-cvv-wrapper">
+                Card CVC/CVV
+                <div class="input-wrapper">
+                  <input id="cvc/cvv" type="text"
+                     required
+                    class="p-regular-16px-400">
+                  <img src="../assets/icons/info.svg">
                 </div>
+                <p class="p-small-12px-400 invalid">
+                  <img src="../assets/icons/invalid-input.svg">
+                  Please enter valid card CVC/CVV.
+                </p>
               </label>
-              <div class="inputs-row">
-                <label>
-                  <span>
-                    City<i>*</i>
-                  </span>
-                  <input type="text" value="Beverly Hills"
-                    class="p-regular-16px-400">
-                </label>
-                <label>
-                  <span>
-                    State/Province<i>*</i>
-                  </span>
-                  <div class="select-wrapper">
-                    <select  class="select--province" select-id="province-select-1"></select>
-                    <img
-                      src="../assets/icons/dropdown-filled-arrow.svg" />
-                  </div>
-                </label>
-              </div>
-              <label>
-                <span>
-                  Zip/Postal Code<i>*</i>
-                </span>
-                <input type="text" value="90211"
-                  class="p-regular-16px-400">
-              </label>
-              <label>
-                <span>
-                  Phone Number<i>*</i>
-                </span>
-                <input type="tel" value="310 855 7504"
-                  class="p-regular-16px-400">
-              </label>
-              <button class="main-btn buttontext">
-                SAVE CHANGES
-              </button>
             </div>
-          </div>
-          <div
-            class="add-address animate animate--div fadeOutRight div-add">
-            <div class="main-layout">
-              <button
-                class="back-to-addressbook toggle-divs" target="book">
-                <img src="../assets/icons/arrowLeft.svg">
-                <h6>
-                  Add address
-                </h6>
-              </button>
-              <div class="inputs-row">
-                <label>
-                  <span>
-                    First Name<i>*</i>
-                  </span>
-                  <input type="text" value="John"
-                    class="p-regular-16px-400">
-                </label>
-                <label>
-                  <span>
-                    Last Name<i>*</i>
-                  </span>
-                  <input type="text" value="Doe"
-                    class="p-regular-16px-400">
-                </label>
-              </div>
-              <label>
-                <span>
-                  Address<i>*</i>
-                </span>
-                <input type="text"
-                  value="292 S La Cienega Blvd #100 Beverly Hills California 90211"
-                  class="p-regular-16px-400">
-              </label>
-              <label>
-                <span>
-                  Country<i>*</i>
-                </span>
-                <div class="select-wrapper">
-                  <select class="select--country" select-target="province-select-2"></select>
-                  <img
-                    src="../assets/icons/dropdown-filled-arrow.svg" />
-                </div>
-              </label>
-              <div class="inputs-row">
-                <label>
-                  <span>
-                    City<i>*</i>
-                  </span>
-                  <input type="text" value="Beverly Hills"
-                    class="p-regular-16px-400">
-                </label>
-                <label>
-                  <span>
-                    State/Province<i>*</i>
-                  </span>
-                  <div class="select-wrapper">
-                    <select  class="select--province" select-id="province-select-2"></select>
-                    <img
-                      src="../assets/icons/dropdown-filled-arrow.svg" />
-                  </div>
-                </label>
-              </div>
-              <label>
-                <span>
-                  Zip/Postal Code<i>*</i>
-                </span>
-                <input type="text" value="90211"
-                  class="p-regular-16px-400">
-              </label>
-              <label>
-                <span>
-                  Phone Number<i>*</i>
-                </span>
-                <input type="tel" value="310 855 7504"
-                  class="p-regular-16px-400">
-              </label>
-              <button class="main-btn buttontext">
-                SAVE ADDRESS
-              </button>
-            </div>
-          </div>
+            <button class="main-btn buttontext" type="submit">
+              SUBMIT
+            </button>
+          </form>
         </div>
       </main>
-      <!-- P E R S O N A L    D E T A I L S    E N D -->
+
+      <!-- P O P - U P    W R A P P E R -->
+      <div class="overlay-wrapper delete-popup" id="delete-pop-up">
+        <!-- P O P - U P    O V E R L A Y -->
+        <i class="pop-up-overlay close-pop-up" data-popup="delete" id="delete-pop-up-overlay"></i>
+        <div class="pop-up">
+        <!-- P O P - U P    T I T L E -->
+        <h5>
+          Delete address?
+          <!-- P O P - U P    C L O S E   I C O N -->
+          <img src="../assets/icons/close.svg"
+          class="close-pop-up" data-popup="delete">
+        </h5>
+        <!-- P O P - U P    C O N T E N T -->
+        <p class="p-regular-16px-400">
+          If you delete this address you won’t we able to recover it. Do you want to delete it?
+        </p>
+        <div class="controls">
+          <button class="sub-btn buttontext close-pop-up" data-popup="delete">
+            CANCEL
+          </button>
+          <button class="main-btn buttontext">
+            DELETE
+          </button>
+        </div>
+      </div>
+      
+      <!-- P A Y M E N T    M E T H O D S    E N D -->
     </div>
   </div>
   <!-- L A Y O U T    E N D  -->
@@ -1008,9 +904,10 @@
     src="../assets/JS/transitions-animations/toggle-btns.js"></script>
   <script
     src="../assets/JS/transitions-animations/bottom-to-top.js"></script>
+  <script src="../assets/JS/tools/toggle-divs.js"></script>
+  <script src="../assets/JS/tools/error-msg.js"></script>
   <script
-    src="../assets/JS/tools/toggle-divs.js"></script>
-    <script src="../assets/JS/tools/options-countries-provinces.js"></script>
+  src="../assets/JS/transitions-animations/pop-up.js"></script>
 </body>
 
 </html>

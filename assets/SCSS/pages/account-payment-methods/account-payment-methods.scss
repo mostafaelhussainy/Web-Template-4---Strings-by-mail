@@ -1,0 +1,130 @@
+@import '../../main.scss';
+
+// P A Y M E N T    M E T H O D S    S T Y L E
+#account--main {
+  .main-layout {
+    min-height: 800px;
+    overflow: hidden;
+
+    p {
+      margin-bottom: 36px;
+    }
+
+    .payment-methods-wrapper {
+      .payment-methods {
+        @include flex(flex-start, flex-start, column, unset, 12px);
+        margin-bottom: 44px;
+
+        .payment-method {
+          width: 100%;
+          max-width: 778px;
+          background: #FFFFFF;
+          border: 1px solid $-gray-100;
+          border-radius: 6px;
+          @include flex(space-between, center, row, 30px);
+          flex-wrap: wrap;
+          padding: 17px 12px;
+
+          .payment-method-control {
+            @include flex(space-between, center, row, 20px);
+            width: fit-content;
+
+            @include respond-to(sm) {
+              margin-left: auto;
+            }
+
+            button {
+              white-space: nowrap;
+              height: 44px;
+              width: fit-content;
+              padding: 10px;
+            }
+
+            .tx-danger:hover {
+              border-color: $Utility-danger;
+            }
+          }
+        }
+      }
+    }
+
+    .new-card-wrapper {
+      .back-to-addressbook {
+        @include flex(flex-start, center, row, 20px);
+      }
+
+      label {
+        &:last-of-type {
+          margin-bottom: 12px;
+        }
+
+        .invalid {
+          color: $Secondary;
+          @include flex(flex-start, center, row, 7px);
+          display: none;
+          margin-bottom: 0;
+        }
+
+        input {
+          max-width: 650px;
+        }
+      }
+
+      .inputs-wrapper {
+        max-width: 650px;
+        @include flex(center, flex-start, row, 12px);
+
+        .cvc-cvv-wrapper {
+          width: 30%;
+
+          @include respond-to(md) {
+            width: 100%;
+          }
+
+          .input-wrapper {
+            position: relative;
+
+            img {
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              transform: translateY(-50%);
+            }
+          }
+
+          .invalid {
+            align-items: flex-start;
+
+            img {
+              margin-top: 3px;
+            }
+
+            text-align: left;
+          }
+        }
+
+        @include respond-to(md) {
+          width: 100%;
+        }
+
+        @include respond-to(md) {
+          .invalid {
+            align-items: flex-start;
+            text-align: left;
+
+            img {
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.delete-popup {
+  .controls {
+    @include flex(flex-end, center, row, 10px);
+    width: 100%;
+  }
+}

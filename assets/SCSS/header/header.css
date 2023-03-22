@@ -780,12 +780,12 @@ button.swiper-pagination-bullet {
 }
 
 .animate {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.45s ease-in-out;
 }
 
 .fadeOutRight {
   opacity: 0;
-  transform: translate3d(100%, 0, 0);
+  transform: translate3d(3000px, 0, 0);
 }
 
 button {
@@ -1174,6 +1174,10 @@ label:last-child {
   bottom: 0;
   left: 0;
   margin-bottom: 0;
+}
+
+.invalid-input {
+  border-color: #E2574C;
 }
 
 .main-border-bottom {
@@ -1696,7 +1700,8 @@ aside .links li a:hover {
   padding: 30px;
   height: -moz-fit-content;
   height: fit-content;
-  width: 653px;
+  width: 80%;
+  max-width: 653px;
   background: #FFFFFF;
   border-radius: 12px;
   display: flex;
@@ -1706,6 +1711,7 @@ aside .links li a:hover {
   -moz-column-gap: 5px;
        column-gap: 5px;
   row-gap: 20px;
+  overflow-y: auto;
 }
 .overlay-wrapper .pop-up h5 {
   display: flex;
@@ -2252,6 +2258,7 @@ aside .links li a:hover {
 
 #layout {
   margin-bottom: 200px;
+  overflow: hidden;
 }
 @media (max-width: 1400px) {
   #layout {
@@ -2276,6 +2283,13 @@ aside .links li a:hover {
 #account--main {
   width: 100%;
   max-width: 910px;
+  position: relative;
+}
+#account--main .animate--div {
+  position: absolute;
+  width: 100%;
+  max-width: 910px;
+  top: 0;
 }
 #account--main label {
   font-family: "Mulish";

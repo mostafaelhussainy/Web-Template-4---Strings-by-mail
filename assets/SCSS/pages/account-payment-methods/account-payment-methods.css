@@ -2407,74 +2407,78 @@ aside .links li a:hover {
   border-radius: 0;
 }
 
-body {
-  padding-top: 185px;
-  background-image: url(../../../images/log-in/log-in-bg.png);
-  background-repeat: no-repeat;
-  background-position: top right;
+#account--main .main-layout {
+  min-height: 800px;
+  overflow: hidden;
 }
-@media (max-width: 1720px) {
-  body {
-    background-image: none;
-  }
+#account--main .main-layout p {
+  margin-bottom: 36px;
 }
-
-#bread-crumb {
-  margin-bottom: 35px;
-}
-
-form {
-  margin-bottom: 70px;
-}
-form .login-container {
-  width: 100%;
-  max-width: 570px;
-  background-color: #FFF;
-  border-radius: 12px;
-  padding: 30px;
-  margin-right: auto;
-  margin-left: 0;
-}
-form .login-container h3 {
-  margin-bottom: 6px;
-}
-form .login-container p {
-  margin-bottom: 37px;
-}
-form .login-container label {
-  margin-bottom: 12px;
-  height: 100px;
-  align-items: flex-start;
-  position: relative;
-  justify-content: flex-start;
-}
-form .login-container input {
-  width: 100%;
-  max-width: 515px;
-}
-form .login-container .input-wrapper {
+#account--main .main-layout .payment-methods-wrapper .payment-methods {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
   -moz-column-gap: unset;
        column-gap: unset;
-  row-gap: unset;
+  row-gap: 12px;
+  margin-bottom: 44px;
+}
+#account--main .main-layout .payment-methods-wrapper .payment-methods .payment-method {
+  width: 100%;
+  max-width: 778px;
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
   border-radius: 6px;
-  padding-left: 16px;
-  padding-right: 16px;
-  width: 100%;
-  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: unset;
+  flex-wrap: wrap;
+  padding: 17px 12px;
 }
-form .login-container .input-wrapper input {
-  background: none;
-  border: none;
-  border-radius: 0;
+#account--main .main-layout .payment-methods-wrapper .payment-methods .payment-method .payment-method-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: unset;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-form .login-container .invalid-username,
-form .login-container .invalid-password {
+@media (max-width: 576px) {
+  #account--main .main-layout .payment-methods-wrapper .payment-methods .payment-method .payment-method-control {
+    margin-left: auto;
+  }
+}
+#account--main .main-layout .payment-methods-wrapper .payment-methods .payment-method .payment-method-control button {
+  white-space: nowrap;
+  height: 44px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+}
+#account--main .main-layout .payment-methods-wrapper .payment-methods .payment-method .payment-method-control .tx-danger:hover {
+  border-color: #E2574C;
+}
+#account--main .main-layout .new-card-wrapper .back-to-addressbook {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: unset;
+}
+#account--main .main-layout .new-card-wrapper label:last-of-type {
+  margin-bottom: 12px;
+}
+#account--main .main-layout .new-card-wrapper label .invalid {
   color: #BE4E2E;
   display: flex;
   justify-content: flex-start;
@@ -2484,27 +2488,67 @@ form .login-container .invalid-password {
        column-gap: 7px;
   row-gap: unset;
   display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   margin-bottom: 0;
 }
-form .login-container .forgot-password,
-form .login-container .main-btn {
-  margin-bottom: 46px;
-  display: block;
+#account--main .main-layout .new-card-wrapper label input {
+  max-width: 650px;
 }
-form .login-container .forgot-password {
-  text-align: right;
+#account--main .main-layout .new-card-wrapper .inputs-wrapper {
+  max-width: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  row-gap: unset;
 }
-form .login-container .main-btn {
+#account--main .main-layout .new-card-wrapper .inputs-wrapper .cvc-cvv-wrapper {
+  width: 30%;
+}
+@media (max-width: 768px) {
+  #account--main .main-layout .new-card-wrapper .inputs-wrapper .cvc-cvv-wrapper {
+    width: 100%;
+  }
+}
+#account--main .main-layout .new-card-wrapper .inputs-wrapper .cvc-cvv-wrapper .input-wrapper {
+  position: relative;
+}
+#account--main .main-layout .new-card-wrapper .inputs-wrapper .cvc-cvv-wrapper .input-wrapper img {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+#account--main .main-layout .new-card-wrapper .inputs-wrapper .cvc-cvv-wrapper .invalid {
+  align-items: flex-start;
+  text-align: left;
+}
+#account--main .main-layout .new-card-wrapper .inputs-wrapper .cvc-cvv-wrapper .invalid img {
+  margin-top: 3px;
+}
+@media (max-width: 768px) {
+  #account--main .main-layout .new-card-wrapper .inputs-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #account--main .main-layout .new-card-wrapper .inputs-wrapper .invalid {
+    align-items: flex-start;
+    text-align: left;
+  }
+  #account--main .main-layout .new-card-wrapper .inputs-wrapper .invalid img {
+    margin-top: 3px;
+  }
+}
+
+.delete-popup .controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: unset;
   width: 100%;
-  height: 55px;
-}
-form .login-container p:last-child {
-  text-decoration: none !important;
-  text-align: center;
-}
-form .login-container p:last-child a:hover {
-  color: #BE4E2E;
-}/*# sourceMappingURL=log-in.css.map */
+}/*# sourceMappingURL=account-payment-methods.css.map */

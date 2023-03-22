@@ -2,6 +2,7 @@
 /// L A Y O U T   S T Y L E
 #layout {
   margin-bottom: 200px;
+  overflow: hidden;
 
   @include respond-to(xxl) {
     margin-bottom: 115px;
@@ -20,6 +21,14 @@
 #account--main {
   width: 100%;
   max-width: 910px;
+  position: relative;
+
+  .animate--div {
+    position: absolute;
+    width: 100%;
+    max-width: 910px;
+    top: 0;
+  }
 
   // L A B E L    S T Y L E S
   label {

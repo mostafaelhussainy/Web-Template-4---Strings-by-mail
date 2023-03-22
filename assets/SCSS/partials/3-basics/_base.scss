@@ -112,6 +112,10 @@ label {
   margin-bottom: 0;
 }
 
+.invalid-input {
+  border-color: $Utility-danger;
+}
+
 // B O R D E R    B O T T O M
 .main-border-bottom {
   border-bottom: 1px solid $-gray-100;

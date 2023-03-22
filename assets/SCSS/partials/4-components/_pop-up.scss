@@ -23,10 +23,12 @@
     position: fixed;
     padding: 30px;
     height: fit-content;
-    width: clamp(350px, 653px, 653px);
+    width: 80%;
+    max-width: 653px;
     background: #FFFFFF;
     border-radius: 12px;
     @include flex(center, flex-start, column, 5px, 20px);
+    overflow-y: auto;
 
     h5 {
       @include flex(space-between, center, row);
