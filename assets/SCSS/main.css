@@ -1570,6 +1570,7 @@ aside .links li a:hover {
   width: -moz-fit-content;
   width: fit-content;
   background: #FFF;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .product-card {
