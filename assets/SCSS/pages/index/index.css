@@ -780,7 +780,7 @@ button.swiper-pagination-bullet {
 }
 
 .animate {
-  transition: all 0.45s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
 }
 
 .fadeOutRight {
@@ -3095,7 +3095,6 @@ aside .links li a:hover {
   right: 50px;
   bottom: 200px;
   z-index: 999;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   width: -moz-fit-content;
   width: fit-content;
 }

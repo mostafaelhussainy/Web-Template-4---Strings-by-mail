@@ -41,7 +41,7 @@ const subscribeBtn = document.querySelector("#subscribe-btn");
 const subscribeInput = newsLetterPopUp.querySelector("input");
 
 closeNewsLetterBtn.addEventListener("click", () => {
-  newsLetterPopUp.classList.add("closeNewsLetter")
+  newsLetterPopUp.classList.add("fadeOutRight")
 });
 
 const subscribeToNewsLetter = (e) => {
