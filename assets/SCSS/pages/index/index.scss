@@ -636,6 +636,7 @@
   bottom: 200px;
   z-index: 999;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: fit-content;
 
   .news-letter-container {
     padding: 33.5px 30px;
@@ -654,11 +655,26 @@
       label {
         max-width: 345px;
         margin-bottom: 0px;
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+
+        input {
+          width: 323px;
+        }
+
+        .invalid {
+          position: absolute;
+          bottom: -25px;
+          left: 0;
+        }
       }
 
       .main-btn {
-        height: 48px;
+        height: 56px;
         width: 188px;
+        @include flex(center, center, row, 10px);
+        margin-bottom: 10px;
       }
     }
 

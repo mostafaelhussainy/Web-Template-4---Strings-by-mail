@@ -11,7 +11,7 @@
   <link rel="stylesheet"
     href="../assets/SCSS/footer/footer.css">
   <link rel="stylesheet"
-    href="../assets/SCSS/pages/home-page/home-page.css">
+    href="../assets/SCSS/pages/index/index.css">
   <title>Home page</title>
 </head>
 
@@ -1631,7 +1631,7 @@
   <!-- C O N T A C T    U S    E N D -->
 
   <!-- N E W S    L E T T E R   S T A R T -->
-  <section id="news-letter">
+  <form id="news-letter">
     <div class="news-letter-container">
       <h4>
         Sign up to our newsletter
@@ -1639,9 +1639,14 @@
       <div class="news-letter-row">
         <label>
           Email
-          <input type="email" class="msg-email">
+          <input type="email" class="msg-email" required>
+          <p
+            class="p-small-12px-400 invalid invalid-msg-firstName">
+            <img src="../assets/icons/invalid-input.svg">
+            Please fill out this field with a valid email.
+          </p>
         </label>
-        <button class="main-btn">
+        <button class="main-btn buttontext" id="subscribe-btn">
           <img src="../assets/icons/news-mail.svg"
             alt="mail">
           SUBSCRIBE
@@ -1656,7 +1661,7 @@
           alt="close icon">
       </button>
     </div>
-  </section>
+  </form>
   <!-- N E W S    L E T T E R   S T A R T -->
 
   <!-- H O M E    P A G E    E N D -->
@@ -1827,7 +1832,8 @@
     src="../assets/JS/transitions-animations/pop-up.js"></script>
   <script
     src="../assets/JS/tools/swiper-bundle.min.js"></script>
-  <script src="../assets/JS/pages/home-page.js"></script>
+
+    <script src="../assets/JS/pages/index.js"></script>
 </body>
 
 </html>

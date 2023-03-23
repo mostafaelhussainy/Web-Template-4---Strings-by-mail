@@ -1177,7 +1177,7 @@ label:last-child {
 }
 
 .invalid {
-  color: #BE4E2E;
+  color: #BE4E2E !important;
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
@@ -3096,6 +3096,8 @@ aside .links li a:hover {
   bottom: 200px;
   z-index: 999;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 #news-letter .news-letter-container {
   padding: 33.5px 30px;
@@ -3119,10 +3121,29 @@ aside .links li a:hover {
 #news-letter .news-letter-container .news-letter-row label {
   max-width: 345px;
   margin-bottom: 0px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+#news-letter .news-letter-container .news-letter-row label input {
+  width: 323px;
+}
+#news-letter .news-letter-container .news-letter-row label .invalid {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
 }
 #news-letter .news-letter-container .news-letter-row .main-btn {
-  height: 48px;
+  height: 56px;
   width: 188px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: unset;
+  margin-bottom: 10px;
 }
 #news-letter .news-letter-container p {
   max-width: 395px;
@@ -3142,4 +3163,4 @@ aside .links li a:hover {
 .closeNewsLetter {
   opacity: 0;
   transform: translate3d(100%, 0, 0);
-}/*# sourceMappingURL=home-page.css.map */
+}/*# sourceMappingURL=index.css.map */
