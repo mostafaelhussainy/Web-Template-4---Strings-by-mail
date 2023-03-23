@@ -637,6 +637,12 @@
   z-index: 999;
   width: fit-content;
 
+  @include respond-to(md) {
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%);
+  }
+
   .news-letter-container {
     padding: 33.5px 30px;
     background: #FFFFFF;
@@ -650,6 +656,10 @@
     .news-letter-row {
       @include flex(flex-start, flex-end, row, 8px);
       margin-bottom: 25px;
+
+      @include respond-to(md) {
+        flex-direction: column;
+      }
 
       label {
         max-width: 345px;
