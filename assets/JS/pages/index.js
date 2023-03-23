@@ -6,6 +6,11 @@ categories.forEach((category, i) => {
   category.style.animationDelay = `${delay}s`
 })
 
+// var swiper = new Swiper(".categoriesSlider", {
+//   freeMode: true,
+//   spaceBetween: 15,
+// });
+
 ///////////////////////////////////////////////////////
 
 // T E S T I M O N I A L S

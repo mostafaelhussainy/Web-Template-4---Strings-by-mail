@@ -2498,8 +2498,18 @@ main .main-layout .orders-list .col .download:hover {
   flex-direction: row;
   -moz-column-gap: unset;
        column-gap: unset;
-  row-gap: unset;
+  row-gap: 20px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+#receipt .heading .title-row h4,
+#receipt .heading .title-row img,
+#receipt .heading .title-row div {
+  width: 50%;
+}
+#receipt .heading .title-row img {
+  width: 121px;
+  height: 53px;
 }
 #receipt .heading .order-no {
   display: flex;
@@ -2509,6 +2519,8 @@ main .main-layout .orders-list .col .download:hover {
   -moz-column-gap: 20px;
        column-gap: 20px;
   row-gap: unset;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
 }
 #receipt .heading .order-no h5 {
   color: #BE4E2E;
@@ -2589,6 +2601,10 @@ main .main-layout .orders-list .col .download:hover {
   row-gap: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  -moz-column-break-after: avoid;
+       break-after: avoid;
 }
 #receipt .order-prices li {
   display: flex;
@@ -2599,6 +2615,12 @@ main .main-layout .orders-list .col .download:hover {
        column-gap: unset;
   row-gap: unset;
   width: 100%;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  -moz-column-break-after: avoid;
+       break-after: avoid;
+  -moz-column-break-before: avoid;
+       break-before: avoid;
 }
 #receipt .order-total {
   display: flex;
@@ -2608,6 +2630,12 @@ main .main-layout .orders-list .col .download:hover {
   -moz-column-gap: unset;
        column-gap: unset;
   row-gap: unset;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  -moz-column-break-after: avoid;
+       break-after: avoid;
+  -moz-column-break-before: avoid;
+       break-before: avoid;
 }
 #receipt .order-total .total-price {
   font-family: "Mulish";
