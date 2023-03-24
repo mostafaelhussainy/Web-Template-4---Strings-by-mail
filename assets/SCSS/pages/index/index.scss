@@ -55,64 +55,88 @@
   .container {
     width: 100%;
     max-width: none;
-    position: relative;
-    height: 329px;
+    min-height: 329px;
 
+    .swiper {
+      width: 100%;
+      height: 100%;
 
+      @include respond-to(sm) {
+        display: none;
+      }
 
-    .imgs-wrapper {
-      @include flex(center, flex-start, row, 16px);
-      height: fit-content;
-      width: fit-content;
-      position: absolute;
-      right: 0px;
-      bottom: 0px;
-
-      .animation-target {
+      .swiper-wrapper {
         position: relative;
-        @include fadeInLeft(0.5s, 0.5s);
+
+        .animation-target {
+          position: relative;
+          @include fadeInLeft(0.5s, 0.5s);
+          width: fit-content !important;
+          height: fit-content !important;
+
+          figure {
+            width: fit-content;
+            height: fit-content;
+
+            img {
+              @include image-fit(235px, 246px, cover, center);
+              border-radius: 5px;
+            }
+          }
+        }
+
+        a:nth-child(1) {
+          margin-top: 0;
+        }
+
+        a:nth-child(2),
+        a:nth-child(11) {
+          position: relative;
+          margin-top: 65px;
+        }
+
+        a:nth-child(3),
+        a:nth-child(9),
+        a:nth-child(12) {
+          margin-top: 25px;
+        }
+
+        a:nth-child(4),
+        a:nth-child(8),
+        a:nth-child(10) {
+          margin-top: 85px;
+        }
+
+        a:nth-child(5),
+        a:nth-child(7) {
+          margin-top: 35px;
+        }
+
+        a:nth-child(6) {
+          margin-top: 100px;
+        }
+      }
+    }
+
+    .imgs-wrapper-mobile {
+      display: none;
+
+      @include respond-to(sm) {
+        @include flex(center, flex-start, row, 10px, 10px);
+        flex-wrap: wrap;
 
         figure {
           width: fit-content;
           height: fit-content;
 
           img {
-            @include image-fit(235px, 246px, cover, center);
+            @include image-fit(110px, 120px, cover, center);
             border-radius: 5px;
           }
         }
       }
-
-      a:nth-child(1) {
-        bottom: 83px;
-      }
-
-      a:nth-child(2) {
-        bottom: 15px;
-      }
-
-      a:nth-child(3) {
-        bottom: 60px;
-      }
-
-      a:nth-child(4) {
-        bottom: 0px;
-      }
-
-      a:nth-child(5) {
-        bottom: 47px;
-      }
-
-      a:nth-child(6) {
-        bottom: 3px;
-      }
-
-      a:nth-child(7) {
-        bottom: 60px;
-      }
     }
   }
-
 }
 
 //////////////////////////////////////////////////////

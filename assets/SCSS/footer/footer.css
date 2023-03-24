@@ -785,7 +785,7 @@ button.swiper-pagination-bullet {
 
 .fadeOutRight {
   opacity: 0;
-  transform: translate3d(3000px, 0, 0);
+  transform: translate3d(3000px, 0, 0) !important;
 }
 
 button {

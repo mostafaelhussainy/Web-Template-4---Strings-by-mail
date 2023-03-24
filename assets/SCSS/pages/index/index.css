@@ -785,7 +785,7 @@ button.swiper-pagination-bullet {
 
 .fadeOutRight {
   opacity: 0;
-  transform: translate3d(3000px, 0, 0);
+  transform: translate3d(3000px, 0, 0) !important;
 }
 
 button {
@@ -2478,36 +2478,35 @@ aside .links li a:hover {
 #categories .container {
   width: 100%;
   max-width: none;
+  min-height: 329px;
+}
+#categories .container .swiper {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 576px) {
+  #categories .container .swiper {
+    display: none;
+  }
+}
+#categories .container .swiper .swiper-wrapper {
   position: relative;
-  height: 329px;
 }
-#categories .container .imgs-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-  row-gap: unset;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-#categories .container .imgs-wrapper .animation-target {
+#categories .container .swiper .swiper-wrapper .animation-target {
   position: relative;
   animation: fadeInLeft 0.5s ease-out 0.5s both;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
-#categories .container .imgs-wrapper .animation-target figure {
+#categories .container .swiper .swiper-wrapper .animation-target figure {
   width: -moz-fit-content;
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
-#categories .container .imgs-wrapper .animation-target figure img {
+#categories .container .swiper .swiper-wrapper .animation-target figure img {
   width: 235px;
   height: 246px;
   -o-object-fit: cover;
@@ -2516,26 +2515,60 @@ aside .links li a:hover {
      object-position: center;
   border-radius: 5px;
 }
-#categories .container .imgs-wrapper a:nth-child(1) {
-  bottom: 83px;
+#categories .container .swiper .swiper-wrapper a:nth-child(1) {
+  margin-top: 0;
 }
-#categories .container .imgs-wrapper a:nth-child(2) {
-  bottom: 15px;
+#categories .container .swiper .swiper-wrapper a:nth-child(2),
+#categories .container .swiper .swiper-wrapper a:nth-child(11) {
+  position: relative;
+  margin-top: 65px;
 }
-#categories .container .imgs-wrapper a:nth-child(3) {
-  bottom: 60px;
+#categories .container .swiper .swiper-wrapper a:nth-child(3),
+#categories .container .swiper .swiper-wrapper a:nth-child(9),
+#categories .container .swiper .swiper-wrapper a:nth-child(12) {
+  margin-top: 25px;
 }
-#categories .container .imgs-wrapper a:nth-child(4) {
-  bottom: 0px;
+#categories .container .swiper .swiper-wrapper a:nth-child(4),
+#categories .container .swiper .swiper-wrapper a:nth-child(8),
+#categories .container .swiper .swiper-wrapper a:nth-child(10) {
+  margin-top: 85px;
 }
-#categories .container .imgs-wrapper a:nth-child(5) {
-  bottom: 47px;
+#categories .container .swiper .swiper-wrapper a:nth-child(5),
+#categories .container .swiper .swiper-wrapper a:nth-child(7) {
+  margin-top: 35px;
 }
-#categories .container .imgs-wrapper a:nth-child(6) {
-  bottom: 3px;
+#categories .container .swiper .swiper-wrapper a:nth-child(6) {
+  margin-top: 100px;
 }
-#categories .container .imgs-wrapper a:nth-child(7) {
-  bottom: 60px;
+#categories .container .imgs-wrapper-mobile {
+  display: none;
+}
+@media (max-width: 576px) {
+  #categories .container .imgs-wrapper-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+  }
+  #categories .container .imgs-wrapper-mobile figure {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #categories .container .imgs-wrapper-mobile figure img {
+    width: 110px;
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    border-radius: 5px;
+  }
 }
 
 .pre-header {
