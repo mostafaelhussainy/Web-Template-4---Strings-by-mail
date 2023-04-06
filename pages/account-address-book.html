@@ -626,7 +626,7 @@
                   class="btn--edit toggle-divs" target="edit">
                   EDIT
                 </button>
-                <button class="btn--delete">
+                <button class="btn--delete pop-up-button" data-popup="del-form">
                   DELETE
                 </button>
               </div>
@@ -653,14 +653,31 @@
               <span class="address--country">
                 United States
               </span>
+              <span class="default-address p-subtitle-14px-500 tx-green">Default address</span>
               <div class="controls">
                 <button
                   class="btn--edit toggle-divs" target="edit">
                   EDIT
                 </button>
-                <button class="btn--delete">
+                <button class="btn--delete pop-up-button" data-popup="del-form">
                   DELETE
                 </button>
+              </div>
+              <div class="overlay-wrapper" id="del-form-pop-up">
+                <i class="pop-up-overlay close-pop-up" data-popup="del-form" id="del-form-pop-up-overlay"></i>
+                <div class="pop-up">
+                  <h5>
+                    Delete address?
+                    <img src="../assets/icons/close.svg"
+                      class="close-pop-up" data-popup="del-form">
+                  </h5>
+                  <p class="p-regular-16px-400">
+                    If you delete this address you won’t we able to recover it. Do you want to delete it?
+                  </p>
+                  <button class="sec-btn close-pop-up" data-popup="del-form">
+                    CANCEL
+                  </button>
+                </div>
               </div>
             </div>
             <button class="main-btn buttontext toggle-divs" target="add">
@@ -1004,6 +1021,8 @@
   <!-- F O O T E R    E N D -->
   <script
     src="../assets/JS/transitions-animations/aside.js"></script>
+    <script
+    src="../assets/JS/transitions-animations/pop-up.js"></script>
   <script
     src="../assets/JS/transitions-animations/dropdown.js"></script>
   <script

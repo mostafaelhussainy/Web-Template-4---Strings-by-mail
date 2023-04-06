@@ -25,6 +25,7 @@ main {
   @include respond-to(md) {
     margin-bottom: 145px;
     max-width: 90%;
+    padding: 20px;
   }
 }
 
@@ -56,7 +57,7 @@ main {
   flex-wrap: wrap;
 
   @include respond-to(md) {
-    @include grid(repeat(2, 1fr), auto auto, 50px, 18px)
+    @include grid(repeat(2, 1fr), auto auto, 35px, 18px)
   }
 
   .order-detail-col {
@@ -66,12 +67,22 @@ main {
     p {
       max-width: 220px;
 
-      @include respond-to(md) {
+      @include respond-to(sm) {
         max-width: 150px;
       }
 
       &:first-child {
         color: $-gray-400;
+      }
+    }
+  }
+
+  .order-detail-col-billing {
+    @include respond-to(md) {
+      grid-column: 1 / span 2;
+
+      p {
+        max-width: unset;
       }
     }
   }

@@ -66,6 +66,16 @@ main {
           color: $-gray-700;
         }
 
+        .default-address {
+          position: absolute;
+          top: 17px;
+          right: 12px;
+          background: #E8FFEC;
+          border: 1px solid #0DAA26;
+          border-radius: 41px;
+          padding: 6.5px 17.5px;
+        }
+
         .controls {
           position: absolute;
           bottom: 17px;

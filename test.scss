@@ -1,0 +1,45 @@
+@import '../../main.scss';
+
+////////////////////////////////////////////////////////////
+/// P E R S O N A L   D E T A I L S   S T Y L E
+
+.loading-section {
+	width: 100%;
+
+	.label-text-skeleton {
+		width: 70px;
+		height: 56px;
+	}
+
+	.input-skeleton {
+		width: 90%;
+		max-width: 650px;
+		height: 56px;
+	}
+
+	.newsletter {
+		flex-direction: row;
+		justify-content: flex-start;
+		width: 100%;
+		column-gap: 12px;
+		margin-bottom: 61px !important;
+
+		.input-box-skeleton {
+			width: 18px;
+			height: 18px;
+		}
+
+		.label-text-skeleton {
+			width: 610px;
+			height: 24px;
+		}
+	}
+
+	.password-controller {
+		margin-bottom: 66px;
+
+		@include respond-to(md) {
+			margin-bottom: 20px;
+		}
+	}
+}

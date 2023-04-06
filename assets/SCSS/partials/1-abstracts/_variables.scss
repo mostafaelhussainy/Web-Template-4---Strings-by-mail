@@ -56,3 +56,15 @@ $-gray-600: #3A3A3A;
 $-gray-700: #272727;
 $-gray-800: #131313;
 $-gray-900: #080808;
+
+.tx-green {
+    color: $Utility-success;
+}
+
+.tx-danger {
+    color: $Utility-danger;
+}
+
+.tx-secondary {
+    color: $Secondary;
+}

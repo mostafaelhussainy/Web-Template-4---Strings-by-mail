@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap");
+.tx-green {
+  color: #0DAA26;
+}
+
+.tx-danger {
+  color: #E2574C;
+}
+
+.tx-secondary {
+  color: #BE4E2E;
+}
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -788,6 +799,13 @@ button.swiper-pagination-bullet {
   transform: translate3d(3000px, 0, 0) !important;
 }
 
+@media (max-width: 768px) {
+  .hide-in-small-screens {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0) !important;
+  }
+}
+
 button {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -1219,18 +1237,6 @@ label:last-child {
 }
 .hover-img:hover {
   transform: scale(1.03);
-}
-
-.tx-green {
-  color: #0DAA26;
-}
-
-.tx-danger {
-  color: #E2574C;
-}
-
-.tx-secondary {
-  color: #BE4E2E;
 }
 
 nav .lower-nav-wrapper .lower-nav-container .search-bar-wrapper .search-dropdown {
@@ -2486,6 +2492,15 @@ main .main-layout .addresses .address span {
   font-size: 16px;
   line-height: 24px;
   color: #272727;
+}
+main .main-layout .addresses .address .default-address {
+  position: absolute;
+  top: 17px;
+  right: 12px;
+  background: #E8FFEC;
+  border: 1px solid #0DAA26;
+  border-radius: 41px;
+  padding: 6.5px 17.5px;
 }
 main .main-layout .addresses .address .controls {
   position: absolute;

@@ -6,3 +6,10 @@
   opacity: 0;
   transform: translate3d(3000px, 0, 0) !important;
 }
+
+.hide-in-small-screens {
+  @include respond-to(md) {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0) !important;
+  }
+}
