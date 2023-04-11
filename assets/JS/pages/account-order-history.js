@@ -19,3 +19,5 @@ document.querySelector('.download').addEventListener('click', function () {
     element.style.display = "none";
   });
 });
+
+
