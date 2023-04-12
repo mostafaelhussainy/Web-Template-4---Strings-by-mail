@@ -1,0 +1,63 @@
+@import '../main.scss';
+
+body {
+    height: 100vh !important;
+    position: relative;
+}
+
+.flash-wrapper {
+    @include flex(flex-start, flex-start, column, unset, 20px);
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 620px;
+
+    @include respond-to(md) {
+        width: 60%;
+    }
+
+    @include respond-to(sm) {
+        width: 80%;
+    }
+
+    .flash-message {
+        @include flex(space-between, center, row);
+        width: 100%;
+        padding: 16px;
+        box-shadow: 9px 6px 24px -2px rgba(0, 0, 0, 0.06);
+        border-radius: 12px;
+
+        .text {
+            padding-left: 13px;
+        }
+
+        button img {
+            width: 11px;
+            height: 11px;
+        }
+    }
+
+    .flash-message.success {
+        background: #E7FFF9;
+
+        .text {
+            border-left: 3px solid $Utility-success;
+        }
+    }
+
+    .flash-message.error {
+        background: #FFF0ED;
+
+        .text {
+            border-left: 3px solid $Utility-danger;
+        }
+    }
+
+    .flash-message.warning {
+        background: #FCECD3;
+
+        .text {
+            border-left: 3px solid #FCD551;
+        }
+    }
+}
