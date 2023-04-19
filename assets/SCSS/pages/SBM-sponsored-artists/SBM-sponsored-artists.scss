@@ -1,0 +1,129 @@
+@import '../../main.scss';
+
+/*/////////////////////////////////////////////////////////*/
+/* H E A D E R    S T Y L E S */
+header .container {
+  h3 {
+    margin-bottom: 38px;
+  }
+
+  p {
+    margin-bottom: 16px;
+    max-width: 1200px;
+  }
+
+  .artists-links {
+    @include flex(flex-start, flex-start, row);
+    flex-wrap: wrap;
+    margin-bottom: 58px;
+    max-width: 1200px;
+
+    span {
+      display: block;
+      padding-right: 5px;
+      border-right: 1px solid #000;
+      margin-right: 5px;
+      color: $Secondary;
+
+      &:last-of-type {
+        padding-right: 0px;
+        border-right: none;
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+/*/////////////////////////////////////////////////////////*/
+/* S P O N S O R E D    A R T I S T S    S T Y L E S */
+#sponsored-artists {
+  margin-bottom: 200px;
+
+  .artist {
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid $-gray-100;
+
+    &:last-of-type {
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+      border-bottom: none;
+    }
+
+    h5 {
+      margin-bottom: 13px;
+    }
+
+    figure {
+      @include flex(flex-start, flex-start, row, 40px, 30px);
+
+      @include respond-to(sm) {
+        flex-direction: column;
+      }
+
+      .img-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 317px;
+        height: 0;
+        padding-bottom: clamp(350px, 88.55%, 358px);
+        margin-bottom: 32px;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          max-width: 317px;
+          max-height: 358px;
+          border-radius: 6px;
+        }
+      }
+
+      figcaption {
+        .quote {
+          padding: 10px 20px;
+          background-color: $-primary-50;
+          border-radius: 6px;
+          margin-bottom: 20px;
+
+          .p-regular-16px-400 {
+            margin-bottom: 20px;
+          }
+        }
+
+        .a-link-16px {
+          color: $Secondary;
+        }
+      }
+    }
+  }
+}
+
+/*/////////////////////////////////////////////////////////*/
+/* S P O N S O R E D    A R T I S T S    S T Y L E S */
+.artists-overlay {
+  .pop-up {
+
+    width: fit-content !important;
+    max-width: unset !important;
+
+    figure {
+      @include flex(flex-start, flex-start, row, 22px);
+
+      .img-wrapper {
+        width: fit-content;
+        height: auto;
+
+        img {
+          @include image-fit(223px, 252px, cover, center);
+        }
+      }
+
+      figcaption {
+        width: clamp(200px, 70%, 525px);
+      }
+    }
+  }
+}

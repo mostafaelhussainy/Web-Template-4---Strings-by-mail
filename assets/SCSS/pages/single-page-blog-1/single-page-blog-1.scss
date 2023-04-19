@@ -1,0 +1,335 @@
+@import '../../main.scss';
+
+/* H E A D E R    S T Y L E S */
+header {
+  margin-bottom: 49px;
+
+  h3 {
+    margin-bottom: 11px;
+  }
+
+  .sub-heading {
+    @include flex(flex-start, center, row, 35px);
+  }
+}
+
+/*//////////////////////////////////////////////*/
+/* L A Y O U T    S T Y L E S */
+#blog-layout {
+  margin-bottom: 104px;
+
+  @include respond-to(md) {
+    margin-bottom: 90px;
+  }
+
+  .container {
+    @include flex(space-between, flex-start, row);
+
+    @include respond-to(md) {
+      flex-direction: column;
+      row-gap: 55px;
+    }
+
+    /* M A I N */
+    main {
+      width: 67%;
+
+      @include respond-to(md) {
+        width: 100%;
+      }
+
+      .intro {
+        font-family: 'Mulish';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $-gray-700;
+        margin-bottom: 33px;
+      }
+
+      figure {
+        position: relative;
+        max-width: 90%;
+        height: 0;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+        margin-bottom: 33px;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          margin-bottom: 33px;
+        }
+      }
+
+      article {
+        ol {
+          li {
+            list-style-type: decimal;
+            list-style-position: inside;
+
+            ul {
+              padding-left: 20px;
+
+              li {
+                list-style-type: disc;
+                list-style-position: inside;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /* A S I D E */
+    .aside {
+      width: 264px;
+
+      ul {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #2E3233;
+
+        p {
+          margin-bottom: 7px;
+        }
+
+        &:last-of-type {
+          padding-bottom: 0;
+          margin-bottom: 0;
+          border: none;
+        }
+      }
+
+      .categories {
+        li {
+          margin-bottom: 3.5px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          a {
+            color: $Secondary;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .recent-posts {
+        li {
+          margin-bottom: 15px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .recent-comments {
+        li {
+          margin-bottom: 9px;
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+
+          a:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .archives {
+        input {
+          background: #FFFFFF;
+          border: 1px solid #B3B3B3;
+          padding: 6.8px 4.8px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/*//////////////////////////////////////////////*/
+/* R E L A T E D   B L O G S    S T Y L E S */
+#related-blogs {
+  h4 {
+    margin-bottom: 38px;
+  }
+
+  .blogs-wrapper {
+    @include flex(flex-start, flex-start, row, 2%, 34px);
+    margin-bottom: 198px;
+
+    @include respond-to(sm) {
+      flex-direction: column;
+    }
+
+    figure {
+      width: 50%;
+
+      @include respond-to(sm) {
+        width: 100%;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin-bottom: 38px;
+      }
+
+      figcaption {
+        h3 {
+          margin-bottom: 12px;
+        }
+
+        p {
+          &:first-of-type {
+            margin-bottom: 22.5px;
+
+            span {
+              color: $Secondary;
+            }
+          }
+
+          &:last-of-type {
+            margin-bottom: 29px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*//////////////////////////////////////////////*/
+/* C O M M E N T S    S T Y L E S */
+#comments {
+  padding-bottom: 52px;
+
+  h6 {
+    margin-bottom: 20px;
+  }
+
+  .comments-wrapper {
+    @include flex(flex-start, flex-start, column);
+
+    .comment {
+      @include flex(flex-start, flex-start, row, 21px);
+      padding-bottom: 27px;
+      margin-bottom: 27px;
+      border-bottom: 1px solid $-gray-200;
+      width: 100%;
+      max-width: 755px;
+
+      &:last-of-type {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-bottom: none;
+      }
+
+      span {
+        color: #FFFFFF;
+        width: 45px;
+        height: 45px;
+        background: $Brand;
+        border-radius: 22.5px;
+        @include flex(center, center, row);
+      }
+
+      .comment-detail {
+        max-width: 285px;
+
+        p {
+          &:first-of-type {
+            color: $Secondary;
+          }
+
+          &:nth-child(2) {
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*//////////////////////////////////////////////*/
+/* R E P L Y    F O R M    S T Y L E S */
+#reply-form {
+  background: $-primary-50;
+  padding-top: 70px;
+  padding-bottom: 112px;
+
+  h4 {
+    margin-bottom: 40px;
+  }
+
+  label {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    @include flex(flex-start, flex-start, column, unset, 5px);
+    margin-bottom: 20px;
+
+    textarea {
+      max-width: 747px;
+      height: 98px;
+      background: #FFFFFF;
+      border: 1px solid $-gray-100;
+      border-radius: 6px;
+    }
+
+    input {
+      max-width: 747px;
+    }
+  }
+
+  .inputs-row {
+    @include flex(flex-start, flex-start, row, 12px);
+    max-width: 747px;
+
+    label {
+      width: 50% !important;
+    }
+  }
+
+  .checkbox-label {
+    @include flex(flex-start, flex-start, row, 13px);
+  }
+
+  .validation-check {
+    margin-bottom: 20px;
+    @include flex(flex-start, center, row);
+
+    span {
+      margin: 0 6px 0 45px;
+      @include flex(flex-start, center, row);
+
+      img {
+        margin: 0 6px;
+      }
+    }
+
+    input {
+      width: 46.34px;
+      height: 30px;
+    }
+  }
+}

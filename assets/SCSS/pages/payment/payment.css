@@ -816,8 +816,8 @@ button:hover {
 }
 
 .main-btn {
-  width: 197px;
-  padding: 8px 0px;
+  padding: 8px 26px;
+  white-space: nowrap;
   text-align: center;
   height: 55px;
   background: #BE4E2E;
