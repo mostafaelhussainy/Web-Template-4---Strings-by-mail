@@ -482,7 +482,98 @@
     </div>
   </section>
   <!-- B R E A D - C R U M B    E N D -->
-  
+  <main>
+    <div class="container">
+      <h3>
+        Contact Us 
+      </h3>
+      <div class="row">
+        <form action="#" id="contact-us-form">
+          <span class="loader"></span>
+          <div class="inputs-wrapper">
+            <label>
+              Name
+              <input required type="text" id="ContactName" name="ContactName">
+              <p
+                class="p-small-12px-400 invalid invalid-msg-ContactName">
+                <img src="../assets/icons/invalid-input.svg">
+                Please fill out this field.
+              </p>
+            </label>
+            <label>
+              Email
+              <input required type="email" id="ContactEmail" name="ContactEmail">
+              <p
+                class="p-small-12px-400 invalid invalid-msg-ContactEmail">
+                <img src="../assets/icons/invalid-input.svg">
+                Please fill out this field.
+              </p>
+            </label>
+            <label>
+              Subject
+              <input required type="text" id="ContactSubject" name="ContactSubject">
+              <p
+                class="p-small-12px-400 invalid invalid-msg-ContactSubject">
+                <img src="../assets/icons/invalid-input.svg">
+                Please fill out this field.
+              </p>
+            </label>
+            <label>
+              Message
+              <textarea required type="text" id="ContactMsg" name="ContactMsg"></textarea>
+              <p
+                class="p-small-12px-400 invalid invalid-msg-ContactName">
+                <img src="../assets/icons/invalid-input.svg">
+                Please fill out this field.
+              </p>
+            </label>
+            <button type="submit" class="main-btn buttontext">
+              SEND MESSAGE
+            </button>
+          </div>
+        </form>
+        <section id="info">
+          <div class="box">
+            <div class="col">
+              <span class="p-subtitle-14px-500">Melodic Strings</span>
+              <span class="p-subtitle-14px-500">3480 Veterans Drive</span>
+              <span class="p-subtitle-14px-500">Suite A</span>
+              <span class="p-subtitle-14px-500">Traverse City, MI 49684</span>
+              <span class="p-subtitle-14px-500">United States</span>
+            </div>
+            <div class="col">
+              <span class="p-subtitle-14px-500">
+                Phone or TEXT: 231-421-3773<br />
+                Toll Free USA: 800-513-8271 
+              </span class="p-subtitle-14px-500">
+              <span class="p-subtitle-14px-500">Phone lines open Mon - Fri 9:00 AM - 3:00 PM EST</span>
+              <span class="p-subtitle-14px-500">Fax: 231-421-3776</span>
+            </div>
+          </div>
+          <div class="content">
+            <p class="p-regular-16px-400">
+              To help answer questions, we've created a <a class="a-link-16px" href="./FAQs.html">FAQ page</a> for your convenience.
+            </p>
+            <p class="p-regular-16px-400">
+              We look forward to serving our phone customers, but with a busy phone line we may need to call you back. Please leave us a message if your call is not answered directly.
+            </p>
+            <p class="p-regular-16px-400">
+              We respond to emails regarding order changes the same business day and try our best to respond to all other emails within 1 business day.
+            </p>
+            <p class="p-regular-16px-400">
+              All purchases must be placed via our website or by phone, no walk-in or email orders please.
+            </p>
+            <p class="p-regular-16px-400">
+              If we do not carry a product, you can place a Special Order Inquiry HERE (Michigan residents HERE), not via email.
+            </p>
+            <p class="p-regular-16px-400">
+              If you'd like to submit your favorite strings for our Strings Choice Database page, please include all of the following: your string set choice (the model on our website), instrument type, year, builder/manufacturer, instrument model, top/side/back woods, pickup type if electric, your name, and a brief comment about why you like your strings.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
 
   <!-- C O N T A C T    U S    E N D -->
 
@@ -631,12 +722,13 @@
     </button>
   </footer>
   <!-- F O O T E R    E N D -->
+  <script src="../assets/JS/pages/contact-us.js"></script>
   <script src="../assets/JS/transitions-animations/pop-up.js"></script>
   <script src="../assets/JS/transitions-animations/aside.js"></script>
   <script src="../assets/JS/transitions-animations/dropdown.js"></script>
   <script src="../assets/JS/transitions-animations/toggle-btns.js"></script>
   <script src="../assets/JS/transitions-animations/bottom-to-top.js"></script>
-  <script src="../assets/JS/transitions-animations/pop-up.js"></script>
+  <script src="../assets/JS/tools/error-msg.js"></script>
 </body>
 
 </html>

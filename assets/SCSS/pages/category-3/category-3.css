@@ -1691,6 +1691,105 @@ aside .links li a:hover {
   margin-left: auto;
 }
 
+/*****************************/
+.product-alert {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: 23px;
+  background: #FFF;
+  border-radius: 6px;
+  width: 100%;
+  width: 600px;
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  z-index: 999;
+  padding: 30px;
+}
+.product-alert .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+  width: 100%;
+}
+.product-alert .product-alert__title {
+  font-family: "Source Serif Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 35px;
+  color: #000000;
+}
+.product-alert figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: unset;
+       column-gap: unset;
+  row-gap: unset;
+  width: 100%;
+}
+.product-alert figure img {
+  width: 128px;
+  height: 128px;
+}
+.product-alert figure figcaption {
+  max-width: 320px;
+  width: 100%;
+  display: block;
+}
+.product-alert figure figcaption .product-alert__new-tag {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #F2A124;
+  border-radius: 42px;
+  padding: 2.5px 5px;
+  margin-bottom: 6px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+}
+.product-alert figure figcaption .product-alert__product-title {
+  margin-bottom: 6px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.product-alert figure figcaption .product-alert__product-qty {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.product-alert figure figcaption .product-alert__product-price {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #BE4E2E;
+}
+
 .pop-up-visible {
   display: block !important;
 }

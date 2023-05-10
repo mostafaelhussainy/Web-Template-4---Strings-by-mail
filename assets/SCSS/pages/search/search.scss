@@ -1,0 +1,41 @@
+@import '../../main.scss';
+
+#no-result {
+    margin-bottom: 257px;
+
+    @include respond-to(md) {
+        margin-bottom: 154px;
+    }
+
+    figure {
+        margin: 0px auto;
+        width: fit-content;
+        width: fit-content;
+
+        img {
+            width: 435px;
+            height: 600px;
+            margin-bottom: 68px;
+            margin: 0 auto;
+            display: block;
+
+            @include respond-to(sm) {
+                width: 275px;
+                height: 380px;
+            }
+        }
+    }
+}
+
+#heading {
+    margin-bottom: 70px;
+
+    h3 {
+        text-align: left;
+        margin-bottom: 36px;
+    }
+
+    p {
+        max-width: 710px;
+    }
+}

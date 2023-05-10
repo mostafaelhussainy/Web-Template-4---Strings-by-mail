@@ -1,1 +1,177 @@
 @import '../../main.scss';
+
+/************************************************/
+/* M A I N    S T Y L E S */
+main {
+  margin-bottom: 200px;
+
+  @include respond-to(md) {
+    margin-bottom: 130px;
+  }
+
+  h3 {
+    margin-bottom: 80px;
+
+    @include respond-to(md) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .row {
+    @include flex(flex-start, flex-start, row, 25px, 75px);
+
+    @include respond-to(xl) {
+      flex-direction: column;
+    }
+
+    /************************************************/
+    /* F O R M    S T Y L E S */
+    #contact-us-form {
+      padding: 20px;
+      width: 100%;
+      max-width: 568px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      min-height: 526px;
+      position: relative;
+
+      .deActive--inputsWrapper {
+        max-height: 0 !important;
+        opacity: 0 !important;
+        overflow: hidden;
+      }
+
+      .inputs-wrapper {
+        position: absolute;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        transition: opacity ease-in-out 0.3s;
+
+        label:has(textarea) {
+          margin-bottom: 40px !important;
+        }
+      }
+
+      .active--spinner {
+        max-height: unset !important;
+        opacity: 100 !important;
+      }
+
+      .loader {
+        max-height: 0;
+        opacity: 0;
+        transition: opacity ease-in-out 0.3s;
+        position: absolute;
+        top: 190px;
+        left: 45%;
+        z-index: 999;
+        color: $Secondary;
+        font-size: 45px;
+        text-indent: -9999em;
+        overflow: hidden;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        transform: translateZ(0);
+        animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+      }
+
+      @keyframes mltShdSpin {
+        0% {
+          box-shadow: 0 -0.83em 0 -0.4em,
+            0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+
+        5%,
+        95% {
+          box-shadow: 0 -0.83em 0 -0.4em,
+            0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+            0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+
+        10%,
+        59% {
+          box-shadow: 0 -0.83em 0 -0.4em,
+            -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em,
+            -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+        }
+
+        20% {
+          box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+            -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em,
+            -0.749em -0.34em 0 -0.477em;
+        }
+
+        38% {
+          box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+            -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em,
+            -0.82em -0.09em 0 -0.477em;
+        }
+
+        100% {
+          box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em,
+            0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+        }
+      }
+
+      @keyframes round {
+        0% {
+          transform: rotate(0deg)
+        }
+
+        100% {
+          transform: rotate(360deg)
+        }
+      }
+    }
+
+    /************************************************/
+    /* I N F O    S T Y L E S */
+    #info {
+      padding: 20px;
+      width: 100%;
+      max-width: 938px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+
+      .box {
+        @include flex(space-between, flex-start, row);
+
+        @include respond-to(md) {
+          flex-direction: column;
+        }
+
+        padding: 17px 23px;
+        width: 100%;
+        border: 1px solid $-gray-100;
+        border-radius: 6px;
+        margin-bottom: 14px;
+
+        .col {
+          @include flex(flex-start, flex-start, column);
+
+          .p-subtitle-14px-500 {
+            color: #181004;
+          }
+
+          &:last-of-type {
+            row-gap: 20px;
+          }
+        }
+      }
+
+      .content {
+        @include flex(flex-start, flex-start, column, unset, 11px);
+
+        p a {
+          color: $Secondary;
+        }
+      }
+    }
+  }
+}

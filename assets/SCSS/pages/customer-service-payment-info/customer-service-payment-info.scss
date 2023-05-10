@@ -1,0 +1,30 @@
+@import '../../main.scss';
+
+#heading {
+  margin-bottom: 40px;
+
+  p {
+    max-width: 1180px;
+    color: $-gray-700;
+  }
+}
+
+section {
+  margin-bottom: 40px;
+
+  &:last-of-type {
+    margin-bottom: 160px;
+  }
+
+  h5 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    max-width: 1180px;
+
+    a {
+      color: $Secondary;
+    }
+  }
+}

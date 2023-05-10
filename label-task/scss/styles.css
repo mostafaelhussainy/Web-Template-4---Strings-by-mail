@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "TradeGothic LT 700";
+  src: url("../fonts/Trade-Gothic-Font/Trade Gothic LT Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TradeGothic LT 400";
+  src: url("../fonts/Trade-Gothic-Font/Trade Gothic LT Bold Extended.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container {
+  border: 1px dashed #000000;
+  justify-content: left;
+  width: 384px;
+  min-height: 768px;
+}
+.container p,
+.container .data {
+  font-family: "TradeGothic LT 400", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: left;
+  color: #000000;
+  text-overflow: clip;
+  word-break: break-all;
+}
+.container .label {
+  font-family: "TradeGothic LT 400", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-overflow: clip;
+  word-break: break-all;
+}
+.container .label {
+  font-family: "TradeGothic LT 700", sans-serif;
+  font-weight: 700;
+}
+.container .row {
+  padding: 28px;
+  border-bottom: 1px dashed #000000;
+}
+.container .row:first-of-type {
+  padding: 28px 22px;
+}
+.container .row:first-of-type h1 {
+  color: #000000;
+  text-align: center;
+  font-family: "TradeGothic LT 700", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 138%;
+  position: relative;
+}
+.container .row:first-of-type p {
+  text-align: center;
+}
+.container .row .data-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 115px auto;
+  justify-content: flex-start;
+  row-gap: 5px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.container .row:last-of-type svg {
+  display: block;
+  margin: 0 auto;
+}
+.container .darker-bg {
+  background-color: #f1f1f1;
+}
+.container .darker-bg p {
+  text-align: center;
+  line-height: 20px;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping label</title>
+    <!-- <link rel="stylesheet" href="./scss/styles.css"> -->
+    <style>
+        @font-face {
+  font-family: "TradeGothic LT 700";
+  src: url("../fonts/Trade-Gothic-Font/Trade Gothic LT Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TradeGothic LT 400";
+  src: url("../fonts/Trade-Gothic-Font/Trade Gothic LT Bold Extended.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container {
+  border: 1px dashed #000000;
+  justify-content: left;
+  width: 384px;
+  min-height: 768px;
+}
+.container p,
+.container .data {
+  font-family: "TradeGothic LT 400", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: left;
+  color: #000000;
+  text-overflow: clip;
+  word-break: break-all;
+}
+.container .label {
+  font-family: "TradeGothic LT 400", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-overflow: clip;
+  word-break: break-all;
+}
+.container .label {
+  font-family: "TradeGothic LT 700", sans-serif;
+  font-weight: 700;
+}
+.container .row {
+  padding: 28px;
+  border-bottom: 1px dashed #000000;
+}
+.container .row:first-of-type {
+  padding: 28px 22px;
+}
+.container .row:first-of-type h1 {
+  color: #000000;
+  text-align: center;
+  font-family: "TradeGothic LT 700", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 138%;
+  position: relative;
+}
+.container .row:first-of-type p {
+  text-align: center;
+}
+.container .row .data-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 136px auto;
+  justify-content: flex-start;
+  row-gap: 5px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.container .row:last-of-type svg {
+  display: block;
+  margin: 0 auto;
+}
+.container .darker-bg {
+  background-color: #f1f1f1;
+}
+.container .darker-bg p {
+  text-align: center;
+  line-height: 20px;
+}/*# sourceMappingURL=styles.css.map */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>
+                OZ International Inc
+            </h1>
+            <p>
+                29010 Commerce Center Dr, Valencia, CA 91355, United States
+            </p>
+        </div>
+        <div class="row">
+            <div class="data-row">
+                <p class="label">
+                    Hub Name:
+                </p>
+                <p class="data">
+                    Blue Streak
+                </p>
+            </div>
+            <div class="data-row">
+                <p class="label">
+                    Transfer Code:
+                </p>
+                <p class="data">
+                    04
+                </p>
+            </div>
+            <div class="data-row">
+                <p class="label">
+                    Route No:
+                </p>
+                <p class="data">
+                    IAD - 8 - A
+                </p>
+            </div>
+            <div class="data-row">
+                <p class="label">
+                    Carrier:
+                </p>
+                <p class="data">
+                    Capital Express
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="data-row">
+                <p class="label">
+                    To:
+                </p>
+                <p class="label">
+                    John Doe
+                </p>
+            </div>
+            <div class="data-row">
+                <p class="label">
+                    Address:
+                </p>
+                <p class="data">
+                    Kansas City, MO 64 133 US
+                </p>
+            </div>
+            <div class="data-row">
+                <p class="label">
+                    Phone:
+                </p>
+                <p class="data">
+                    +1 000 000 000
+                </p>
+            </div>
+            <div class="data-row">
+                <p class="label">
+                    Piece:
+                </p>
+                <p class="data">
+                    johndoe@gmail.com
+                </p>
+            </div>
+            <div class="data-row">
+                <p class="label">
+                    Weight:
+                </p>
+                <p class="data">
+                    5kg
+                </p>
+            </div>
+            <div class="data-row">
+                <p class="label">
+                    Delivery Comments:
+                </p>
+                <p class="data">
+                    “Gate code 501, don’t deliver on weekends”
+                </p>
+            </div>
+        </div>
+        <div class="row darker-bg">
+            <p>
+                Nikotine/Smokeless Tobacco: Federal Law Requires the Payment of all Applicable Excise Taxes, and compliance with Appicable Licensing and Tax Stamping Obligations.Contains tobacco products: signature of person 21 years of age or older required for delivery
+
+            </p>
+        </div>
+        <div class="row">
+            <svg id="barcode" width="222px" height="142px" x="0px" y="0px" viewBox="0 0 222 142" xmlns="http://www.w3.org/2000/svg" version="1.1"><rect x="0" y="0" width="222" height="142" style="fill:#ffffff;"></rect><g transform="translate(10, 10)" style="fill:#000000;"><rect x="0" y="0" width="4" height="100"></rect><rect x="6" y="0" width="2" height="100"></rect><rect x="12" y="0" width="6" height="100"></rect><rect x="22" y="0" width="2" height="100"></rect><rect x="26" y="0" width="4" height="100"></rect><rect x="34" y="0" width="6" height="100"></rect><rect x="44" y="0" width="2" height="100"></rect><rect x="52" y="0" width="2" height="100"></rect><rect x="56" y="0" width="4" height="100"></rect><rect x="66" y="0" width="2" height="100"></rect><rect x="70" y="0" width="6" height="100"></rect><rect x="78" y="0" width="4" height="100"></rect><rect x="88" y="0" width="2" height="100"></rect><rect x="98" y="0" width="2" height="100"></rect><rect x="102" y="0" width="4" height="100"></rect><rect x="110" y="0" width="6" height="100"></rect><rect x="118" y="0" width="2" height="100"></rect><rect x="122" y="0" width="8" height="100"></rect><rect x="132" y="0" width="4" height="100"></rect><rect x="140" y="0" width="2" height="100"></rect><rect x="144" y="0" width="6" height="100"></rect><rect x="154" y="0" width="2" height="100"></rect><rect x="164" y="0" width="4" height="100"></rect><rect x="172" y="0" width="2" height="100"></rect><rect x="176" y="0" width="4" height="100"></rect><rect x="186" y="0" width="6" height="100"></rect><rect x="194" y="0" width="2" height="100"></rect><rect x="198" y="0" width="4" height="100"></rect><text style="font: 20px monospace" text-anchor="middle" x="101" y="122">123445673</text></g></svg>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,7 +1,8 @@
 const forms = document.querySelectorAll('form'); // get all forms on the page
 
 forms.forEach((form) => { // loop through each form
-  const inputs = form.querySelectorAll('input[required]'); // get all required inputs within this form
+  const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+  // get all required inputs within this form
 
   inputs.forEach((input) => { // loop through each required input
     input.addEventListener('invalid', (event) => { // add an event listener for the 'invalid' event

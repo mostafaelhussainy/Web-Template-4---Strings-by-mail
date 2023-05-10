@@ -1,5 +1,9 @@
 @import '../main.scss';
 
+.search-dropdown {
+  display: none !important;
+}
+
 nav {
   // A N I M A T I O N
   z-index: 998;
@@ -199,7 +203,42 @@ nav {
           .search-input:not(:placeholder-shown)+.search-icon {
             display: none;
           }
+
+          .search-results {
+            width: 690px;
+            position: absolute;
+            top: 60px;
+            background: #FFFFFF;
+            box-shadow: 9px 6px 24px -2px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+
+            p {
+              background: #FFF6F0;
+              border-bottom: 1px solid #E5B8AB;
+              padding: 6px 15px;
+            }
+
+            li {
+              a {
+                font-family: 'Mulish';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $-gray-700;
+                width: 100%;
+                height: 100%;
+                display: block;
+                padding: 16px 12px;
+
+                &:hover {
+                  background-color: #F6F6F7;
+                }
+              }
+            }
+          }
         }
+
       }
 
       .customer-wrapper {

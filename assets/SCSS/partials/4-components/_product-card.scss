@@ -98,4 +98,94 @@
       margin-left: auto;
     }
   }
+
+}
+
+/*****************************/
+.product-alert {
+  @include flex(flex-start, flex-start, column, unset, 23px);
+  background: #FFF;
+  border-radius: 6px;
+  width: 100%;
+  width: 600px;
+  position: fixed;
+  bottom: 10%;
+  left: 10%;
+  z-index: 999;
+  padding: 30px;
+
+  .row {
+    @include flex(space-between, center, row);
+    width: 100%;
+  }
+
+  .product-alert__title {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 35px;
+    color: #000000;
+  }
+
+  figure {
+    @include flex(space-between, center, row);
+    width: 100%;
+
+    img {
+      width: 128px;
+      height: 128px;
+    }
+
+    figcaption {
+      max-width: 320px;
+      width: 100%;
+      display: block;
+
+      .product-alert__new-tag {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #F2A124;
+        border-radius: 42px;
+        padding: 2.5px 5px;
+        margin-bottom: 6px;
+        width: fit-content;
+        display: block;
+      }
+
+      .product-alert__product-title {
+        margin-bottom: 6px;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+      }
+
+      .product-alert__product-qty {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+      }
+
+      .product-alert__product-price {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #BE4E2E;
+      }
+    }
+  }
 }

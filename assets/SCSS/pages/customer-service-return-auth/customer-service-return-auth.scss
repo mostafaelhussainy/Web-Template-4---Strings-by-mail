@@ -1,0 +1,82 @@
+@import '../../main.scss';
+
+#heading {
+  margin-bottom: 40px;
+
+  h3 {
+    margin-bottom: 29px;
+  }
+
+  p {
+    max-width: 1180px;
+    color: $-gray-700;
+  }
+}
+
+section {
+  margin-bottom: 40px;
+
+  &:last-of-type {
+    margin-bottom: 160px;
+  }
+
+  h5 {
+    margin-bottom: 15px;
+  }
+
+  .p-regular-16px-400 {
+    max-width: 1180px;
+    margin-bottom: 15px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+
+    a {
+      color: $Secondary;
+    }
+  }
+}
+
+#return-auth {
+  h5 {
+    margin-bottom: 15px;
+  }
+
+  h6 {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    @include flex(flex-start, flex-start, row, 6px);
+    width: 100%;
+    max-width: 800px;
+  }
+
+  input,
+  select,
+  option {
+    width: 100%;
+    max-width: 800px;
+    appearance: none;
+  }
+
+  .select-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+
+    img {
+      position: absolute;
+      right: 20px;
+      bottom: 25px;
+      transform: translateY(50%);
+    }
+  }
+
+  textarea {
+    width: 100%;
+    max-width: 800px;
+    height: 150px;
+  }
+}

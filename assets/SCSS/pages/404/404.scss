@@ -1,0 +1,36 @@
+@import '../../main.scss';
+
+#broken-link {
+    margin-bottom: 257px;
+
+    @include respond-to(md) {
+        margin-bottom: 154px;
+    }
+
+    figure {
+        margin: 0px auto;
+        width: fit-content;
+        width: fit-content;
+
+        img {
+            width: 506px;
+            height: 436px;
+            margin-bottom: 68px;
+            margin: 0 auto;
+            display: block;
+
+            @include respond-to(sm) {
+                width: 288px;
+                height: 249px;
+            }
+        }
+
+        figcaption {
+            text-align: center;
+
+            h3 {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
