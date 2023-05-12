@@ -1,0 +1,28 @@
+@import '../../main.scss';
+
+/************************************************/
+/* M A I N    S T Y L E S */
+main {
+  h3 {
+    font-weight: 700;
+    margin-bottom: 32px;
+  }
+
+  p {
+    margin-bottom: 22px;
+  }
+
+  figure {
+    @include flex(flex-start, flex-start, row, 15px);
+    margin-bottom: 48px;
+
+    @include respond-to(md) {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 158px;
+    }
+  }
+}

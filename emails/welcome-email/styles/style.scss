@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #000000;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    max-width: 600px;
+}
+
+body {
+    width: 600px;
+    border: 1px solid #000;
+}
+
+table,
+th,
+td {
+    border-collapse: initial;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: unset;
+    border: none;
+}
+
+a {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.p-regular-16px-400,
+.p-regular-16px-700,
+.p-regular-14px-500 {
+    font-family: 'Mulish';
+    font-style: normal;
+}
+
+.p-regular-16px-400 {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.p-regular-14px-500 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.p-regular-16px-700 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #000000;
+}
+
+h3 {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+}
+
+header {
+    margin-bottom: 36px;
+
+    .container {
+
+        img {
+            display: block;
+            width: fit-content;
+            margin: 31px auto 15px;
+            width: 121.76px;
+            height: 56.69px;
+        }
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+        background-color: #F2A124;
+    }
+}
+
+main {
+    margin-bottom: 94px;
+
+    h3,
+    p {
+        text-align: left;
+    }
+
+    p {
+        margin-bottom: 57px;
+    }
+
+    a {
+        width: fit-content;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        padding: 0 26px;
+        line-height: 56px;
+        background: #BE4E2E;
+        border-radius: 6px;
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        &:hover {
+            background: #8F3B23;
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    #footer__questions {
+        width: 100%;
+        background: #EEEEEE;
+        border-radius: 6px;
+        padding: 29px 38px;
+
+        thead tr {
+            th {
+                // display: block;
+
+                &:first-of-type {
+                    img {
+                        display: block;
+                        margin-right: 34px;
+                    }
+                }
+
+                &:last-of-type {
+                    text-align: left;
+
+                    .p-regular-16px-700 {
+                        margin-bottom: 3px;
+                    }
+
+                    .p-regular-16px-400 a {
+                        color: #BE4E2E;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    #credits {
+        background: #272727;
+        padding: 28px 0;
+
+        .container {
+            text-align: center;
+
+            p:first-of-type {
+                margin-bottom: 3px;
+            }
+
+            table {
+                margin: 0 auto 3px;
+
+                thead tr th {
+                    padding-right: 9px;
+
+                    &:last-of-type {
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

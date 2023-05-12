@@ -11,8 +11,8 @@
   <link rel="stylesheet"
     href="../assets/SCSS/footer/footer.css">
   <link rel="stylesheet"
-    href="../assets/SCSS/pages/forgot-password/forgot-password.css">
-  <title>Create account</title>
+    href="../assets/SCSS/pages/shopping-bag/shopping-bag.css">
+  <title>Shopping bag</title>
 </head>
 
 <body>
@@ -62,7 +62,7 @@
     <div class="lower-nav-wrapper">
       <div class="lower-nav-container">
         <!-- L O G O -->
-        <a href="/" class="logo">
+        <a href="#" class="logo">
           <figure>
             <img src="../assets/images/Logo/Logo.png"
               alt="website logo and title: 'Melodic Strings'">
@@ -101,8 +101,7 @@
               <ul>
                 <li>
                   <a href="#" class="p-regular-16px-400">
-                    Classical Guitar
-                    Strings
+                    Classical Guitar Strings
                   </a>
                 </li>
                 <li>
@@ -142,13 +141,9 @@
                       alt="guitar string bag">
                     <figcaption>
                       <p class="product-title">
-                        Aquila
-                        Alabastro
-                        Light
-                        Tension
+                        Aquila Alabastro Light Tension
                         Classical
-                        Guitar
-                        Strings 167C
+                        Guitar Strings 167C
                       </p>
                       <span
                         class="product-price p-subtitle-14px-500">
@@ -164,13 +159,9 @@
                       alt="guitar string bag">
                     <figcaption>
                       <p class="product-title">
-                        Aquila
-                        Alabastro
-                        Light
-                        Tension
+                        Aquila Alabastro Light Tension
                         Classical
-                        Guitar
-                        Strings 167C
+                        Guitar Strings 167C
                       </p>
                       <span
                         class="product-price p-subtitle-14px-500">
@@ -186,13 +177,9 @@
                       alt="guitar string bag">
                     <figcaption>
                       <p class="product-title">
-                        Aquila
-                        Alabastro
-                        Light
-                        Tension
+                        Aquila Alabastro Light Tension
                         Classical
-                        Guitar
-                        Strings 167C
+                        Guitar Strings 167C
                       </p>
                       <span
                         class="product-price p-subtitle-14px-500">
@@ -209,22 +196,19 @@
         <!-- C U S T O M E R -->
         <div class="customer-wrapper">
           <figure>
-            <a href="./pages/account-profile.html">
             <img
               src="../assets/images/header/customerPortraitPlaceholder.png"
               alt="customer image placeholder">
-            </a>
             <figcaption>
               <span class="welcome p-small-12px-600">
                 Hi Welcome!
               </span>
               <div class="controls">
-                <a href="./pages/log-in.html" class="p-regular-16px-400">
+                <a href="#" class="p-regular-16px-400">
                   Login
                 </a>
-                <span class="p-regular-16px-400">
-                  or </span>
-                <a href="./pages/create-account.html" class="p-regular-16px-400">
+                <span class="p-regular-16px-400"> or </span>
+                <a href="#" class="p-regular-16px-400">
                   Sign up
                 </a>
               </div>
@@ -495,66 +479,385 @@
   </aside>
   <!-- S I D E    B A R   E N D -->
 
-  <!-- R E G I S T E R    S T A R T -->
+  <!-- C A R T    S T A R T -->
 
-  <!-- B R E A D - C R U M B    S T A R T -->
-  <section id="bread-crumb">
+  <!-- L A Y O U T    S T A R T -->
+  <div id="layout">
     <div class="container">
-      <ul>
-        <li>
-          <a href="/"
-            class="p-regular-16px-400">Home</a>
-          <img src="../assets/icons/arrowRight.svg">
-        </li>
-        <li>
-          <a class="p-regular-16px-400"
-            href="./log-in.html">Login</a>
-          <img src="../assets/icons/arrowRight.svg">
-        </li>
-        <li>
-          <a class="p-regular-16px-400 active">
-            Reset password
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- B R E A D - C R U M B    E N D -->
-
-  <!-- H E A D I N G   S T A R T -->
-  <section id="heading">
-    <div class="container">
-      <h3>
-        Reset Password
-      </h3>
-      <p class="p-regular-16px-400">
-        If you already remember your password, please login
-        at the <a href="./log-in.html">login page</a>.
-      </p>
-    </div>
-  </section>
-  <!-- H E A D I N G   E N D -->
-
-  <!-- R E G I S T E R    F O R M    S T A R T -->
-  <form id="reset-password">
-    <div class="container">
-      <label>
-        Email
-        <input required type="email" id="firstName">
-        <p
-          class="p-small-12px-400 invalid invalid-msg-firstName">
-          <img src="../assets/icons/invalid-input.svg">
-          Please fill this field with your email.
+      <!-- S H O P P I N G   B A G    S T A R T -->
+      <main id="shopping-bag">
+        <h3>
+          Shopping Bag
+        </h3>
+        <p class="p-regular-16px-400 sub-header">
+          Items in your bag are not on hold.
         </p>
-      </label>
-      <button class="main-btn buttontext" type="submit">
-        RESET PASSWORD
+        <div class="shopping-bag-products">
+          <figure class="product main-border-bottom">
+            <img
+              src="../assets/images/shopping-bag/shopping-bag-products-1.png">
+            <figcaption>
+              <p class="p-regular-16px-400">
+                D'Addario EPBB170 Phosphor Bronze Acoustic
+                Bass Strings 45-100
+              </p>
+              <div class="controls">
+                <button>
+                  <img src="../assets/icons/minus.svg"
+                    alt="minus button">
+                </button>
+                <span class="quantity">1</span>
+                <button>
+                  <img src="../assets/icons/plus.svg"
+                    alt="plus button">
+                </button>
+                <span class="price">$23.99</span>
+                <button class="delete">
+                  <img src="../assets/icons/delete.svg"
+                    alt="delete button">
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="product main-border-bottom">
+            <img
+              src="../assets/images/shopping-bag/shopping-bag-products-2.png">
+            <figcaption>
+              <p class="p-regular-16px-400">
+                D'Addario EPBB170 Phosphor Bronze Acoustic
+                Bass Strings 45-100
+              </p>
+              <div class="controls">
+                <button>
+                  <img src="../assets/icons/minus.svg"
+                    alt="minus button">
+                </button>
+                <span class="quantity">1</span>
+                <button>
+                  <img src="../assets/icons/plus.svg"
+                    alt="plus button">
+                </button>
+                <span class="price">$23.99</span>
+                <button class="delete">
+                  <img src="../assets/icons/delete.svg"
+                    alt="delete button">
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="product main-border-bottom">
+            <img
+              src="../assets/images/shopping-bag/shopping-bag-products-3.png">
+            <figcaption>
+              <p class="p-regular-16px-400">
+                D'Addario EPBB170 Phosphor Bronze Acoustic
+                Bass Strings 45-100
+              </p>
+              <div class="controls">
+                <button>
+                  <img src="../assets/icons/minus.svg"
+                    alt="minus button">
+                </button>
+                <span class="quantity">1</span>
+                <button>
+                  <img src="../assets/icons/plus.svg"
+                    alt="plus button">
+                </button>
+                <span class="price">$23.99</span>
+                <button class="delete">
+                  <img src="../assets/icons/delete.svg"
+                    alt="delete button">
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="product main-border-bottom">
+            <img
+              src="../assets/images/shopping-bag/shopping-bag-products-4.png">
+            <figcaption>
+              <p class="p-regular-16px-400">
+                D'Addario EPBB170 Phosphor Bronze Acoustic
+                Bass Strings 45-100
+              </p>
+              <div class="controls">
+                <button>
+                  <img src="../assets/icons/minus.svg"
+                    alt="minus button">
+                </button>
+                <span class="quantity">1</span>
+                <button>
+                  <img src="../assets/icons/plus.svg"
+                    alt="plus button">
+                </button>
+                <span class="price">$23.99</span>
+                <button class="delete">
+                  <img src="../assets/icons/delete.svg"
+                    alt="delete button">
+                </button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="row">
+          <div class="payment-methods">
+            <p class="p-regular-16px-400">
+              Accepted Payment Methods
+            </p>
+            <img
+              src="../assets/images/shopping-bag/payment-methods.png"
+              alt="visa, mastercard, american-express, paypall and discorver">
+            <p class="p-regular-16px-400">
+              Need help? Call (612) 331-3635
+            </p>
+          </div>
+          <div class="shopping-bag-subtotal-price">
+            <div class="subtotal-price main-border-bottom">
+              <h5>
+                Subtotal
+              </h5>
+              <h3>
+                $296.00
+              </h3>
+            </div>
+            <button class="main-btn">
+              CHECKOUT
+            </button>
+          </div>
+        </div>
+      </main>
+      <!-- S H O P P I N G    B A G    E N D -->
+
+      <!-- P E P O L E    A L S O   V I E W E D    S T A R T -->
+      <section id="pepole-also-viewed">
+        <h5>
+          People Also Viewed
+        </h5>
+        <div class="products-column">
+          <figure class="product-card">
+            <div class="img-wrapper">
+              <img
+                src="../assets/images/shopping-bag/pepole-also-viewed-1.png"
+                class="product-image" alt="product image">
+              <span class="badge">NEW</span>
+            </div>
+            <figcaption>
+              <span class="product-title">
+                Aquila Alabastro Light Tension Classical
+                Guitar Strings 167C
+              </span>
+              <div class="rate">
+                <img src="../assets/icons/star.svg"
+                  class="star">
+                (2)
+              </div>
+              <div class="price">
+                <p class="p-regular-16px-400 normal-price">
+                  $11.99
+                </p>
+              </div>
+              <img
+                src="../assets/icons/add-to-cart-mini.svg"
+                class="add-product-to-cart">
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="img-wrapper">
+              <img
+                src="../assets/images/shopping-bag/pepole-also-viewed-2.png"
+                class="product-image" alt="product image">
+              <span class="badge">NEW</span>
+            </div>
+            <figcaption>
+              <span class="product-title">
+                Aquila Alabastro Light Tension Classical
+                Guitar Strings 167C
+              </span>
+              <div class="rate">
+                <img src="../assets/icons/star.svg"
+                  class="star">
+                (2)
+              </div>
+              <div class="price">
+                <p class="p-regular-16px-400 normal-price">
+                  $11.99
+                </p>
+              </div>
+              <img
+                src="../assets/icons/add-to-cart-mini.svg"
+                class="add-product-to-cart">
+            </figcaption>
+          </figure>
+          <figure class="product-card">
+            <div class="img-wrapper">
+              <img
+                src="../assets/images/shopping-bag/pepole-also-viewed-3.png"
+                class="product-image" alt="product image">
+              <span class="badge">NEW</span>
+            </div>
+            <figcaption>
+              <span class="product-title">
+                Aquila Alabastro Light Tension Classical
+                Guitar Strings 167C
+              </span>
+              <div class="rate">
+                <img src="../assets/icons/star.svg"
+                  class="star">
+                (2)
+              </div>
+              <div class="price">
+                <p class="p-regular-16px-400 normal-price">
+                  $11.99
+                </p>
+              </div>
+              <img
+                src="../assets/icons/add-to-cart-mini.svg"
+                class="add-product-to-cart">
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- P E P O L E    A L S O   V I E W E D    E N D -->
+    </div>
+  </div>
+  <!-- L A Y O U T    E N D -->
+
+  <!-- C A R T    E N D -->
+
+  <!-- M I N I    C A R T   S T A R T -->
+  <section id="mini-cart" class="fadeOutRight">
+    <!-- <i class="close-mini-cart"></i> -->
+    <div class="mini-cart-heading main-border-bottom">
+      <h5>
+        Shopping Bag
+        <button class="close-mini-cart">
+          <img src="../assets/icons/close.svg"
+            alt="close btn">
+        </button>
+      </h5>
+      <p class="p-regular-16px-400">4 items</p>
+    </div>
+    <div class="shopping-bag-products">
+      <figure class="product main-border-bottom">
+        <img
+          src="../assets/images/shopping-bag/shopping-bag-products-1.png">
+        <figcaption>
+          <p class="p-regular-16px-400">
+            D'Addario EPBB170 Phosphor Bronze Acoustic
+            Bass Strings 45-100
+          </p>
+          <div class="controls">
+            <button>
+              <img src="../assets/icons/minus.svg"
+                alt="minus button">
+            </button>
+            <span class="quantity">1</span>
+            <button>
+              <img src="../assets/icons/plus.svg"
+                alt="plus button">
+            </button>
+            <span class="price">$23.99</span>
+            <button class="delete">
+              <img src="../assets/icons/delete.svg"
+                alt="delete button">
+            </button>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="product main-border-bottom">
+        <img
+          src="../assets/images/shopping-bag/shopping-bag-products-2.png">
+        <figcaption>
+          <p class="p-regular-16px-400">
+            D'Addario EPBB170 Phosphor Bronze Acoustic
+            Bass Strings 45-100
+          </p>
+          <div class="controls">
+            <button>
+              <img src="../assets/icons/minus.svg"
+                alt="minus button">
+            </button>
+            <span class="quantity">1</span>
+            <button>
+              <img src="../assets/icons/plus.svg"
+                alt="plus button">
+            </button>
+            <span class="price">$23.99</span>
+            <button class="delete">
+              <img src="../assets/icons/delete.svg"
+                alt="delete button">
+            </button>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="product main-border-bottom">
+        <img
+          src="../assets/images/shopping-bag/shopping-bag-products-3.png">
+        <figcaption>
+          <p class="p-regular-16px-400">
+            D'Addario EPBB170 Phosphor Bronze Acoustic
+            Bass Strings 45-100
+          </p>
+          <div class="controls">
+            <button>
+              <img src="../assets/icons/minus.svg"
+                alt="minus button">
+            </button>
+            <span class="quantity">1</span>
+            <button>
+              <img src="../assets/icons/plus.svg"
+                alt="plus button">
+            </button>
+            <span class="price">$23.99</span>
+            <button class="delete">
+              <img src="../assets/icons/delete.svg"
+                alt="delete button">
+            </button>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="product main-border-bottom">
+        <img
+          src="../assets/images/shopping-bag/shopping-bag-products-4.png">
+        <figcaption>
+          <p class="p-regular-16px-400">
+            D'Addario EPBB170 Phosphor Bronze Acoustic
+            Bass Strings 45-100
+          </p>
+          <div class="controls">
+            <button>
+              <img src="../assets/icons/minus.svg"
+                alt="minus button">
+            </button>
+            <span class="quantity">1</span>
+            <button>
+              <img src="../assets/icons/plus.svg"
+                alt="plus button">
+            </button>
+            <span class="price">$23.99</span>
+            <button class="delete">
+              <img src="../assets/icons/delete.svg"
+                alt="delete button">
+            </button>
+          </div>
+        </figcaption>
+      </figure>
+      <div class="subtotal-price">
+        <h5>
+          Subtotal
+        </h5>
+        <h3>
+          $296.00
+        </h3>
+      </div>
+    </div>
+    <div class="checkout-wrapper">
+      <button class="main-btn">
+        CHECKOUT
       </button>
     </div>
-  </form>
+  </section>
+  <!-- M I N I    C A R T   E N D -->
 
-  <!-- R E G I S T E R    F O R M    E N D  -->
-  <!-- R E G I S T E R    E N D -->
   <!-- F O O T E R    S T A R T -->
   <footer id="main-footer">
     <div class="container">
@@ -617,40 +920,37 @@
             <a href="#">Discount Deals</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="#">Classical Guitar
-              Strings</a>
+            <a href="#">Classical Guitar Strings</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="#">Acoustic Guitar
-              Strings</a>
+            <a href="#">Acoustic Guitar Strings</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="#">Electric Guitar
-              Strings</a>
+            <a href="#">Electric Guitar Strings</a>
           </li>
         </ul>
         <ul>
           <h6>Customer Service</h6>
           <li class="p-subtitle-14px-300">
-            <a href="./contact-us.html">Contact Us</a>
+            <a href="#">Contact Us</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="./FAQs.html">FAQ</a>
+            <a href="#">FAQ</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="./shipping.html">Shipping</a>
-          </li>
-<li class="p-subtitle-14px-300">
-            <a href="./returns.html">Returns</a>
+            <a href="#">Shipping</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="./payment.html">Payment</a>
+            <a href="#">Returns</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="./account-profile.html">My Account</a>
+            <a href="#">Payment</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="./account-gift-certificates.html">Discount Coupons</a>
+            <a href="#">My Account</a>
+          </li>
+          <li class="p-subtitle-14px-300">
+            <a href="#">Discount Coupons</a>
           </li>
         </ul>
         <ul>
@@ -659,24 +959,19 @@
             <a href="#">String Basics</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="#">Classical Guitar String
-              Basics</a>
+            <a href="#">Classical Guitar String Basics</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="#">Accoustic Guitar String
-              Basics</a>
+            <a href="#">Accoustic Guitar String Basics</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="#">Electric Guitar String
-              Basics</a>
+            <a href="#">Electric Guitar String Basics</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="#">Guitar String
-              Maintenance</a>
+            <a href="#">Guitar String Maintenance</a>
           </li>
           <li class="p-subtitle-14px-300">
-            <a href="#">Help Me Choose Guitar
-              Strings</a>
+            <a href="#">Help Me Choose Guitar Strings</a>
           </li>
         </ul>
         <ul>
@@ -685,8 +980,7 @@
             <a href="#">SBM Articles</a>
           </li>
           <li>
-            <a href="#">SBM Sponsored
-              Artists</a>
+            <a href="#">SBM Sponsored Artists</a>
           </li>
           <li>
             <a href="#">SBM Newsletters</a>
@@ -725,7 +1019,11 @@
     src="../assets/JS/transitions-animations/dropdown.js"></script>
   <script
     src="../assets/JS/transitions-animations/toggle-btns.js"></script>
-  <script src="../assets/JS/tools/error-msg.js"></script>
+  <script
+    src="../assets/JS/transitions-animations/bottom-to-top.js"></script>
+  <script
+    src="../assets/JS/transitions-animations/pop-up.js"></script>
+  <script src="../assets/JS/pages/mini-cart.js"></script>
 </body>
 
 </html>
