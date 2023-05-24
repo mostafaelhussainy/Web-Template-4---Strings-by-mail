@@ -1,0 +1,161 @@
+body {
+  min-height: 100vh;
+}
+
+#pact_main {
+  width: 100%;
+  padding-top: 85px;
+  margin-bottom: 195px;
+}
+#pact_main * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+}
+#pact_main .container {
+  background-color: #FFF;
+  width: 80%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+#pact_main .container .delivery_changes {
+  width: 100%;
+  background: #FFF8F3;
+  border: 1px solid #FF6600;
+  border-radius: 4px;
+  padding: 17px 25px;
+  margin-bottom: 30px;
+}
+#pact_main .container .delivery_changes p:first-of-type {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+#pact_main .container .delivery_changes .row {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+  margin-bottom: 5px;
+}
+#pact_main .container .delivery_changes .row p {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+#pact_main .container .delivery_changes .row:last-of-type {
+  margin-bottom: 0px;
+}
+#pact_main .container a {
+  color: #000;
+}
+#pact_main .container h1 {
+  font-family: "TradeGothic LT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+#pact_main .container p {
+  display: block;
+  font-family: "TradeGothic LT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  color: #000000;
+  margin-bottom: 20px;
+}
+#pact_main .container p:last-of-type {
+  margin-bottom: 40;
+}
+#pact_main .container label {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#pact_main .container .text_input_label {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+#pact_main .container .text_input_label p {
+  margin-bottom: 0;
+}
+#pact_main .container .text_input_label input[type=text],
+#pact_main .container .text_input_label input[type=tel],
+#pact_main .container .text_input_label input[type=email] {
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  max-width: 700px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  color: #000;
+  padding-left: 17px;
+}
+#pact_main .container .text_input_label input[type=text]::-moz-placeholder, #pact_main .container .text_input_label input[type=tel]::-moz-placeholder, #pact_main .container .text_input_label input[type=email]::-moz-placeholder {
+  font-family: "TradeGothic LT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  color: #919191;
+}
+#pact_main .container .text_input_label input[type=text]::placeholder,
+#pact_main .container .text_input_label input[type=tel]::placeholder,
+#pact_main .container .text_input_label input[type=email]::placeholder {
+  font-family: "TradeGothic LT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  color: #919191;
+}
+#pact_main .container .checkbox_input_label {
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+  align-items: flex-start;
+}
+#pact_main .container .checkbox_input_label a {
+  display: inline;
+}
+#pact_main .container .checkbox_input_label p {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#pact_main .container .checkbox_input_label input[type=checkbox] {
+  accent-color: #FF6600;
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+}
+#pact_main .container #pact_confirm_button {
+  display: block;
+  margin-left: auto;
+  background: #FF6600;
+  border-radius: 6px;
+  padding: 15px 20px;
+  font-family: "TradeGothic LT Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+#pact_main .container #pact_confirm_button:hover {
+  color: #fff;
+  background: #ff7d00;
+  text-decoration: none;
+}/*# sourceMappingURL=stylePage.css.map */

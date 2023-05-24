@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/stylePage.css">
+</head>
+<body>
+    <div id="pact_main">
+        <div class="container">
+            <h1>
+                Dear valued customer, 
+            </h1>
+            <p>
+                We’ve changed our delivery options. Your approval is required to continue receiving recurring orders.
+            </p>
+            <p>
+                Please note that as a result of the PACT ACT regulations, your orders will now be hand delivered by a messenger.
+            </p>
+            <p>
+                Delivery time is expected within <strong>10 business days.</strong> (5 business days in most cases).
+            </p>
+            <div class="delivery_changes">
+                <p>
+                    Delivery charges are:
+                </p>
+                <div class="row">
+                    <p>$18</p>
+                    <p>Up to 30 items</p>
+                </div>
+                <div class="row">
+                    <p>$24</p>
+                    <p>From 31 to 60 items</p>
+                </div>
+                <div class="row">
+                    <p>$30</p>
+                    <p>Over 60 items</p>
+                </div>
+            </div>
+            <p>
+                You will need to show a formal ID confirming that you are at least 21 years of age.
+            </p>
+            <p>
+                Most messengers will send you a text message in advance of the delivery to ensure you will be available to personally sign for it. 
+            </p>
+            <p>
+
+            </p>
+            <label class="text_input_label">
+                <p>
+                    Please confirm your cell phone number for the messenger's communication:
+                </p>
+                <input type="tel" name="pact_confrim_number" placeholder="XXX-XXX-XXXX">
+            </label>
+            <p>
+                If you do not accept the first delivery attempt ,the messenger will leave a note with a telephone number for you to reschedule your delivery. We will email you a link to track the status of your order.
+            </p>
+            <label class="text_input_label">
+                <p>
+                    Please Confirm your email address:
+                </p>
+                <input type="email" name="pact_confirm_email" placeholder="johndoe@gmail.com">
+            </label>
+            <p>
+                The messenger will only deliver to the shipping address on this order, so be sure your address is accurate before placing the order, so <strong>we will not be able to change it manually.</strong> 
+            </p>
+            <p>
+                Please confirm you understand and agree to the terms and conditions of the delivery.
+            </p>
+            <p>
+                Please confirm you understand and agree to the terms and conditions of the delivery:
+            </p>
+            <label class="checkbox_input_label">
+                <input type="checkbox" name="pact_age_confirmation"/>
+                <p>
+                    I accept that the orders will go through a messenger service and I will be required to sign for the package and provide proof that I am over age 21.
+                </p>
+            </label>
+            <label class="checkbox_input_label">
+                <input type="checkbox" name="pact_terms_conditions"/>
+                <p>
+                    I acknowledge that I have read and understood the <a href="https://cat.iloveecigs.com/conditions_use">Terms and Conditions</a> and <a href="https://cat.iloveecigs.com/privacy">Privacy Policy</a>
+                </p>
+            </label>
+            <button id="pact_confirm_button" type="button">CONFIRM</button>
+        </div>
+    </div>
+</body>
+</html>

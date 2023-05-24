@@ -1,0 +1,174 @@
+body {
+    min-height: 100vh;
+}
+
+
+
+/////////////////////////////////////////////////////
+#pact_main {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        outline: none;
+    }
+
+    width: 100%;
+    padding-top: 85px;
+    margin-bottom: 195px;
+
+    .container {
+        background-color: #FFF;
+        width: 80%;
+        max-width: 700px;
+        margin: 0 auto;
+
+        .delivery_changes {
+            width: 100%;
+            background: #FFF8F3;
+            border: 1px solid #FF6600;
+            border-radius: 4px;
+            padding: 17px 25px;
+            margin-bottom: 30px;
+
+            p:first-of-type {
+                font-weight: 700;
+                margin-bottom: 12px;
+            }
+
+            .row {
+                display: flex;
+                flex-direction: row;
+                column-gap: 29px;
+                margin-bottom: 5px;
+
+                p {
+                    font-weight: 400;
+                    margin-bottom: 0px;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        a {
+            color: #000;
+        }
+
+        h1 {
+            font-family: 'TradeGothic LT';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        p {
+            display: block;
+            font-family: 'TradeGothic LT';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 138%;
+            color: #000000;
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin-bottom: 40;
+            }
+        }
+
+        label {
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .text_input_label {
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"] {
+                background: #FFFFFF;
+                border: 1px solid #DBDBDB;
+                max-width: 700px;
+                width: 100%;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 138%;
+                color: #000;
+                padding-left: 17px;
+
+                &::placeholder {
+                    font-family: 'TradeGothic LT';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 138%;
+                    color: #919191;
+                }
+            }
+        }
+
+        .checkbox_input_label {
+            max-width: 80%;
+            display: flex;
+            flex-direction: row;
+            column-gap: 13px;
+            align-items: flex-start;
+
+            a {
+                display: inline;
+            }
+
+            p {
+                width: fit-content;
+            }
+
+            input[type="checkbox"] {
+                accent-color: #FF6600;
+                margin-top: 3px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+
+
+        #pact_confirm_button {
+            display: block;
+            margin-left: auto;
+            background: #FF6600;
+            border-radius: 6px;
+            padding: 15px 20px;
+            font-family: 'TradeGothic LT Bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+            border: none;
+            outline: none;
+
+            &:hover {
+                color: #fff;
+                background: #ff7d00;
+                text-decoration: none;
+            }
+        }
+    }
+}
